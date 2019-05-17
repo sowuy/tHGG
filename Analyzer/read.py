@@ -91,11 +91,13 @@ if __name__ == '__main__':
         Leptons.sort(key=operator.attrgetter('pt'))
                 
         nLep = len(Leptons)
-      
+
         for t in [tLep,tHad]:
             
             t.evNVtx[0] = Event.nVtx
             t.evWeight[0] = Event.weight
+
+            t.diPhoMass[0] = Event.diPhoMass
         
         if( nLep == 1 ):                            
            

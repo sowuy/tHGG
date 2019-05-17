@@ -41,12 +41,12 @@ if __name__ == '__main__':
             if len(d2) != 1:
                 print 'Several runs found in', i 
                 exit
-                for i2 in d2:
-                    d3 = os.popen(cpath+'/'+i1+'/'+i2).read().splitlines()
-                    for i3 in d3:
-                        d3 = os.popen(cpath+'/'+i1+'/'+i2+'/'+i3).read().splitlines()
-                        for i4 in d3:
-                            fout.write("        <file>root://"+ntPath+ntProd+'/'+i+'/'+i1+'/'+i2+'/'+i3+'/'+i4+"</file>\n")
+            for i2 in d2:
+                d3 = os.popen(cpath+'/'+i1+'/'+i2).read().splitlines()
+                for i3 in d3:
+                    d3 = os.popen(cpath+'/'+i1+'/'+i2+'/'+i3).read().splitlines()
+                    for i4 in d3:
+                        fout.write("        <file>root://"+ntPath+ntProd+'/'+i+'/'+i1+'/'+i2+'/'+i3+'/'+i4+"</file>\n")
         fout.write("    </sample>\n")
 
     fout.write("</data>")
