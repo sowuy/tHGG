@@ -14,6 +14,7 @@ def main(argv = None):
         
     parser = OptionParser(usage)
     parser.add_option("-n","--nfiles",default="30",help="number of files per job [default: %default]")
+    parser.add_option("-o","--out",default="jobs",help="output directory [default: %default]")
     
     (options, args) = parser.parse_args(sys.argv[1:])
     
@@ -21,8 +22,17 @@ def main(argv = None):
 
 if __name__ == '__main__':
     
-    options = main()
+    options = main()    
+    
+    home = os.getcwd()
+    
+    outpath = home+"/"+options.out
+    
+    if os.path.isdir(outpath):
+        os.system("rm -rf "+outpath)
 
+    os.system("mkdir "+outpath)
+    
     xmlTree = ET.parse(c.xmlName)
     for s in xmlTree.findall('sample'):
         for s0 in c.submit:
@@ -32,11 +42,28 @@ if __name__ == '__main__':
                 for child in s:
                     files.append(child.text)
 
-                fout = open("job.xml","w+")
+                nj = 0
+                fout = open(outpath+"/"+s0+"_"+str(nj)+".xml","w+")
                 fout.write('<data>\n')                
                 fout.write("<sample id=\""+s0+"\" isdata=\""+isdata+"\">\n")
-                for f in files:
-                    fout.write("    <file>"+f+"</file>\n")
+                nc = 0
+                for i in range(len(files)):
+                    
+                    nc = nc + 1
+                    
+                    if (nc > int(options.nfiles)):
+                        fout.write("</sample>\n")
+                        fout.write("</data>")
+                        fout.close()
+                        
+                        nc = 0
+                        nj = nj + 1
+                        fout = open(outpath+"/"+s0+"_"+str(nj)+".xml","w+")
+                        fout.write('<data>\n')
+                        fout.write("<sample id=\""+s0+"\" isdata=\""+isdata+"\">\n")                        
+                        
+                    fout.write("    <file>"+files[i]+"</file>\n")
+                    
                 fout.write("</sample>\n")                
                 fout.write("</data>")
                 fout.close()
