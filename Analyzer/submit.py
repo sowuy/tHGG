@@ -10,7 +10,7 @@ def main(argv = None):
     if argv == None:
         argv = sys.argv[1:]
         
-    usage = "usage: %prog [options]\n Script to produce a list of ntuples"
+    usage = "usage: %prog [options]\n Script to submit Analyzer jobs to batch"
         
     parser = OptionParser(usage)
     parser.add_option("-n","--nfiles",default="30",help="number of files per job [default: %default]")
@@ -51,21 +51,23 @@ if __name__ == '__main__':
                     
                     nc = nc + 1
                     
+                    fout.write("    <file>"+files[i]+"</file>\n")
+                    
                     if (nc > int(options.nfiles)):
                         fout.write("</sample>\n")
                         fout.write("</data>")
                         fout.close()
-                        
-                        nc = 0
-                        nj = nj + 1
-                        fout = open(outpath+"/"+s0+"_"+str(nj)+".xml","w+")
-                        fout.write('<data>\n')
-                        fout.write("<sample id=\""+s0+"\" isdata=\""+isdata+"\">\n")                        
-                        
-                    fout.write("    <file>"+files[i]+"</file>\n")
-                    
-                fout.write("</sample>\n")                
-                fout.write("</data>")
-                fout.close()
+
+                        if (i != (len(files)-1)):
+                            nc = 0
+                            nj = nj + 1
+                            fout = open(outpath+"/"+s0+"_"+str(nj)+".xml","w+")
+                            fout.write('<data>\n')
+                            fout.write("<sample id=\""+s0+"\" isdata=\""+isdata+"\">\n")
+
+                if (nc <= int(options.nfiles)):
+                    fout.write("</sample>\n")
+                    fout.write("</data>")
+                    fout.close()
 
                     
