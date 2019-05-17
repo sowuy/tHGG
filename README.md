@@ -34,8 +34,14 @@ The analysis code does not depend on CMSSW and it can be run with:
 
 ```
 git clone https://github.com/kskovpen/tHGG
-cd Analyzer
+cd tHGG/Analyzer
 ./read.sh
+```
+
+Available run options:
+
+```
+python read.py -h
 ```
 
 ## Histograms and higher-level analysis
