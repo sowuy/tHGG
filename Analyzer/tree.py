@@ -9,8 +9,8 @@ class tree():
 
     def __init__(self, name):
 
-        self.lepPt, self.lepEta, self.lepPhi, self.lepE, self.evWeight \
-        = (array( 'f', [ -777 ] ) for _ in range(5))
+        self.lepPt, self.lepEta, self.lepPhi, self.lepE, self.evWeight, \
+        self.diPhoMass = (array( 'f', [ -777 ] ) for _ in range(6))
         
         self.lepCharge, self.evNVtx = (array( 'i', [ -777 ] ) for _ in range(2))
 
@@ -18,6 +18,8 @@ class tree():
         
         self.t.Branch( 'evNVtx', self.evNVtx, 'evNVtx/I' )
         self.t.Branch( 'evWeight', self.evWeight, 'evWeight/F' )
+        
+        self.t.Branch( 'diPhoMass', self.diPhoMass, 'diPhoMass/F' )                
         
         if (name == 'leptonic'):
 

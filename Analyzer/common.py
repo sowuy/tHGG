@@ -1,5 +1,8 @@
 treeName = "flashggNtuples/flashggStdTree"
+workdir = "/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/"
 xmlName = "samples.xml"
+batchqueue = "localgrid"
+walltime = "05:00:00"
 
 submit = [\
 'DiPhotonJetsBox_M40_80-Sherpa',\

@@ -40,7 +40,7 @@ if __name__ == '__main__':
     tHad = tr.tree('hadronic')
     
     files=[]
-    xmlTree = ET.parse(c.xmlName)
+    xmlTree = ET.parse(c.workdir+c.xmlName)
     for s in xmlTree.findall('sample'):
         if s.get('id') == options.sample:
             isdata = s.get('isdata')

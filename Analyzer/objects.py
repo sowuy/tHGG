@@ -11,6 +11,8 @@ class event():
 
         self.nVtx = ev.__getattr__("EvtInfo.NVtx")
         self.weight = ev.__getattr__("EvtInfo.genweight")
+        
+        self.diPhoMass = ev.__getattr__("DiPhoInfo.mass")
 
 class jet():
 
