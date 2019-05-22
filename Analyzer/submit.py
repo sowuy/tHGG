@@ -24,9 +24,11 @@ def main(argv = None):
 
 if __name__ == '__main__':
     
-    options = main()    
+    options = main()
     
-    home = os.getcwd()
+    os.system("cp /tmp/"+c.proxy+" "+c.proxydir+c.proxy)
+
+    home = os.getcwd()    
     
     outpath = home+"/"+options.out
     
@@ -92,7 +94,7 @@ if __name__ == '__main__':
                     outlog = outname+'.log'
                     output = outname+'.root'
                     
-                    while (str(subprocess.Popen(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+outname+',output='+output+',dout='+home],stdout=subprocess.PIPE)).find('Invalid credential') != -1):
+                    while (str(subprocess.Popen(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+f+',output='+output+',dout='+home+',proxy='+c.proxydir+c.proxy+',arch='+c.arch],stdout=subprocess.PIPE)).find('Invalid credential') != -1):
                         pass
                     
                     jid = jid + 1                    

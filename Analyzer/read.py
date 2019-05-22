@@ -34,7 +34,7 @@ if __name__ == '__main__':
                 
     ROOT.gROOT.SetBatch()
 
-    outFile = ROOT.TFile(options.output,"RECREATE")
+    outFile = ROOT.TFile.Open(options.output,"RECREATE")
     
     tLep = tr.tree('leptonic')
     tHad = tr.tree('hadronic')
