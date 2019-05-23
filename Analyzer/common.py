@@ -5,9 +5,10 @@ proxydir = "/user/kskovpen/proxy/"
 arch = "slc6_amd64_gcc700"
 xmlName = "samples.xml"
 batchqueue = "localgrid"
-walltime = "01:00:00"
+walltime = "03:00:00"
 
 submit = [\
+'DoubleEG',\
 'DiPhotonJetsBox_M40_80-Sherpa',\
 'DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa',\
 'DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8',\
