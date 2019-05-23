@@ -14,12 +14,17 @@ class tree():
         
         self.lepCharge, self.evNVtx = (array( 'i', [ -777 ] ) for _ in range(2))
 
+        self.phoLeadIsGenMatched, self.phoSubLeadIsGenMatched = (array( 'b', [ 0 ] ) for _ in range(2))
+
         self.t = ROOT.TTree( name, 'Analysis tree' )
         
         self.t.Branch( 'evNVtx', self.evNVtx, 'evNVtx/I' )
         self.t.Branch( 'evWeight', self.evWeight, 'evWeight/F' )
         
-        self.t.Branch( 'diPhoMass', self.diPhoMass, 'diPhoMass/F' )                
+        self.t.Branch( 'diPhoMass', self.diPhoMass, 'diPhoMass/F' )
+        
+#        self.t.Branch( 'phoLeadIsGenMatched', self.phoLeadIsGenMatched, 'phoLeadIsGenMatched/O' )
+#        self.t.Branch( 'phoSubLeadIsGenMatched', self.phoSubLeadIsGenMatched, 'phoSubLeadIsGenMatched/O' )
         
         if (name == 'leptonic'):
 

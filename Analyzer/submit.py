@@ -14,7 +14,7 @@ def main(argv = None):
     usage = "usage: %prog [options]\n Script to submit Analyzer jobs to batch"
         
     parser = OptionParser(usage)
-    parser.add_option("-f","--files",default="30",help="number of files per job [default: %default]")
+    parser.add_option("-f","--files",default="10",help="number of files per job [default: %default]")
     parser.add_option("-o","--out",default="jobs",help="output directory [default: %default]")
     parser.add_option("-n","--nmax",default="-1",help="number of processed events per job [default: %default]")
     

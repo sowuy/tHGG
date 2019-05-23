@@ -11,6 +11,7 @@ class event():
 
         self.nVtx = ev.__getattr__("EvtInfo.NVtx")
         self.weight = ev.__getattr__("EvtInfo.genweight")
+        self.trig = ev.__getattr__("EvtInfo.passTrigger")
         
         self.diPhoMass = ev.__getattr__("DiPhoInfo.mass")
 
@@ -27,6 +28,8 @@ class jet():
         self.eta = ev.__getattr__("JetInfo.Eta")[idx]
         self.phi = ev.__getattr__("JetInfo.Phi")[idx]
         self.E = ev.__getattr__("JetInfo.Energy")[idx]
+        
+        self.btag = ev.__getattr__("JetInfo.pfDeepCSVJetTags_probb")[idx]+ev.__getattr__("JetInfo.pfDeepCSVJetTags_probbb")[idx]
 
         passPt = bool(self.pt > 25)
         passEta = bool(math.fabs(self.eta) < 2.4)
@@ -44,12 +47,16 @@ class photon():
         self.passed = False
         
         self.diPhoMass = ev.__getattr__("DiPhoInfo.mass")
+        if self.diPhoMass < 0:
+            return
     
-        if (idx == 0):
+        if idx == 0:
             self.pt = ev.__getattr__("DiPhoInfo.leadPt")
             self.eta = ev.__getattr__("DiPhoInfo.leadEta")
             self.phi = ev.__getattr__("DiPhoInfo.leadPhi")
             self.E = ev.__getattr__("DiPhoInfo.leadE")
+            
+            self.isGenMatched = ev.__getattr__("DiPhoInfo.leadGenMatch")
             
             passPt = bool(self.pt > self.diPhoMass/2)
             passID = bool(ev.__getattr__("DiPhoInfo.leadIDMVA") > 0.9)
@@ -58,6 +65,8 @@ class photon():
             self.eta = ev.__getattr__("DiPhoInfo.subleadEta")
             self.phi = ev.__getattr__("DiPhoInfo.subleadPhi")
             self.E = ev.__getattr__("DiPhoInfo.subleadE")
+            
+            self.isGenMatched = ev.__getattr__("DiPhoInfo.subleadGenMatch")
             
             passPt = bool(self.pt > self.diPhoMass/4)
             passID = bool(ev.__getattr__("DiPhoInfo.subleadIDMVA") > 0.9)
@@ -111,28 +120,3 @@ class lepton():
             passOverlap = fun.overlap(self.eta,self.phi,Jets,0.4)
             
             self.passed = (passPt and passEta and passTight and passIso and passOverlap)
-
-class tree():
-
-    def __init__(self, name):
-
-        self.lepPt, self.lepEta, self.lepPhi, self.lepE \
-        = [array( 'f', [ -777 ] )] * 4
-        
-        self.lepCharge, self.evNVtx = [array( 'i', [ -777 ] )] * 2
-
-        self.t = ROOT.TTree( name, 'Analysis tree' )
-        
-        self.t.Branch( 'evNVtx', self.evNVtx, 'evNVtx/I' )
-        
-        if (name == 'leptonic'):
-
-            self.t.Branch( 'lepPt', self.lepPt, 'lepPt/F' )
-            self.t.Branch( 'lepEta', self.lepEta, 'lepEta/F' )
-            self.t.Branch( 'lepPhi', self.lepPhi, 'lepPhi/F' )
-            self.t.Branch( 'lepE', self.lepE, 'lepE/F' )
-            self.t.Branch( 'lepCharge', self.lepCharge, 'lepCharge/I' )
-
-    def fill(self):
-        
-        self.t.Fill()
