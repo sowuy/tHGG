@@ -44,6 +44,15 @@ Available run options:
 python read.py -h
 ```
 
+Submit jobs to local batch:
+
+```
+python submit.py
+```
+
+All configuration can be found in
+[common.py](https://github.com/kskovpen/tHGG/blob/master/Analyzer/common.py).
+
 ## Histograms and higher-level analysis
 
 TBA
