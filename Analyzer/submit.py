@@ -39,7 +39,7 @@ if __name__ == '__main__':
     
     xmlTree = ET.parse(c.xmlName)
     for s in xmlTree.findall('sample'):
-        for s0 in c.submit:
+        for s0, xsec in c.submit:
             if s.get('id') == s0:
                 isdata = s.get('isdata')
                 files=[]
