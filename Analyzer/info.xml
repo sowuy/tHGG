@@ -1,0 +1,6 @@
+<data>
+    <sample xsec="777">ttHJetToGG_M125_13TeV_amcatnloFXFX_madspin_pythia8</sample>
+    <sample xsec="777">DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8</sample>
+    <sample xsec="777">TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8</sample>
+    <sample xsec="777">TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8</sample>
+    <sample xsec="777">TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8</sample>
