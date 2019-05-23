@@ -16,6 +16,9 @@ class tree():
 
         self.phoLeadIsGenMatched, self.phoSubLeadIsGenMatched = (array( 'b', [ 0 ] ) for _ in range(2))
 
+        if name == 'leptonic':
+            self.h = ROOT.TH1F ( 'counter', 'counter', 1, 0., 1. )
+        
         self.t = ROOT.TTree( name, 'Analysis tree' )
         
         self.t.Branch( 'evNVtx', self.evNVtx, 'evNVtx/I' )
@@ -37,3 +40,8 @@ class tree():
     def fill(self):
         
         self.t.Fill()
+
+    def count(self, w):
+        
+        self.h.SetBinContent(1,self.h.GetBinContent(1)+w)
+        

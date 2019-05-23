@@ -57,13 +57,21 @@ if __name__ == '__main__':
     
     for ev in tr:
 
-        if (ie > int(options.nmax) and int(options.nmax) >= 0): break
+        ie = ie + 1
+        if (ie > int(options.nmax) and (int(options.nmax) >= 0)):
+            break
         
         Jets = []
         Leptons = []
         Photons = []
 
         Event = obj.event(ev)
+        
+        tLep.count(Event.weight)
+        
+        passTrig = Event.trig
+        if passTrig == False:
+            continue
 
         nJet = ev.__getattr__("jets_size")
         for i in range(int(nJet)):
@@ -91,6 +99,9 @@ if __name__ == '__main__':
         Leptons.sort(key=operator.attrgetter('pt'))
                 
         nLep = len(Leptons)
+        
+        nPho = len(Photons)
+        if nPho < 2: continue
 
         for t in [tLep,tHad]:
             
@@ -98,6 +109,9 @@ if __name__ == '__main__':
             t.evWeight[0] = Event.weight
 
             t.diPhoMass[0] = Event.diPhoMass
+            
+            t.phoLeadIsGenMatched[0] = Photons[0].isGenMatched
+            t.phoSubLeadIsGenMatched[0] = Photons[1].isGenMatched
         
         if( nLep == 1 ):                            
            
@@ -112,8 +126,6 @@ if __name__ == '__main__':
         elif( nLep == 0 ):
             
             tHad.fill()
-
-        ie = ie + 1
         
     outFile.Write()
     outFile.Close()
