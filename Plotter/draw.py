@@ -89,6 +89,24 @@ if __name__ == '__main__':
         h['DiPhotonJets'].SetLineColor(ROOT.kAzure-7)
         h['DiPhotonJets'].SetFillColor(ROOT.kAzure-7)
         h['DiPhotonJets'].SetLineStyle(1)
+
+        h['TTJets'].SetMarkerSize(0)
+        h['TTJets'].SetMarkerColor(ROOT.kBlue)
+        h['TTJets'].SetLineColor(ROOT.kBlue)
+        h['TTJets'].SetFillColor(ROOT.kBlue)
+        h['TTJets'].SetLineStyle(1)
+
+        h['QCD'].SetMarkerSize(0)
+        h['QCD'].SetMarkerColor(ROOT.kGreen)
+        h['QCD'].SetLineColor(ROOT.kGreen)
+        h['QCD'].SetFillColor(ROOT.kGreen)
+        h['QCD'].SetLineStyle(1)
+
+        h['GJet'].SetMarkerSize(0)
+        h['GJet'].SetMarkerColor(ROOT.kMagenta)
+        h['GJet'].SetLineColor(ROOT.kMagenta)
+        h['GJet'].SetFillColor(ROOT.kMagenta)
+        h['GJet'].SetLineStyle(1)
         
         hSM = ROOT.THStack()
         hNP = ROOT.THStack()
@@ -161,7 +179,10 @@ if __name__ == '__main__':
             elif p == 'StHct': leg.AddEntry(h[p],"StHct","l")
             elif p == 'TtHut': leg.AddEntry(h[p],"TtHut","l")
             elif p == 'TtHct': leg.AddEntry(h[p],"TtHct","l")
-            elif p == 'DiPhotonJets': leg.AddEntry(h[p],"DiPhotonJets","f")
+            elif p == 'DiPhotonJets': leg.AddEntry(h[p],"#gamma#gamma+jets","f")
+            elif p == 'TTJets': leg.AddEntry(h[p],"t#bar{t}(#gamma)+jets","f")
+            elif p == 'QCD': leg.AddEntry(h[p],"QCD","f")
+            elif p == 'GJet': leg.AddEntry(h[p],"#gamma+jets","f")
         leg.Draw()
     
         t = style.CMSLABEL()
