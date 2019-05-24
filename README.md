@@ -50,9 +50,16 @@ Submit jobs to local batch:
 python submit.py
 ```
 
-All configuration can be found in
+The batch configuration and sample list can be found in
 [common.py](https://github.com/kskovpen/tHGG/blob/master/Analyzer/common.py).
 
 ## Histograms and higher-level analysis
 
-TBA
+An example of histogram creation:
+
+```
+python plot.py --channel=leptonic --names=diPhoMass,phoLeadPt 
+```
+
+The plotting configuration is available in
+[common.py](https://github.com/kskovpen/tHGG/blob/master/Plotter/common.py).
