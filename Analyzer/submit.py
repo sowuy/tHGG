@@ -77,6 +77,7 @@ if __name__ == '__main__':
                             nc = 0
                             nj = nj + 1
                             
+                            xml = outpath+"/"+s0+"/"+s0+"_"+str(nj)+".xml"
                             fout = open(xml,"w+")
                             fjobname.append(s0)
                             fjobid.append(str(nj))
@@ -96,7 +97,7 @@ if __name__ == '__main__':
                     outlog = outname+'.log'
                     output = outname+'.root'
                     
-                    while (str(subprocess.Popen(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+f+',xml='+xml+',output='+output+',dout='+home+',proxy='+c.proxydir+c.proxy+',arch='+c.arch],stdout=subprocess.PIPE)).find('Invalid credential') != -1):
+                    while (str(subprocess.check_output(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+f+',xml='+xml+',output='+output+',dout='+home+',proxy='+c.proxydir+c.proxy+',arch='+c.arch])).find('Invalid credential') != -1):
                         pass
                     
                     jid = jid + 1                    
