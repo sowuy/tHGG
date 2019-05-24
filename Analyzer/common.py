@@ -1,9 +1,7 @@
 treeName = "flashggNtuples/flashggStdTree"
-workdir = "/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/"
 proxy = "x509up_u20657"
 proxydir = "/user/kskovpen/proxy/"
 arch = "slc6_amd64_gcc700"
-xmlName = "samples.xml"
 batchqueue = "localgrid"
 walltime = "06:00:00"
 

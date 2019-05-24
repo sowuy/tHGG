@@ -4,6 +4,7 @@ proxy=${proxy}
 arch=${arch}
 dout=${dout}
 sample=${sample}
+xml=${xml}
 output=${output}
 nmax=${nmax}
 
@@ -15,5 +16,5 @@ export SCRAM_ARCH=${arch}
 eval `scramv1 runtime -sh`
 cd -
 
-echo "Executing python read.py --sample ${sample} --output ${output} --nmax ${nmax}"
-time python ${dout}/./read.py --sample "${sample}" --output "${output}" --nmax "${nmax}"
+echo "Executing python read.py --sample ${sample} --xml ${xml} --output ${output} --nmax ${nmax}"
+time python ${dout}/./read.py --sample "${sample}" --xml "${xml}" --output "${output}" --nmax "${nmax}"

@@ -21,6 +21,7 @@ def main(argv = None):
     
     parser = OptionParser(usage)
     parser.add_option("-s","--sample",default="sample",help="input sample [default: %default]")
+    parser.add_option("-x","--xml",default="samples.xml",help="input xml configuration [default: %default]")
     parser.add_option("-o","--output",default="output",help="file output name [default: %default]")
     parser.add_option("-n","--nmax",default=-1,help="max number of events [default: %default]")
     
@@ -40,7 +41,7 @@ if __name__ == '__main__':
     tHad = tr.tree('hadronic')
     
     files=[]
-    xmlTree = ET.parse(c.workdir+c.xmlName)
+    xmlTree = ET.parse(options.xml)
     for s in xmlTree.findall('sample'):
         if s.get('id') == options.sample:
             isdata = s.get('isdata')
@@ -67,7 +68,7 @@ if __name__ == '__main__':
         Photons = []
 
         Event = obj.event(ev,isdata)
-        tLep.count(Event.weight)
+        tLep.count(Event.weightb)
         
         passTrig = Event.trig
         if passTrig == False:
