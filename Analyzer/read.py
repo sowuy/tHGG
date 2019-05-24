@@ -108,6 +108,7 @@ if __name__ == '__main__':
             
             t.evNVtx[0] = Event.nVtx
             t.evWeight[0] = Event.weight
+            t.evWeightb[0] = Event.weightb
 
             t.diPhoMass[0] = Event.diPhoMass
             
