@@ -22,7 +22,7 @@ def main(argv = None):
     parser = OptionParser(usage)
     parser.add_option("-s","--sample",default="sample",help="input sample [default: %default]")
     parser.add_option("-x","--xml",default="samples.xml",help="input xml configuration [default: %default]")
-    parser.add_option("-o","--output",default="output",help="file output name [default: %default]")
+    parser.add_option("-o","--output",default="output.root",help="output file name [default: %default]")
     parser.add_option("-n","--nmax",default=-1,help="max number of events [default: %default]")
     
     (options, args) = parser.parse_args(sys.argv[1:])
