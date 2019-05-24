@@ -7,10 +7,11 @@ import functions as fun
 
 class event():
     
-    def __init__(self, ev):
+    def __init__(self, ev, isdata):
 
         self.nVtx = ev.__getattr__("EvtInfo.NVtx")
         self.weight = ev.__getattr__("EvtInfo.genweight")
+        if bool(isdata) == True: self.weight = 1            
         self.trig = ev.__getattr__("EvtInfo.passTrigger")
         
         self.diPhoMass = ev.__getattr__("DiPhoInfo.mass")

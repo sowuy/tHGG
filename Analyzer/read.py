@@ -52,6 +52,7 @@ if __name__ == '__main__':
     for f in files: tr.Add(f)
 
     nEntries = tr.GetEntries()
+    print 'Number of events:', nEntries
 
     ie = 0
     
@@ -65,8 +66,7 @@ if __name__ == '__main__':
         Leptons = []
         Photons = []
 
-        Event = obj.event(ev)
-        
+        Event = obj.event(ev,isdata)
         tLep.count(Event.weight)
         
         passTrig = Event.trig

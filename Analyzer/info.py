@@ -38,14 +38,16 @@ if __name__ == '__main__':
             if s0 == s:
                 print s0
                 found = True
+                nEvents = 0
                 for r, d, f in os.walk(options.dir+'/'+s0):
                     for file in f:
                         if '.root' in file:
                             inFile = ROOT.TFile.Open(options.dir+'/'+s+'/'+file,"OPEN")
                             counter = inFile.Get('counter')
+                            nEvents = nEvents + counter.GetBinContent(1)
                             inFile.Close()
 
-                fout.write('    <sample xsec="'+str(xsec)+'">'+s+'</sample>\n')
+                fout.write('    <sample xsec="'+str(xsec)+'" '+'stat='+str(nEvents)+'>'+s+'</sample>\n')
                 
         if not found:
             print 'Not found sample '+s
