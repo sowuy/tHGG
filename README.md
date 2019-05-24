@@ -58,6 +58,7 @@ The batch configuration and sample list can be found in
 An example of histogram creation:
 
 ```
+cd tHGG/Plotter
 python plot.py --channel=leptonic --names=diPhoMass,phoLeadPt 
 ```
 
