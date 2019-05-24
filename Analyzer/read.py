@@ -64,6 +64,7 @@ if __name__ == '__main__':
             break
         
         Jets = []
+        JetsBTag = []
         Leptons = []
         Photons = []
 
@@ -79,6 +80,10 @@ if __name__ == '__main__':
             j = obj.jet(ev,i)
             if j.passed:
                 Jets.append(j)
+                if j.isBTag:
+                    JetsBTag.append(j)
+        nJetSelected = len(Jets)
+        nJetBTagSelected = len(JetsBTag)
 
         for i in range(2):
             p = obj.photon(ev,i)
@@ -99,7 +104,7 @@ if __name__ == '__main__':
                 
         Leptons.sort(key=operator.attrgetter('pt'))
                 
-        nLep = len(Leptons)
+        nLepSelected = len(Leptons)
         
         nPho = len(Photons)
         if nPho < 2: continue
@@ -114,20 +119,26 @@ if __name__ == '__main__':
             
             t.phoLeadIsGenMatched[0] = Photons[0].isGenMatched
             t.phoSubLeadIsGenMatched[0] = Photons[1].isGenMatched
-        
-        if( nLep == 1 ):                            
-           
-            tLep.lepPt[0] = Leptons[0].pt
-            tLep.lepEta[0] = Leptons[0].eta
-            tLep.lepPhi[0] = Leptons[0].phi
-            tLep.lepE[0] = Leptons[0].E
-            tLep.lepCharge[0] = Leptons[0].charge
 
-            tLep.fill()
+        if nJetBTagSelected != 1: continue    
+        
+        if nLepSelected >= 1:
+           
+            if nJetSelected >= 2:
+                
+                tLep.lepPt[0] = Leptons[0].pt
+                tLep.lepEta[0] = Leptons[0].eta
+                tLep.lepPhi[0] = Leptons[0].phi
+                tLep.lepE[0] = Leptons[0].E
+                tLep.lepCharge[0] = Leptons[0].charge
+                
+                tLep.fill()
             
-        elif( nLep == 0 ):
+        else:
             
-            tHad.fill()
+            if nJetSelected >= 4:
+            
+                tHad.fill()
         
     outFile.Write()
     outFile.Close()

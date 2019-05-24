@@ -50,6 +50,7 @@ if __name__ == '__main__':
                 nj = 0
                 fjobname = []
                 fjobid = []
+                fjobxml = []
                 
                 if os.path.isdir(outpath+"/"+s0):
                     os.system("rm -rf "+outpath+"/"+s0)
@@ -59,7 +60,8 @@ if __name__ == '__main__':
                 fout = open(xml,"w+")
                 fjobname.append(s0)
                 fjobid.append(str(nj))
-                fout.write('<data>\n')                
+                fjobxml.append(xml)
+                fout.write('<data>\n')
                 fout.write("<sample id=\""+s0+"\" isdata=\""+isdata+"\">\n")
                 nc = 0
                 for i in range(len(files)):
@@ -81,6 +83,7 @@ if __name__ == '__main__':
                             fout = open(xml,"w+")
                             fjobname.append(s0)
                             fjobid.append(str(nj))
+                            fjobxml.append(xml)
                             fout.write('<data>\n')
                             fout.write("<sample id=\""+s0+"\" isdata=\""+isdata+"\">\n")
 
@@ -97,7 +100,7 @@ if __name__ == '__main__':
                     outlog = outname+'.log'
                     output = outname+'.root'
                     
-                    while (str(subprocess.check_output(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+f+',xml='+xml+',output='+output+',dout='+home+',proxy='+c.proxydir+c.proxy+',arch='+c.arch])).find('Invalid credential') != -1):
+                    while (str(subprocess.check_output(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+f+',xml='+fjobxml[jid+',output='+output+',dout='+home+',proxy='+c.proxydir+c.proxy+',arch='+c.arch])).find('Invalid credential') != -1):
                         pass
                     
                     jid = jid + 1                    

@@ -35,6 +35,7 @@ class jet():
         self.E = ev.__getattr__("JetInfo.Energy")[idx]
         
         self.btag = ev.__getattr__("JetInfo.pfDeepCSVJetTags_probb")[idx]+ev.__getattr__("JetInfo.pfDeepCSVJetTags_probbb")[idx]
+        self.isBTag = bool(self.btag > 0.4941)
 
         passPt = bool(self.pt > 25)
         passEta = bool(math.fabs(self.eta) < 2.4)
@@ -101,13 +102,12 @@ class lepton():
             passEta = bool(math.fabs(self.eta) < 1.4442 or math.fabs(self.eta) > 1.566 and math.fabs(self.eta) < 2.4)
             passOverlapJets = fun.overlap(self.eta,self.phi,Jets,0.4)
             passOverlapPhotons = fun.overlap(self.eta,self.phi,Photons,1.0)
-            passID = bool(ev.__getattr__("ElecInfo.EGMCutBasedIDMedium")[idx])
+            passID = bool(ev.__getattr__("ElecInfo.EGMCutBasedIDLoose")[idx] == 1)
 #            passDxy = (math.fabs(ev.__getattr__("ElecInfo.GsfTrackDxy")[idx]) < 0.02)
 #            passDz = (math.fabs(ev.__getattr__("ElecInfo.GsfTrackDz")[idx]) < 0.2)
-        
+
             if (passPt and passEta and 
-                passOverlapJets and passOverlapPhotons and 
-                passID): self.passed = True
+                passOverlapJets and passOverlapPhotons): self.passed = True
             
         else:
             
@@ -115,12 +115,12 @@ class lepton():
             self.eta = ev.__getattr__("MuonInfo.Eta")[idx]
             self.phi = ev.__getattr__("MuonInfo.Phi")[idx]
             self.E = ev.__getattr__("MuonInfo.Energy")[idx]
-            self.iso = ev.__getattr__("MuonInfo.PFIsoDeltaBetaCorrR04")[idx]/self.pt
+            self.iso = ev.__getattr__("MuonInfo.PFIsoDeltaBetaCorrR04")[idx]
             self.charge = ev.__getattr__("MuonInfo.Charge")[idx]
             
             passPt = bool(self.pt > 20)
             passEta = bool(math.fabs(self.eta) < 2.4)
-            passTight = bool(ev.__getattr__("MuonInfo.CutBasedIdTight")[idx])
+            passTight = bool(ev.__getattr__("MuonInfo.CutBasedIdTight")[idx] == 1)
             passIso = bool(self.iso < 0.25)
             passOverlap = fun.overlap(self.eta,self.phi,Jets,0.4)
             
