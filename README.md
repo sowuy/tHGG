@@ -64,3 +64,9 @@ python plot.py --channel=leptonic --names=diPhoMass,phoLeadPt
 
 The plotting configuration is available in
 [common.py](https://github.com/kskovpen/tHGG/blob/master/Plotter/common.py).
+
+The produced histograms can be combined and drawn:
+
+```
+python draw.py
+```
