@@ -17,5 +17,12 @@ process = {\
          'TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8',\
          'TT_FCNC-T2HJ_aTleptonic_HToaa_eta_hct-MadGraph5-pythia8'),\
 'DiPhotonJets':('DiPhotonJetsBox_M40_80-Sherpa',\
-                'DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa')
-}
+                'DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa')}
+
+processSort = []
+processSort.append('data')
+processSort.append('DiPhotonJets')
+processSort.append('TtHut')
+processSort.append('StHut')
+processSort.append('TtHct')
+processSort.append('StHct')

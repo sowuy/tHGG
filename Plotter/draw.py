@@ -54,7 +54,7 @@ if __name__ == '__main__':
         h = {}
         hSysUp = {}
         hSysDown = {}
-        for p in c.process:
+        for p in c.processSort:
             h[p] = fHist.Get('h_'+v+'__'+p)
 
             for isys in range(nSys):
@@ -92,7 +92,8 @@ if __name__ == '__main__':
         
         hSM = ROOT.THStack()
         hNP = ROOT.THStack()
-        for p in c.process:
+        for p in c.processSort:
+            if p == 'data': continue
             if p not in ['StHut','StHct','TtHut','TtHct']:
                 hSM.Add(h[p])
             else:
@@ -114,13 +115,13 @@ if __name__ == '__main__':
         hBG = []
         hBGUp = []
         hBGDown = []
-        for p in c.process:
+        for p in c.processSort:
             if p not in ['StHut','StHct','TtHut','TtHct']:
                 hBG.append(h[p])
                 hBGUp.append(hSysUp[p])
                 hBGDown.append(hSysDown[p])
 
-        hComb = h['data'].Clone("hComb")
+        hComb = h['DiPhotonJets'].Clone("hComb")
         hSysUpCombSum = hComb.Clone("hSysUpCombSum")
         hSysDownCombSum = hComb.Clone("hSysDownCombSum")
         hSysUpComb = []
@@ -139,22 +140,22 @@ if __name__ == '__main__':
 	func.combSys(hComb,hSysDownComb,hSysUpComb,hSysDownCombSum,hSysUpCombSum,nSys);
 	func.totSys(hComb,hSysDownCombSum,hSysUpCombSum);
         
-#        hComb.SetLineColor(1)
-#        hComb.SetLineStyle(2)
-#        hComb.SetFillColor(0)
-#        hComb.Draw("hist same")
+##        hComb.SetLineColor(1)
+##        hComb.SetLineStyle(2)
+##        hComb.SetFillColor(0)
+##        hComb.Draw("hist same")
         
-        grMCMerged = func.makeErrorBand(hComb,hSysUpCombSum,hSysDownCombSum)
+#        grMCMerged = func.makeErrorBand(hComb,hSysUpCombSum,hSysDownCombSum)
  
-        ROOT.gStyle.SetHatchesLineWidth(5);
-        grMCMerged.SetFillStyle(3005)
-        grMCMerged.SetFillColor(ROOT.kBlack)
-        grMCMerged.Draw("2SAME")
+#        ROOT.gStyle.SetHatchesLineWidth(5);
+#        grMCMerged.SetFillStyle(3005)
+#        grMCMerged.SetFillColor(ROOT.kBlack)
+#        grMCMerged.Draw("2SAME")
         
         leg = ROOT.TLegend(0.82,0.92,0.995,0.40)
         leg.SetFillColor(253)
         leg.SetBorderSize(0)
-        for p in c.process:
+        for p in c.processSort:
             if p == 'data': leg.AddEntry(h[p],"Data","lp")
             elif p == 'StHut': leg.AddEntry(h[p],"StHut","l")
             elif p == 'StHct': leg.AddEntry(h[p],"StHct","l")
