@@ -71,7 +71,6 @@ if __name__ == '__main__':
         for ev in tree[p][0]:
             w = eval('ev.evWeight')
             wb = eval('ev.evWeightb')
-            print w, wb
             if p != 'data': wb = wb * c.lumi / (tree[p][2]/tree[p][1])
             for k in hist[p]:
                 if k == 'diPhoMass':
