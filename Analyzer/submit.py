@@ -100,7 +100,7 @@ if __name__ == '__main__':
                     outlog = outname+'.log'
                     output = outname+'.root'
                     
-                    while (str(subprocess.check_output(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+f+',xml='+fjobxml[jid+',output='+output+',dout='+home+',proxy='+c.proxydir+c.proxy+',arch='+c.arch])).find('Invalid credential') != -1):
+                    while (str(subprocess.check_output(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+f+',xml='+fjobxml[jid]+',output='+output+',dout='+home+',proxy='+c.proxydir+c.proxy+',arch='+c.arch])).find('Invalid credential') != -1):
                         pass
                     
                     jid = jid + 1                    
