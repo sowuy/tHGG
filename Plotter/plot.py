@@ -21,6 +21,7 @@ def main(argv = None):
     parser.add_option("-c","--channel",default="leptonic",help="analysis channel [default: %default]")
     parser.add_option("-o","--output",default="output.root",help="output file name [default: %default]")
     parser.add_option("-x","--xml",default="../Analyzer/info.xml",help="input xml configuration [default: %default]")
+    parser.add_option("-b","--blind",default="1",help="blind analysis [default: %default]")
     
     (options, args) = parser.parse_args(sys.argv[1:])
     
@@ -51,7 +52,7 @@ if __name__ == '__main__':
     hist = {}
     hinfo = {}
     for h in hnames:
-        if h == 'diPhoMass': hinfo['diPhoMass'] = [{'xtit':'Diphoton invariant mass [GeV]','nb':30,'xmin':0.,'xmax':200.,'ytit':'Events'}]
+        if h == 'diPhoMass': hinfo['diPhoMass'] = [{'xtit':'Diphoton invariant mass [GeV]','nb':20,'xmin':100.,'xmax':180.,'ytit':'Events'}]
         elif h == 'phoLeadPt': hinfo['phoLeadPt'] = [{'xtit':'Leading photon p_{T} [GeV]','nb':30,'xmin':0.,'xmax':200.,'ytit':'Events'}]
 
     outFile = ROOT.TFile.Open(options.output,"RECREATE")
@@ -71,6 +72,10 @@ if __name__ == '__main__':
         for ev in tree[p][0]:
             w = eval('ev.evWeight')
             wb = eval('ev.evWeightb')
+            mgg = eval('ev.diPhoMass')
+            if options.blind == '1' and p == 'data':
+                if mgg > 120 and mgg < 130:
+                    continue
             if p != 'data': wb = wb * c.lumi / (tree[p][2]/tree[p][1])
             for k in hist[p]:
                 if k == 'diPhoMass':

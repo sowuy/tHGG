@@ -96,11 +96,11 @@ if __name__ == '__main__':
         h['TTJets'].SetFillColor(ROOT.kBlue)
         h['TTJets'].SetLineStyle(1)
 
-        h['QCD'].SetMarkerSize(0)
-        h['QCD'].SetMarkerColor(ROOT.kGreen)
-        h['QCD'].SetLineColor(ROOT.kGreen)
-        h['QCD'].SetFillColor(ROOT.kGreen)
-        h['QCD'].SetLineStyle(1)
+#        h['QCD'].SetMarkerSize(0)
+#        h['QCD'].SetMarkerColor(ROOT.kGreen)
+#        h['QCD'].SetLineColor(ROOT.kGreen)
+#        h['QCD'].SetFillColor(ROOT.kGreen)
+#        h['QCD'].SetLineStyle(1)
 
         h['GJet'].SetMarkerSize(0)
         h['GJet'].SetMarkerColor(ROOT.kMagenta)
@@ -117,7 +117,7 @@ if __name__ == '__main__':
             else:
                 hNP.Add(h[p])
         
-        hSM.Draw('hist')
+        hSM.Draw('hist e1')
         hNP.Draw('hist same')
         h['data'].Draw('e1 same')    
         
