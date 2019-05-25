@@ -23,6 +23,7 @@ def main(argv = None):
     parser.add_option("-c","--channel",default="leptonic",help="analysis channel [default: %default]")
     parser.add_option("-o","--output",default="pics",help="output directory [default: %default]")
     parser.add_option("-s","--sys",default="",help="systematics list [default: %default]")
+    parser.add_option("-f","--factor",default="1",help="signal scale factor [default: %default]")
     
     (options, args) = parser.parse_args(sys.argv[1:])
     
@@ -74,15 +75,19 @@ if __name__ == '__main__':
             h[l].SetMarkerSize(0)
             h[l].SetMarkerColor(ROOT.kOrange+2)
             h[l].SetLineColor(ROOT.kOrange+2)
-            h[l].SetFillColor(ROOT.kOrange+2)
+            h[l].SetFillStyle(0)
             h[l].SetLineStyle(1)
+            
+            h[l].Scale(float(options.factor))
         
         for l in ['TtHut','TtHct']:
             h[l].SetMarkerSize(0)
             h[l].SetMarkerColor(ROOT.kOrange+10)
             h[l].SetLineColor(ROOT.kOrange+10)
-            h[l].SetFillColor(ROOT.kOrange+10)
+            h[l].SetFillStyle(0)
             h[l].SetLineStyle(1)
+            
+            h[l].Scale(float(options.factor))
         
         h['DiPhotonJets'].SetMarkerSize(0)
         h['DiPhotonJets'].SetMarkerColor(ROOT.kAzure-7)
@@ -90,12 +95,18 @@ if __name__ == '__main__':
         h['DiPhotonJets'].SetFillColor(ROOT.kAzure-7)
         h['DiPhotonJets'].SetLineStyle(1)
 
-        h['TTJets'].SetMarkerSize(0)
-        h['TTJets'].SetMarkerColor(ROOT.kBlue)
-        h['TTJets'].SetLineColor(ROOT.kBlue)
-        h['TTJets'].SetFillColor(ROOT.kBlue)
-        h['TTJets'].SetLineStyle(1)
+        h['TTGJets'].SetMarkerSize(0)
+        h['TTGJets'].SetMarkerColor(ROOT.kMagenta-9)
+        h['TTGJets'].SetLineColor(ROOT.kMagenta-9)
+        h['TTGJets'].SetFillColor(ROOT.kMagenta-9)
+        h['TTGJets'].SetLineStyle(1)
 
+        h['TGJets'].SetMarkerSize(0)
+        h['TGJets'].SetMarkerColor(ROOT.kMagenta-3)
+        h['TGJets'].SetLineColor(ROOT.kMagenta-3)
+        h['TGJets'].SetFillColor(ROOT.kMagenta-3)
+        h['TGJets'].SetLineStyle(1)
+        
 #        h['QCD'].SetMarkerSize(0)
 #        h['QCD'].SetMarkerColor(ROOT.kGreen)
 #        h['QCD'].SetLineColor(ROOT.kGreen)
@@ -103,9 +114,9 @@ if __name__ == '__main__':
 #        h['QCD'].SetLineStyle(1)
 
         h['GJet'].SetMarkerSize(0)
-        h['GJet'].SetMarkerColor(ROOT.kMagenta)
-        h['GJet'].SetLineColor(ROOT.kMagenta)
-        h['GJet'].SetFillColor(ROOT.kMagenta)
+        h['GJet'].SetMarkerColor(ROOT.kBlue-3)
+        h['GJet'].SetLineColor(ROOT.kBlue-3)
+        h['GJet'].SetFillColor(ROOT.kBlue-3)
         h['GJet'].SetLineStyle(1)
         
         hSM = ROOT.THStack()
@@ -114,11 +125,11 @@ if __name__ == '__main__':
             if p == 'data': continue
             if p not in ['StHut','StHct','TtHut','TtHct']:
                 hSM.Add(h[p])
-            else:
+            elif p in ['StHut','TtHut']:
                 hNP.Add(h[p])
         
-        hSM.Draw('hist e1')
-        hNP.Draw('hist same')
+        hSM.Draw('hist')
+        hNP.Draw('hist noclear same')
         h['data'].Draw('e1 same')    
         
         hSM.GetXaxis().SetTitle(h['data'].GetXaxis().GetTitle())
@@ -134,7 +145,7 @@ if __name__ == '__main__':
         hBGUp = []
         hBGDown = []
         for p in c.processSort:
-            if p not in ['StHut','StHct','TtHut','TtHct']:
+            if p not in ['StHut','StHct','TtHut','TtHct','data']:
                 hBG.append(h[p])
                 hBGUp.append(hSysUp[p])
                 hBGDown.append(hSysDown[p])
@@ -163,24 +174,25 @@ if __name__ == '__main__':
 ##        hComb.SetFillColor(0)
 ##        hComb.Draw("hist same")
         
-#        grMCMerged = func.makeErrorBand(hComb,hSysUpCombSum,hSysDownCombSum)
+        grMCMerged = func.makeErrorBand(hComb,hSysUpCombSum,hSysDownCombSum)
  
-#        ROOT.gStyle.SetHatchesLineWidth(5);
-#        grMCMerged.SetFillStyle(3005)
-#        grMCMerged.SetFillColor(ROOT.kBlack)
-#        grMCMerged.Draw("2SAME")
+        ROOT.gStyle.SetHatchesLineWidth(5);
+        grMCMerged.SetFillStyle(3005)
+        grMCMerged.SetFillColor(ROOT.kBlack)
+        grMCMerged.Draw("2SAME")
         
         leg = ROOT.TLegend(0.82,0.92,0.995,0.40)
         leg.SetFillColor(253)
         leg.SetBorderSize(0)
         for p in c.processSort:
             if p == 'data': leg.AddEntry(h[p],"Data","lp")
-            elif p == 'StHut': leg.AddEntry(h[p],"StHut","l")
-            elif p == 'StHct': leg.AddEntry(h[p],"StHct","l")
-            elif p == 'TtHut': leg.AddEntry(h[p],"TtHut","l")
-            elif p == 'TtHct': leg.AddEntry(h[p],"TtHct","l")
+            elif p == 'StHut': leg.AddEntry(h[p],"ST Hut","l")
+#            elif p == 'StHct': leg.AddEntry(h[p],"StHct","l")
+            elif p == 'TtHut': leg.AddEntry(h[p],"TT Hut","l")
+#            elif p == 'TtHct': leg.AddEntry(h[p],"TtHct","l")
             elif p == 'DiPhotonJets': leg.AddEntry(h[p],"#gamma#gamma+jets","f")
-            elif p == 'TTJets': leg.AddEntry(h[p],"t#bar{t}(#gamma)+jets","f")
+            elif p == 'TTGJets': leg.AddEntry(h[p],"t#bar{t}(#gamma)+jets","f")
+            elif p == 'TGJets': leg.AddEntry(h[p],"t/#bar{t}#gamma+jets","f")
             elif p == 'QCD': leg.AddEntry(h[p],"QCD","f")
             elif p == 'GJet': leg.AddEntry(h[p],"#gamma+jets","f")
         leg.Draw()

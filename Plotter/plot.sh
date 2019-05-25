@@ -1,3 +1,3 @@
 #!/bin/env bash
 
-python plot.py --names=diPhoMass,phoLeadPt --channel=hadronic --blind=1
+python plot.py --names=diPhoMass,phoLeadPt --channel=leptonic --blind=1
