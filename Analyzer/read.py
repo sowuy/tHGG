@@ -108,6 +108,8 @@ if __name__ == '__main__':
         
         nPho = len(Photons)
         if nPho < 2: continue
+        
+        if nJetBTagSelected != 1: continue
 
         for t in [tLep,tHad]:
             
@@ -119,8 +121,6 @@ if __name__ == '__main__':
             
             t.phoLeadIsGenMatched[0] = Photons[0].isGenMatched
             t.phoSubLeadIsGenMatched[0] = Photons[1].isGenMatched
-
-        if nJetBTagSelected != 1: continue    
         
         if nLepSelected >= 1:
            
