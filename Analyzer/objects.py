@@ -99,7 +99,7 @@ class lepton():
             self.charge = ev.__getattr__("ElecInfo.Charge")[idx]
             
             passPt = bool(self.pt > 20)
-            passEta = bool(math.fabs(self.eta) < 1.4442 or math.fabs(self.eta) > 1.566 and math.fabs(self.eta) < 2.4)
+            passEta = bool((math.fabs(self.eta) < 1.4442 or math.fabs(self.eta) > 1.566) and math.fabs(self.eta) < 2.4)
             passOverlapJets = fun.overlap(self.eta,self.phi,Jets,0.4)
             passOverlapPhotons = fun.overlap(self.eta,self.phi,Photons,1.0)
             passID = bool(ev.__getattr__("ElecInfo.EGMCutBasedIDLoose")[idx] == 1)
