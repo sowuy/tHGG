@@ -10,11 +10,17 @@ class tree():
     def __init__(self, name):
 
         self.lepPt, self.lepEta, self.lepPhi, self.lepE, self.evWeight, self.evWeightb, \
-        self.diPhoMass = (array( 'f', [ -777 ] ) for _ in range(7))
+        self.diPhoMass, self.phoLeadIDMVA, self.phoSubLeadIDMVA, self.diPhoMVA, \
+        self.jet1Pt, self.jet1Eta, self.jet1Phi, self.jet1E, self.jet1Btag, \
+        self.jet2Pt, self.jet2Eta, self.jet2Phi, self.jet2E, self.jet2Btag, \
+        self.jet3Pt, self.jet3Eta, self.jet3Phi, self.jet3E, self.jet3Btag, \
+        self.jet4Pt, self.jet4Eta, self.jet4Phi, self.jet4E, self.jet4Btag \
+        = (array( 'f', [ -777 ] ) for _ in range(30))
         
         self.lepCharge, self.evNVtx = (array( 'i', [ -777 ] ) for _ in range(2))
 
-        self.phoLeadIsGenMatched, self.phoSubLeadIsGenMatched = (array( 'b', [ 0 ] ) for _ in range(2))
+        self.phoLeadIsGenMatched, self.phoSubLeadIsGenMatched, self.lepIsElec \
+        = (array( 'b', [ 0 ] ) for _ in range(3))
 
         if name == 'leptonic':
             self.h = ROOT.TH1F ( 'counter', 'counter', 1, 0., 1. )
@@ -26,10 +32,40 @@ class tree():
         self.t.Branch( 'evWeightb', self.evWeightb, 'evWeightb/F' )
         
         self.t.Branch( 'diPhoMass', self.diPhoMass, 'diPhoMass/F' )
+        self.t.Branch( 'diPhoMVA', self.diPhoMVA, 'diPhoMVA/F' )
         
         self.t.Branch( 'phoLeadIsGenMatched', self.phoLeadIsGenMatched, 'phoLeadIsGenMatched/O' )
-        self.t.Branch( 'phoSubLeadIsGenMatched', self.phoSubLeadIsGenMatched, 'phoSubLeadIsGenMatched/O' )
+        self.t.Branch( 'phoLeadIDMVA', self.phoLeadIDMVA, 'phoLeadIDMVA/F' )
         
+        self.t.Branch( 'phoSubLeadIsGenMatched', self.phoSubLeadIsGenMatched, 'phoSubLeadIsGenMatched/O' )
+        self.t.Branch( 'phoSubLeadIDMVA', self.phoSubLeadIDMVA, 'phoSubLeadIDMVA/F' )
+        
+        self.t.Branch( 'jet1Pt', self.jet1Pt, 'jet1Pt/F' )
+        self.t.Branch( 'jet1Eta', self.jet1Eta, 'jet1Eta/F' )
+        self.t.Branch( 'jet1Phi', self.jet1Phi, 'jet1Phi/F' )
+        self.t.Branch( 'jet1E', self.jet1E, 'jet1E/F' )
+        self.t.Branch( 'jet1Btag', self.jet1Btag, 'jet1Btag/F' )
+
+        self.t.Branch( 'jet2Pt', self.jet2Pt, 'jet2Pt/F' )
+        self.t.Branch( 'jet2Eta', self.jet2Eta, 'jet2Eta/F' )
+        self.t.Branch( 'jet2Phi', self.jet2Phi, 'jet2Phi/F' )
+        self.t.Branch( 'jet2E', self.jet2E, 'jet2E/F' )
+        self.t.Branch( 'jet2Btag', self.jet2Btag, 'jet2Btag/F' )
+        
+        if (name == 'hadronic'):
+            
+            self.t.Branch( 'jet3Pt', self.jet3Pt, 'jet3Pt/F' )
+            self.t.Branch( 'jet3Eta', self.jet3Eta, 'jet3Eta/F' )
+            self.t.Branch( 'jet3Phi', self.jet3Phi, 'jet3Phi/F' )
+            self.t.Branch( 'jet3E', self.jet3E, 'jet3E/F' )
+            self.t.Branch( 'jet3Btag', self.jet3Btag, 'jet3Btag/F' )
+
+            self.t.Branch( 'jet4Pt', self.jet4Pt, 'jet4Pt/F' )
+            self.t.Branch( 'jet4Eta', self.jet4Eta, 'jet4Eta/F' )
+            self.t.Branch( 'jet4Phi', self.jet4Phi, 'jet4Phi/F' )
+            self.t.Branch( 'jet4E', self.jet4E, 'jet4E/F' )
+            self.t.Branch( 'jet4Btag', self.jet4Btag, 'jet4Btag/F' )
+            
         if (name == 'leptonic'):
 
             self.t.Branch( 'lepPt', self.lepPt, 'lepPt/F' )
@@ -37,6 +73,7 @@ class tree():
             self.t.Branch( 'lepPhi', self.lepPhi, 'lepPhi/F' )
             self.t.Branch( 'lepE', self.lepE, 'lepE/F' )
             self.t.Branch( 'lepCharge', self.lepCharge, 'lepCharge/I' )
+            self.t.Branch( 'lepIsElec', self.lepIsElec, 'lepIsElec/O' )
 
     def fill(self):
         

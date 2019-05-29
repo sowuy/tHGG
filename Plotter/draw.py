@@ -35,7 +35,7 @@ if __name__ == '__main__':
                 
     ROOT.gROOT.SetBatch()
 
-    style.SetPlotStyle()
+    pstyle = style.SetPlotStyle()
 
     var = options.names.split(',')
     chan = options.channel
@@ -56,6 +56,11 @@ if __name__ == '__main__':
         hSysUp = {}
         hSysDown = {}
         for p in c.processSort:
+            
+            if not fHist.GetListOfKeys().Contains('h_'+v+'__'+p):
+                print 'Histogram '+'h_'+v+'__'+p+' does not exist'
+                exit()
+
             h[p] = fHist.Get('h_'+v+'__'+p)
 
             for isys in range(nSys):
@@ -107,11 +112,11 @@ if __name__ == '__main__':
         h['TGJets'].SetFillColor(ROOT.kMagenta-3)
         h['TGJets'].SetLineStyle(1)
         
-#        h['QCD'].SetMarkerSize(0)
-#        h['QCD'].SetMarkerColor(ROOT.kGreen)
-#        h['QCD'].SetLineColor(ROOT.kGreen)
-#        h['QCD'].SetFillColor(ROOT.kGreen)
-#        h['QCD'].SetLineStyle(1)
+        h['Others'].SetMarkerSize(0)
+        h['Others'].SetMarkerColor(ROOT.kGray)
+        h['Others'].SetLineColor(ROOT.kGray)
+        h['Others'].SetFillColor(ROOT.kGray)
+        h['Others'].SetLineStyle(1)
 
         h['GJet'].SetMarkerSize(0)
         h['GJet'].SetMarkerColor(ROOT.kBlue-3)
@@ -120,37 +125,47 @@ if __name__ == '__main__':
         h['GJet'].SetLineStyle(1)
         
         hSM = ROOT.THStack()
-        hNP = ROOT.THStack()
+        maxSM = 0
         for p in c.processSort:
             if p == 'data': continue
             if p not in ['StHut','StHct','TtHut','TtHct']:
                 hSM.Add(h[p])
+                maxSM = maxSM + h[p].GetMaximum()
+
+        h['StHut'].Scale(maxSM/(h['StHut'].GetMaximum()+h['TtHut'].GetMaximum()))
+        h['TtHut'].Scale(maxSM/(h['StHut'].GetMaximum()+h['TtHut'].GetMaximum()))
+        h['StHct'].Scale(maxSM/(h['StHct'].GetMaximum()+h['TtHct'].GetMaximum()))
+        h['TtHct'].Scale(maxSM/(h['StHct'].GetMaximum()+h['TtHct'].GetMaximum()))
+                
+        hNP = ROOT.THStack()
+        maxNP = 0
+        for p in c.processSort:
+            if p == 'data': continue
             elif p in ['StHut','TtHut']:
                 hNP.Add(h[p])
-        
+                maxNP = maxNP + h[p].GetMaximum()
+                
         hSM.Draw('hist')
-        hNP.Draw('hist noclear same')
-        h['data'].Draw('e1 same')    
         
         hSM.GetXaxis().SetTitle(h['data'].GetXaxis().GetTitle())
         hSM.GetYaxis().SetTitle(h['data'].GetYaxis().GetTitle())
     
         maxData = h['data'].GetMaximum()
-        maxSM = hSM.GetMaximum()
-        maxNP = hNP.GetMaximum()
         hSM.SetMaximum(1.2*max(maxData,maxSM,maxNP))
         hSM.SetMinimum(0.)
 
         hBG = []
         hBGUp = []
         hBGDown = []
+        hComb = h['DiPhotonJets'].Clone("hComb")
         for p in c.processSort:
             if p not in ['StHut','StHct','TtHut','TtHct','data']:
+                if p not in ['DiPhotonJets']:
+                    hComb.Add(h[p])
                 hBG.append(h[p])
                 hBGUp.append(hSysUp[p])
                 hBGDown.append(hSysDown[p])
 
-        hComb = h['DiPhotonJets'].Clone("hComb")
         hSysUpCombSum = hComb.Clone("hSysUpCombSum")
         hSysDownCombSum = hComb.Clone("hSysDownCombSum")
         hSysUpComb = []
@@ -169,19 +184,21 @@ if __name__ == '__main__':
 	func.combSys(hComb,hSysDownComb,hSysUpComb,hSysDownCombSum,hSysUpCombSum,nSys);
 	func.totSys(hComb,hSysDownCombSum,hSysUpCombSum);
         
-##        hComb.SetLineColor(1)
-##        hComb.SetLineStyle(2)
-##        hComb.SetFillColor(0)
-##        hComb.Draw("hist same")
+#        hComb.SetLineColor(1)
+#        hComb.SetLineStyle(2)
+#        hComb.SetFillColor(0)
+#        hComb.Draw("hist same")
         
         grMCMerged = func.makeErrorBand(hComb,hSysUpCombSum,hSysDownCombSum)
- 
-        ROOT.gStyle.SetHatchesLineWidth(5);
-        grMCMerged.SetFillStyle(3005)
-        grMCMerged.SetFillColor(ROOT.kBlack)
+
+        grMCMerged.SetFillStyle(3354)
+        grMCMerged.SetFillColor(ROOT.kGray+1)
         grMCMerged.Draw("2SAME")
+
+        hNP.Draw('hist noclear same')
+        h['data'].Draw('e1 same')    
         
-        leg = ROOT.TLegend(0.82,0.92,0.995,0.40)
+        leg = ROOT.TLegend(0.82,0.92,0.990,0.40)
         leg.SetFillColor(253)
         leg.SetBorderSize(0)
         for p in c.processSort:
@@ -191,12 +208,12 @@ if __name__ == '__main__':
             elif p == 'TtHut': leg.AddEntry(h[p],"TT Hut","l")
 #            elif p == 'TtHct': leg.AddEntry(h[p],"TtHct","l")
             elif p == 'DiPhotonJets': leg.AddEntry(h[p],"#gamma#gamma+jets","f")
-            elif p == 'TTGJets': leg.AddEntry(h[p],"t#bar{t}(#gamma)+jets","f")
+            elif p == 'TTGJets': leg.AddEntry(h[p],"t#bar{t}#gamma(#gamma)+jets","f")
             elif p == 'TGJets': leg.AddEntry(h[p],"t/#bar{t}#gamma+jets","f")
-            elif p == 'QCD': leg.AddEntry(h[p],"QCD","f")
+            elif p == 'Others': leg.AddEntry(h[p],"Others","f")
             elif p == 'GJet': leg.AddEntry(h[p],"#gamma+jets","f")
         leg.Draw()
-    
+        
         t = style.CMSLABEL()
         
         c1.Print('pics/'+v+'.eps')

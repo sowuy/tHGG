@@ -4,6 +4,7 @@ import subprocess
 import common as c
 from subprocess import call
 import xml.etree.ElementTree as ET
+import math
 import ROOT
 
 ROOT.PyConfig.IgnoreCommandLineOptions = True
@@ -55,11 +56,15 @@ if __name__ == '__main__':
     hinfo = {}
     for h in hnames:
         if options.channel == 'hadronic':
-            if h == 'diPhoMass': hinfo['diPhoMass'] = [{'xtit':'Diphoton invariant mass [GeV]','nb':20,'xmin':100.,'xmax':180.,'ytit':'Events'}]
-            elif h == 'phoLeadPt': hinfo['phoLeadPt'] = [{'xtit':'Leading photon p_{T} [GeV]','nb':30,'xmin':0.,'xmax':200.,'ytit':'Events'}]
+            if h == 'diPhoMass': hinfo['diPhoMass'] = [{'xtit':'Diphoton invariant mass [GeV]','nb':32,'xmin':100.,'xmax':180.,'ytit':'Events'}]
+            elif h == 'diPhoMVA': hinfo['diPhoMVA'] = [{'xtit':'Diphoton MVA discriminant','nb':30,'xmin':-1.,'xmax':1.,'ytit':'Events'}]
+            elif h == 'phoLeadIDMVA': hinfo['phoLeadIDMVA'] = [{'xtit':'Leading photon MVA discriminant','nb':30,'xmin':-1.,'xmax':1.,'ytit':'Events'}]
+            elif h == 'phoSubLeadIDMVA': hinfo['phoSubLeadIDMVA'] = [{'xtit':'Subleading photon MVA discriminant','nb':30,'xmin':-1.,'xmax':1.,'ytit':'Events'}]
         else:
             if h == 'diPhoMass': hinfo['diPhoMass'] = [{'xtit':'Diphoton invariant mass [GeV]','nb':7,'xmin':100.,'xmax':180.,'ytit':'Events'}]
-            elif h == 'phoLeadPt': hinfo['phoLeadPt'] = [{'xtit':'Leading photon p_{T} [GeV]','nb':5,'xmin':0.,'xmax':200.,'ytit':'Events'}]            
+            elif h == 'diPhoMVA': hinfo['diPhoMVA'] = [{'xtit':'Diphoton MVA discriminant','nb':30,'xmin':-1.,'xmax':1.,'ytit':'Events'}]
+            elif h == 'phoLeadIDMVA': hinfo['phoLeadIDMVA'] = [{'xtit':'Leading photon MVA discriminant','nb':30,'xmin':-1.,'xmax':1.,'ytit':'Events'}]
+            elif h == 'phoSubLeadIDMVA': hinfo['phoSubLeadIDMVA'] = [{'xtit':'Subleading photon MVA discriminant','nb':30,'xmin':-1.,'xmax':1.,'ytit':'Events'}]
 
     outFile = ROOT.TFile.Open(options.output,"RECREATE")
         
@@ -81,18 +86,21 @@ if __name__ == '__main__':
                 w = eval('ev.evWeight')
                 wb = eval('ev.evWeightb')
                 mgg = eval('ev.diPhoMass')
+                phoLeadIDMVA = eval('ev.phoLeadIDMVA')
+                phoSubLeadIDMVA = eval('ev.phoSubLeadIDMVA')
+#                if phoLeadIDMVA < 0.8 or phoSubLeadIDMVA < 0.8: continue
 #                if p in ['TTJets','TGJets','TTGJets']:
 #                    w = wb
                 if mgg < 100 or mgg > 180: continue
-                if options.blind == '1' and p == 'data':
+                if options.blind == '1' and p not in ['StHut','StHct','TtHut','TtHct']:
                     if mgg > 120 and mgg < 130:
                         continue
                 if p != 'data': w = w * c.lumi / (tree[p][s][2]/tree[p][s][1])
+                if math.fabs(w) > 10 and p in ['Others']: continue # manually remove large weight
                 for k in hist[p]:
-                    if k == 'diPhoMass':
-                        br = 'ev.'+k
-                        v = eval(br)
-                        hist[p][k].Fill(v,w)
+                    br = 'ev.'+k
+                    v = eval(br)
+                    hist[p][k].Fill(v,w)
         print ': \033[1;32mdone\033[1;m'
 
     outFile.Write()

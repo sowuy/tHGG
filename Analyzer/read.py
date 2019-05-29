@@ -103,13 +103,14 @@ if __name__ == '__main__':
                 Leptons.append(l)
                 
         Leptons.sort(key=operator.attrgetter('pt'))
+        Jets.sort(key=operator.attrgetter('pt'))
                 
         nLepSelected = len(Leptons)
         
         nPho = len(Photons)
         if nPho < 2: continue
         
-        if nJetBTagSelected != 1: continue
+        if nJetBTagSelected == 0: continue
 
         for t in [tLep,tHad]:
             
@@ -118,19 +119,56 @@ if __name__ == '__main__':
             t.evWeightb[0] = Event.weightb
 
             t.diPhoMass[0] = Event.diPhoMass
+            t.diPhoMVA[0] = Event.diPhoMVA
             
             t.phoLeadIsGenMatched[0] = Photons[0].isGenMatched
+            t.phoLeadIDMVA[0] = Photons[0].IDMVA
+            
             t.phoSubLeadIsGenMatched[0] = Photons[1].isGenMatched
+            t.phoSubLeadIDMVA[0] = Photons[1].IDMVA
         
+            if nJetSelected > 0:
+            
+                t.jet1Pt = Jets[0].pt
+                t.jet1Eta = Jets[0].eta
+                t.jet1Phi = Jets[0].phi
+                t.jet1E = Jets[0].E
+                t.jet1Btag = Jets[0].btag
+
+            if nJetSelected > 1:
+                    
+                t.jet2Pt = Jets[1].pt
+                t.jet2Eta = Jets[1].eta
+                t.jet2Phi = Jets[1].phi
+                t.jet2E = Jets[1].E
+                t.jet2Btag = Jets[1].btag
+        
+        if nJetSelected > 2:
+            
+            tHad.jet3Pt = Jets[2].pt
+            tHad.jet3Eta = Jets[2].eta
+            tHad.jet3Phi = Jets[2].phi
+            tHad.jet3E = Jets[2].E
+            tHad.jet3Btag = Jets[2].btag
+
+        if nJetSelected > 3:
+            
+            tHad.jet4Pt = Jets[3].pt
+            tHad.jet4Eta = Jets[3].eta
+            tHad.jet4Phi = Jets[3].phi
+            tHad.jet4E = Jets[3].E
+            tHad.jet4Btag = Jets[3].btag
+            
         if nLepSelected >= 1:
-           
+
+            tLep.lepPt[0] = Leptons[0].pt
+            tLep.lepEta[0] = Leptons[0].eta
+            tLep.lepPhi[0] = Leptons[0].phi
+            tLep.lepE[0] = Leptons[0].E
+            tLep.lepCharge[0] = Leptons[0].charge
+            tLep.lepIsElec[0] = Leptons[0].isElec
+            
             if nJetSelected >= 2:
-                
-                tLep.lepPt[0] = Leptons[0].pt
-                tLep.lepEta[0] = Leptons[0].eta
-                tLep.lepPhi[0] = Leptons[0].phi
-                tLep.lepE[0] = Leptons[0].E
-                tLep.lepCharge[0] = Leptons[0].charge
                 
                 tLep.fill()
             
