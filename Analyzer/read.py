@@ -6,6 +6,7 @@ import objects as obj
 import tree as tr
 from array import array
 import xml.etree.ElementTree as ET
+import functions as func
 import common as c
 import ROOT
 
@@ -80,10 +81,6 @@ if __name__ == '__main__':
             j = obj.jet(ev,i)
             if j.passed:
                 Jets.append(j)
-                if j.isBTag:
-                    JetsBTag.append(j)
-        nJetSelected = len(Jets)
-        nJetBTagSelected = len(JetsBTag)
 
         for i in range(2):
             p = obj.photon(ev,i)
@@ -101,6 +98,18 @@ if __name__ == '__main__':
             l = obj.lepton(ev,i,0,Jets,Photons)
             if l.passed:
                 Leptons.append(l)
+
+        for j in Jets:
+            passedOverlapPhotons = func.overlap(j.eta,j.phi,Photons,0.4)[0]
+            passedOverlapLeptons = func.overlap(j.eta,j.phi,Leptons,0.4)[0]
+            if not passedOverlapPhotons or not passedOverlapLeptons:
+                Jets.remove(j)
+            else:
+                if j.isBTag:
+                    JetsBTag.append(j)
+
+        nJetSelected = len(Jets)
+        nJetBTagSelected = len(JetsBTag)
                 
         Leptons.sort(key=operator.attrgetter('pt'))
         Jets.sort(key=operator.attrgetter('pt'))
@@ -159,7 +168,7 @@ if __name__ == '__main__':
             tHad.jet4E = Jets[3].E
             tHad.jet4Btag = Jets[3].btag
             
-        if nLepSelected >= 1:
+        if nLepSelected == 1:
 
             tLep.lepPt[0] = Leptons[0].pt
             tLep.lepEta[0] = Leptons[0].eta
@@ -167,14 +176,15 @@ if __name__ == '__main__':
             tLep.lepE[0] = Leptons[0].E
             tLep.lepCharge[0] = Leptons[0].charge
             tLep.lepIsElec[0] = Leptons[0].isElec
+            tLep.lepDrlpMin[0] = Leptons[0].drlpMin
             
-            if nJetSelected >= 2:
+            if nJetSelected >= 1:
                 
                 tLep.fill()
             
-        else:
+        elif nLepSelected == 0:
             
-            if nJetSelected >= 4:
+            if nJetSelected >= 3:
             
                 tHad.fill()
         

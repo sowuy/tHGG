@@ -202,7 +202,7 @@ if __name__ == '__main__':
         leg.SetFillColor(253)
         leg.SetBorderSize(0)
         for p in c.processSort:
-            if p == 'data': leg.AddEntry(h[p],"Data","lp")
+            if p == 'data': leg.AddEntry(h[p],"Data","p")
             elif p == 'StHut': leg.AddEntry(h[p],"ST Hut","l")
 #            elif p == 'StHct': leg.AddEntry(h[p],"StHct","l")
             elif p == 'TtHut': leg.AddEntry(h[p],"TT Hut","l")
@@ -214,6 +214,10 @@ if __name__ == '__main__':
             elif p == 'GJet': leg.AddEntry(h[p],"#gamma+jets","f")
         leg.Draw()
         
-        t = style.CMSLABEL()
+        t1, t2, t3 = style.cmslabel()
+        t1.Draw()
+        t3.Draw()
+        t = style.channel(chan)
+        t.Draw()
         
         c1.Print('pics/'+v+'.eps')

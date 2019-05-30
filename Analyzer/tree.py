@@ -14,8 +14,9 @@ class tree():
         self.jet1Pt, self.jet1Eta, self.jet1Phi, self.jet1E, self.jet1Btag, \
         self.jet2Pt, self.jet2Eta, self.jet2Phi, self.jet2E, self.jet2Btag, \
         self.jet3Pt, self.jet3Eta, self.jet3Phi, self.jet3E, self.jet3Btag, \
-        self.jet4Pt, self.jet4Eta, self.jet4Phi, self.jet4E, self.jet4Btag \
-        = (array( 'f', [ -777 ] ) for _ in range(30))
+        self.jet4Pt, self.jet4Eta, self.jet4Phi, self.jet4E, self.jet4Btag, \
+        self.lepDrlpMin \
+        = (array( 'f', [ -777 ] ) for _ in range(31))
         
         self.lepCharge, self.evNVtx = (array( 'i', [ -777 ] ) for _ in range(2))
 
@@ -74,6 +75,7 @@ class tree():
             self.t.Branch( 'lepE', self.lepE, 'lepE/F' )
             self.t.Branch( 'lepCharge', self.lepCharge, 'lepCharge/I' )
             self.t.Branch( 'lepIsElec', self.lepIsElec, 'lepIsElec/O' )
+            self.t.Branch( 'lepDrlpMin', self.lepDrlpMin, 'lepDrlpMin/F' )
 
     def fill(self):
         

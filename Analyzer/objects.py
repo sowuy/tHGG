@@ -105,14 +105,14 @@ class lepton():
             
             passPt = bool(self.pt > 20)
             passEta = bool((math.fabs(self.eta) < 1.4442 or math.fabs(self.eta) > 1.566) and math.fabs(self.eta) < 2.4)
-            passOverlapJets = fun.overlap(self.eta,self.phi,Jets,0.4)
-            passOverlapPhotons = fun.overlap(self.eta,self.phi,Photons,1.0)
-            passID = bool(ev.__getattr__("ElecInfo.EGMCutBasedIDLoose")[idx])
+            passOverlapPhotons = bool(ev.__getattr__("ElecInfo.fggPhoVeto")[idx])
+#            passOverlapPhotons, self.drlpMin = fun.overlap(self.eta,self.phi,Photons,0.3)
+#            passID = bool(ev.__getattr__("ElecInfo.EGMCutBasedIDLoose")[idx])
+            passID = bool(ev.__getattr__("ElecInfo.EGMCutBasedIDMedium")[idx])
 #            passDxy = (math.fabs(ev.__getattr__("ElecInfo.GsfTrackDxy")[idx]) < 0.02)
 #            passDz = (math.fabs(ev.__getattr__("ElecInfo.GsfTrackDz")[idx]) < 0.2)
 
-            if (passPt and passEta and
-                passOverlapJets and passOverlapPhotons and passID): self.passed = True
+            if (passPt and passEta and passID and passOverlapPhotons): self.passed = True
             
         else:
             
@@ -127,6 +127,6 @@ class lepton():
             passEta = bool(math.fabs(self.eta) < 2.4)
             passTight = bool(ev.__getattr__("MuonInfo.CutBasedIdTight")[idx])
             passIso = bool(self.iso < 0.25)
-            passOverlap = fun.overlap(self.eta,self.phi,Jets,0.4)
+            passOverlapPhotons, self.drlpMin = fun.overlap(self.eta,self.phi,Photons,0.3)
             
-            self.passed = (passPt and passEta and passTight and passIso and passOverlap)
+            self.passed = (passPt and passEta and passTight and passIso and passOverlapPhotons)

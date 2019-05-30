@@ -1,3 +1,5 @@
 #!/bin/env bash
 
-python draw.py --names=diPhoMass,diPhoMVA,phoLeadIDMVA,phoSubLeadIDMVA --channel=leptonic --factor=1
+pn="_Elec"
+
+python draw.py --names=diPhoMass${pn},diPhoMVA${pn},phoLeadIDMVA${pn},phoSubLeadIDMVA${pn} --channel=leptonic --factor=1

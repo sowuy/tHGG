@@ -9,6 +9,7 @@ def overlap(eta,phi,ecol,drMax):
         dr = utils.deltaR(eta,phi,e.eta,e.phi)
         if (dr < drMin): drMin = dr
     
-    if (drMin < drMax): passed = False
+    if (drMin < drMax):
+        passed = False
         
-    return passed
+    return passed, drMin

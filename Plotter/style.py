@@ -9,6 +9,8 @@ def SetPlotStyle():
 def PlotStyle():
 
     plotStyle = ROOT.TStyle("PLOT","Plot style")
+    
+    plotStyle.SetErrorX(0.0001)
 
     icol = 0
     plotStyle.SetFrameBorderMode(icol)
@@ -64,7 +66,7 @@ def PlotStyle():
 
     return plotStyle
 
-def CMSLABEL():
+def cmslabel():
     
     tex = ROOT.TLatex(0.1969,0.906825,"CMS")
     tex.SetNDC()
@@ -72,7 +74,6 @@ def CMSLABEL():
     tex.SetTextFont(61)
     tex.SetTextSize(0.07475)
     tex.SetLineWidth(2)
-    tex.Draw()
    
     tex2 = ROOT.TLatex(0.1969,0.817125,"Preliminary")
     tex2.SetNDC()
@@ -80,7 +81,6 @@ def CMSLABEL():
     tex2.SetTextFont(52)
     tex2.SetTextSize(0.05681)
     tex2.SetLineWidth(2)
-    tex2.Draw()
     
     text1 = ROOT.TLatex(0.80,0.94,"41.5 fb^{-1}, #sqrt{s} = 13 TeV")
     text1.SetNDC()
@@ -88,17 +88,17 @@ def CMSLABEL():
     text1.SetTextFont(42)
     text1.SetTextSize(0.04875)
     text1.SetLineWidth(2)
-    text1.Draw()
 
     return tex, tex2, text1
 
-def LABEL(lab):
+def channel(chan):
 
-   tex = ROOT.TLatex(0.65,0.906825,lab)
+   tex = ROOT.TLatex(0.60,0.906825,chan)
    tex.SetNDC()
    tex.SetTextAlign(13)
    tex.SetTextFont(61)
-   tex.SetTextSize(0.07475)
+   tex.SetTextSize(0.05475)
    tex.SetLineWidth(2)
-   tex.Draw()
+   
+   return tex
 
