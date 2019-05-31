@@ -65,12 +65,15 @@ if __name__ == '__main__':
             break
         
         Jets = []
-        JetsBTag = []
+        JetsBTagLoose = []
+        JetsBTagMedium = []
+        JetsBTagTight = []
         Leptons = []
         Photons = []
 
         Event = obj.event(ev,isdata)
-        tLep.count(Event.weightb)
+#        tLep.count(Event.weightb)
+        tLep.count(Event.weight)
         
         passTrig = Event.trig
         if passTrig == False:
@@ -105,11 +108,15 @@ if __name__ == '__main__':
             if not passedOverlapPhotons or not passedOverlapLeptons:
                 Jets.remove(j)
             else:
-                if j.isBTag:
-                    JetsBTag.append(j)
+                if j.isBTagLoose:
+                    JetsBTagLoose.append(j)
+                if j.isBTagMedium:
+                    JetsBTagMedium.append(j)
+                if j.isBTagTight:
+                    JetsBTagTight.append(j)
 
         nJetSelected = len(Jets)
-        nJetBTagSelected = len(JetsBTag)
+        nJetBTagSelected = len(JetsBTagLoose)
                 
         Leptons.sort(key=operator.attrgetter('pt'))
         Jets.sort(key=operator.attrgetter('pt'))
@@ -127,6 +134,10 @@ if __name__ == '__main__':
             t.evWeight[0] = Event.weight
             t.evWeightb[0] = Event.weightb
             t.evNJet[0] = nJetSelected
+            t.evNBLJet[0] = len(JetsBTagLoose)
+            t.evNBMJet[0] = len(JetsBTagMedium)
+            t.evNBTJet[0] = len(JetsBTagTight)
+            t.evNLep[0] = nLepSelected
 
             t.diPhoMass[0] = Event.diPhoMass
             t.diPhoMVA[0] = Event.diPhoMVA
@@ -169,7 +180,7 @@ if __name__ == '__main__':
             tHad.jet4E = Jets[3].E
             tHad.jet4Btag = Jets[3].btag
             
-        if nLepSelected == 1:
+        if nLepSelected >= 1:
 
             tLep.lepPt[0] = Leptons[0].pt
             tLep.lepEta[0] = Leptons[0].eta

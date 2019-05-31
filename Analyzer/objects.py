@@ -38,7 +38,9 @@ class jet():
         self.puIdMVA = ev.__getattr__("JetInfo.puJetIdMVA")[idx]
         
         self.btag = ev.__getattr__("JetInfo.pfDeepCSVJetTags_probb")[idx]+ev.__getattr__("JetInfo.pfDeepCSVJetTags_probbb")[idx]
-        self.isBTag = bool(self.btag > 0.4941)
+        self.isBTagLoose = bool(self.btag > 0.1522)
+        self.isBTagMedium = bool(self.btag > 0.4941)
+        self.isBTagTight = bool(self.btag > 0.8001)
 
         passPt = bool(self.pt > 25)
         passEta = bool(math.fabs(self.eta) < 2.4)
@@ -60,6 +62,7 @@ class photon():
             return
     
         if idx == 0:
+            
             self.pt = ev.__getattr__("DiPhoInfo.leadPt")
             self.eta = ev.__getattr__("DiPhoInfo.leadEta")
             self.phi = ev.__getattr__("DiPhoInfo.leadPhi")
@@ -69,8 +72,11 @@ class photon():
             self.isGenMatched = ev.__getattr__("DiPhoInfo.leadGenMatch")
             
             passPt = bool(self.pt > self.diPhoMass/2)
-#            passID = bool(ev.__getattr__("DiPhoInfo.leadIDMVA") > 0.9)
+        
+#            passID = bool(ev.__getattr__("DiPhoInfo.leadIDMVA") > -0.4)
+        
         else:
+            
             self.pt = ev.__getattr__("DiPhoInfo.subleadPt")
             self.eta = ev.__getattr__("DiPhoInfo.subleadEta")
             self.phi = ev.__getattr__("DiPhoInfo.subleadPhi")
@@ -80,7 +86,8 @@ class photon():
             self.isGenMatched = ev.__getattr__("DiPhoInfo.subleadGenMatch")
             
             passPt = bool(self.pt > self.diPhoMass/4)
-#            passID = bool(ev.__getattr__("DiPhoInfo.subleadIDMVA") > 0.9)
+        
+#            passID = bool(ev.__getattr__("DiPhoInfo.subleadIDMVA") > -0.4)
         
         self.passed = (passPt)
         

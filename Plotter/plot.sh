@@ -1,5 +1,10 @@
 #!/bin/env bash
 
+chan=leptonic
+#chan=hadronic
+sl=SR1,SR2
+#sl=''
+
 python plot.py \
 --names=diPhoMass,diPhoMVA,phoLeadIDMVA,phoSubLeadIDMVA,lepPhMllMin \
---channel=leptonic --blind=1 --selection=SelNJet2
+--channel=${chan} --blind=1 --selection=${sl}

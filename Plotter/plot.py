@@ -56,6 +56,8 @@ if __name__ == '__main__':
     sel = [""]
     if options.selection != "": sel.extend(options.selection.split(','))
     ncat = int(len(sel))
+    
+    isLep = bool(options.channel == 'leptonic')
                         
     helep = [dict() for x in range(ncat)]
     hmlep = [dict() for x in range(ncat)]
@@ -65,7 +67,7 @@ if __name__ == '__main__':
     hist = {}
     hinfo = {}
     
-    if options.channel == 'hadronic':
+    if not isLep:
         hinfo['All'] = hhad
     else:
         hinfo['All'] = hlep
@@ -73,7 +75,7 @@ if __name__ == '__main__':
         hinfo['Muon'] = hmlep
     
     for h in hnames:
-        if options.channel == 'hadronic':            
+        if not isLep:
             for s, hd in enumerate(hhad):
                 sstr = sel[s]
                 if sstr != "": sstr = '_'+sstr
@@ -124,11 +126,11 @@ if __name__ == '__main__':
                 mgg = eval('ev.diPhoMass')
                 phoLeadIDMVA = eval('ev.phoLeadIDMVA')
                 phoSubLeadIDMVA = eval('ev.phoSubLeadIDMVA')
-#                if phoLeadIDMVA < 0.8 or phoSubLeadIDMVA < 0.8: continue
-
-#                if p in ['TTJets','TGJets','TTGJets']:
-#                    w = wb
-                w = wb
+                
+                if isLep:
+                    if phoLeadIDMVA < -0.4 or phoSubLeadIDMVA < -0.4: continue
+                else:
+                    if phoLeadIDMVA < 0. or phoSubLeadIDMVA < 0.: continue
                     
                 if mgg < 100 or mgg > 180: continue
                 
@@ -138,7 +140,10 @@ if __name__ == '__main__':
                     
                 if p != 'data': w = w * c.lumi / (tree[p][s][2]/tree[p][s][1])
                 
-                if math.fabs(w) > 100 and p in ['Others']: continue # manually remove large weight
+                if math.fabs(w) > 1000 and p in ['Others']: continue # manually remove very large weights
+
+                nBJet = eval('ev.evNBMJet')
+                if nBJet < 1: continue
                 
                 for k in hist[p]:
                     
@@ -150,17 +155,20 @@ if __name__ == '__main__':
                     if len(dec) > 1:
                         cname = k.split('_')[1]
                     if len(dec) > 2:
-                        sname = k.split('_')[2]
+                        sname = k.split('_')[2]                        
+
+                    if isLep:
+                        isElec = eval('ev.lepIsElec')
+                        if cname == 'Elec':
+                            if isElec == False: continue
+                        elif cname == 'Muon':                        
+                            if isElec == True: continue
                         
-                    isElec = eval('ev.lepIsElec')
-                    if cname == 'Elec':
-                        if isElec == False: continue
-                    elif cname == 'Muon':                        
-                        if isElec == True: continue
-                        
-                    if sname == 'SelNJet2':
-                        nJet = eval('ev.evNJet')
-                        if nJet < 2: continue
+                    nJet = eval('ev.evNJet')
+                    if sname == 'SR1':
+                        if nJet == 1: continue
+                    elif sname == 'SR2':
+                        if nJet >= 2: continue
                         
                     br = 'ev.'+vname
                     v = eval(br)

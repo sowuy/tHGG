@@ -18,7 +18,8 @@ class tree():
         self.lepDrlpMin, self.lepPhMllMin \
         = (array( 'f', [ -777 ] ) for _ in range(32))
         
-        self.lepCharge, self.evNVtx, self.evNJet = (array( 'i', [ -777 ] ) for _ in range(3))
+        self.lepCharge, self.evNVtx, self.evNJet, self.evNLep, self.evNBLJet, self.evNBMJet, self.evNBTJet \
+        = (array( 'i', [ -777 ] ) for _ in range(7))
 
         self.phoLeadIsGenMatched, self.phoSubLeadIsGenMatched, self.lepIsElec \
         = (array( 'b', [ 0 ] ) for _ in range(3))
@@ -33,6 +34,10 @@ class tree():
         self.t.Branch( 'evWeightb', self.evWeightb, 'evWeightb/F' )
         
         self.t.Branch( 'evNJet', self.evNJet, 'evNJet/I' )
+        self.t.Branch( 'evNBLJet', self.evNBLJet, 'evNBLJet/I' )
+        self.t.Branch( 'evNBMJet', self.evNBMJet, 'evNBMJet/I' )
+        self.t.Branch( 'evNBTJet', self.evNBTJet, 'evNBTJet/I' )
+        self.t.Branch( 'evNLep', self.evNLep, 'evNLep/I' )
         
         self.t.Branch( 'diPhoMass', self.diPhoMass, 'diPhoMass/F' )
         self.t.Branch( 'diPhoMVA', self.diPhoMVA, 'diPhoMVA/F' )

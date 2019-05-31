@@ -1,368 +1,399 @@
 <data>
-    <sample id="DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa" xsec="84.4" stat="26082413.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_10.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_14.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_3.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_18.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_7.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_2.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_6.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_11.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_15.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_4.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_13.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_8.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_17.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_12.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_9.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_16.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_5.root</file>
-    </sample>
-    <sample id="TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8" xsec="2.967" stat="372122.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8/TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8_2.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8/TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8/TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8_1.root</file>
-    </sample>
-    <sample id="GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8" xsec="0.11" stat="1137404.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8_2.root</file>
-    </sample>
-    <sample id="GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8" xsec="878.1" stat="78784302.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_22.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_13.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_2.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_40.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_17.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_26.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_44.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_6.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_32.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_48.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_50.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_36.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_54.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_33.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_49.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_51.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_37.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_55.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_23.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_12.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_3.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_41.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_16.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_27.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_45.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_7.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_9.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_31.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_29.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_53.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_18.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_35.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_57.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_21.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_10.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_39.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_43.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_14.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_25.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_47.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_5.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_20.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_11.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_38.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_42.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_15.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_24.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_46.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_4.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_8.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_30.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_28.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_19.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_52.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_34.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_56.root</file>
-    </sample>
-    <sample id="TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hct-MadGraph5-pythia8" xsec="0.23" stat="949234.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hct-MadGraph5-pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hct-MadGraph5-pythia8_0.root</file>
-    </sample>
-    <sample id="DoubleEG" xsec="-1" stat="123632497.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_46.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_6.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_15.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_24.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_73.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_38.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_42.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_20.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_11.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_2.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_56.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_67.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_34.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_28.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_63.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_52.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_19.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_30.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_57.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_66.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_35.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_62.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_29.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_18.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_53.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_31.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_47.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_14.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_7.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_25.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_39.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_72.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_43.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_21.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_3.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_10.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_55.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_64.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_37.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_60.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_9.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_51.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_33.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_49.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_45.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_74.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_16.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_5.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_27.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_70.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_41.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_23.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_68.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_59.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_12.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_44.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_4.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_17.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_26.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_71.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_40.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_69.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_22.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_13.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_58.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_54.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_65.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_36.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_61.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_8.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_50.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_32.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_48.root</file>
-    </sample>
-    <sample id="GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8" xsec="3186.0" stat="29530447.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_4.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_12.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_8.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_16.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_13.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_9.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_5.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_11.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_15.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_3.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_7.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_2.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_6.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_10.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_14.root</file>
-    </sample>
-    <sample id="TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8" xsec="0.11" stat="985059.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8_2.root</file>
-    </sample>
-    <sample id="TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hut-MadGraph5-pythia8" xsec="0.23" stat="985943.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hut-MadGraph5-pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hut-MadGraph5-pythia8_0.root</file>
-    </sample>
-    <sample id="QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8" xsec="24810.0" stat="9264674.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_2.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_3.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_5.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_4.root</file>
-    </sample>
-    <sample id="THQ_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5" xsec="0.000169" stat="1887041.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/THQ_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5/THQ_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/THQ_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5/THQ_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5_1.root</file>
-    </sample>
-    <sample id="TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8" xsec="0.11" stat="973679.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8_0.root</file>
-    </sample>
-    <sample id="TT_FCNC-T2HJ_aTleptonic_HToaa_eta_hct-MadGraph5-pythia8" xsec="0.11" stat="1005990.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-T2HJ_aTleptonic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-T2HJ_aTleptonic_HToaa_eta_hct-MadGraph5-pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-T2HJ_aTleptonic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-T2HJ_aTleptonic_HToaa_eta_hct-MadGraph5-pythia8_1.root</file>
-    </sample>
-    <sample id="TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8" xsec="830" stat="38712854.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_61.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_7.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_50.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_32.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_48.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_54.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_65.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_3.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_36.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_40.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_22.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_69.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_58.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_13.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_44.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_17.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_26.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_70.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_41.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_68.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_23.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_12.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_59.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_45.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_16.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_27.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_6.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_60.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_51.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_33.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_49.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_55.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_2.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_64.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_37.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_39.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_43.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_21.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_10.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_47.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_14.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_8.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_25.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_29.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_62.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_4.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_53.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_18.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_31.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_57.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_66.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_35.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_5.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_63.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_28.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_19.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_52.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_30.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_56.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_67.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_34.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_38.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_42.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_20.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_11.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_46.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_15.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_24.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_9.root</file>
-    </sample>
-    <sample id="TTGG_0Jets_TuneCP5_13TeV_amcatnlo_madspin_pythia8" xsec="0.01687" stat="820316.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTGG_0Jets_TuneCP5_13TeV_amcatnlo_madspin_pythia8/TTGG_0Jets_TuneCP5_13TeV_amcatnlo_madspin_pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTGG_0Jets_TuneCP5_13TeV_amcatnlo_madspin_pythia8/TTGG_0Jets_TuneCP5_13TeV_amcatnlo_madspin_pythia8_0.root</file>
-    </sample>
-    <sample id="DiPhotonJetsBox_M40_80-Sherpa" xsec="303.2" stat="3911168.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_M40_80-Sherpa/DiPhotonJetsBox_M40_80-Sherpa_2.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_M40_80-Sherpa/DiPhotonJetsBox_M40_80-Sherpa_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_M40_80-Sherpa/DiPhotonJetsBox_M40_80-Sherpa_0.root</file>
-    </sample>
-    <sample id="GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8" xsec="232.9" stat="13381994.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_2.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_6.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_3.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_7.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_5.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_4.root</file>
-    </sample>
-    <sample id="QCD_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8" xsec="118100.0" stat="3137062.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_0.root</file>
-    </sample>
-    <sample id="TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8" xsec="3.819" stat="1033081.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8_0.root</file>
-    </sample>
-    <sample id="THW_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5" xsec="3.4e-05" stat="964419.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/THW_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5/THW_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5_0.root</file>
-    </sample>
-    <sample id="ttHJetToGG_M125_13TeV_amcatnloFXFX_madspin_pythia8" xsec="0.0016" stat="142415.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ttHJetToGG_M125_13TeV_amcatnloFXFX_madspin_pythia8/ttHJetToGG_M125_13TeV_amcatnloFXFX_madspin_pythia8_0.root</file>
-    </sample>
-    <sample id="VBFHToGG_M125_13TeV_amcatnlo_pythia8" xsec="0.0086" stat="592520.0">
+    <sample id="VBFHToGG_M125_13TeV_amcatnlo_pythia8" xsec="0.0086" stat="7704794.0">
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/VBFHToGG_M125_13TeV_amcatnlo_pythia8/VBFHToGG_M125_13TeV_amcatnlo_pythia8_0.root</file>
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/VBFHToGG_M125_13TeV_amcatnlo_pythia8/VBFHToGG_M125_13TeV_amcatnlo_pythia8_1.root</file>
     </sample>
-    <sample id="ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8" xsec="0.019" stat="3742091.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8/ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8/ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8/ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8_2.root</file>
+    <sample id="ttHJetToGG_M125_13TeV_amcatnloFXFX_madspin_pythia8" xsec="0.0016" stat="409426.09375">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ttHJetToGG_M125_13TeV_amcatnloFXFX_madspin_pythia8/ttHJetToGG_M125_13TeV_amcatnloFXFX_madspin_pythia8_0.root</file>
+    </sample>
+    <sample id="TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8" xsec="3.819" stat="18963810.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8_1.root</file>
+    </sample>
+    <sample id="DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8" xsec="21.37" stat="8944740.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8_3.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8_2.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8_4.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8_1.root</file>
     </sample>
     <sample id="TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hut-MadGraph5-pythia8" xsec="0.23" stat="1006512.0">
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hut-MadGraph5-pythia8_0.root</file>
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hut-MadGraph5-pythia8_1.root</file>
     </sample>
-    <sample id="ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8" xsec="50.43" stat="18984217.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_19.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_6.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_15.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_2.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_20.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_11.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_7.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_14.root</file>
+    <sample id="TTGG_0Jets_TuneCP5_13TeV_amcatnlo_madspin_pythia8" xsec="0.01687" stat="25078.0371094">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTGG_0Jets_TuneCP5_13TeV_amcatnlo_madspin_pythia8/TTGG_0Jets_TuneCP5_13TeV_amcatnlo_madspin_pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTGG_0Jets_TuneCP5_13TeV_amcatnlo_madspin_pythia8/TTGG_0Jets_TuneCP5_13TeV_amcatnlo_madspin_pythia8_0.root</file>
+    </sample>
+    <sample id="GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8" xsec="878.1" stat="78784302.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_46.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_24.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_3.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_15.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_42.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_38.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_7.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_11.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_20.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_56.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_34.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_52.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_19.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_28.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_30.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_57.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_35.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_18.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_53.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_29.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_31.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_47.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_25.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_2.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_14.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_43.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_39.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_6.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_10.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_21.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_55.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_8.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_37.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_51.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_49.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_33.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_45.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_27.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_16.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_41.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_12.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_4.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_23.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_44.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_26.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_17.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_40.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_13.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_5.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_22.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_54.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_9.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_36.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_50.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_48.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_32.root</file>
+    </sample>
+    <sample id="THQ_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5" xsec="0.000169" stat="1887041.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/THQ_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5/THQ_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/THQ_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5/THQ_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5_1.root</file>
+    </sample>
+    <sample id="GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8" xsec="3186.0" stat="29530447.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_9.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_5.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_15.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_11.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_4.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_14.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_10.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_8.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_16.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_6.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_12.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_2.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_7.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_13.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_3.root</file>
+    </sample>
+    <sample id="DiPhotonJetsBox_M40_80-Sherpa" xsec="303.2" stat="2748940.375">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_M40_80-Sherpa/DiPhotonJetsBox_M40_80-Sherpa_2.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_M40_80-Sherpa/DiPhotonJetsBox_M40_80-Sherpa_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_M40_80-Sherpa/DiPhotonJetsBox_M40_80-Sherpa_0.root</file>
+    </sample>
+    <sample id="QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8" xsec="241400.0" stat="41145232.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_9.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_18.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_14.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_21.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_10.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_5.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_15.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_20.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_11.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_4.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_8.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_19.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_17.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_2.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_22.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_13.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_6.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_16.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_3.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_12.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_7.root</file>
+    </sample>
+    <sample id="GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8" xsec="0.11" stat="218638536.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8_2.root</file>
+    </sample>
+    <sample id="TT_FCNC-TtoHJ_aTleptonic_HToaa_eta_hut-MadGraph5-pythia8" xsec="0.11" stat="913978.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-TtoHJ_aTleptonic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-TtoHJ_aTleptonic_HToaa_eta_hut-MadGraph5-pythia8_0.root</file>
+    </sample>
+    <sample id="TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8" xsec="0.23" stat="935818.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8_2.root</file>
+    </sample>
+    <sample id="TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8" xsec="0.11" stat="985059.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8_2.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8_1.root</file>
+    </sample>
+    <sample id="TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8" xsec="2.967" stat="5920849.5">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8/TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8/TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8/TGJets_TuneCP5_13TeV_amcatnlo_madspin_pythia8_2.root</file>
+    </sample>
+    <sample id="TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hct-MadGraph5-pythia8" xsec="0.23" stat="949234.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hct-MadGraph5-pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hct-MadGraph5-pythia8_0.root</file>
+    </sample>
+    <sample id="GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8" xsec="232.9" stat="13381994.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_4.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_5.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_3.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_7.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_2.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_6.root</file>
+    </sample>
+    <sample id="QCD_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8" xsec="118100.0" stat="3137062.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_1.root</file>
+    </sample>
+    <sample id="ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8" xsec="0.139" stat="3910333.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8/ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8/ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8/ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8_2.root</file>
+    </sample>
+    <sample id="TT_FCNC-T2HJ_aTleptonic_HToaa_eta_hct-MadGraph5-pythia8" xsec="0.11" stat="1005990.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-T2HJ_aTleptonic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-T2HJ_aTleptonic_HToaa_eta_hct-MadGraph5-pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-T2HJ_aTleptonic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-T2HJ_aTleptonic_HToaa_eta_hct-MadGraph5-pythia8_1.root</file>
+    </sample>
+    <sample id="ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8" xsec="0.009" stat="3823526.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8/ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8/ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8/ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8_2.root</file>
+    </sample>
+    <sample id="DoubleEG" xsec="-1" stat="123632497.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_10.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_21.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_43.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_39.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_72.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_8.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_25.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_14.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_47.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_31.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_18.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_53.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_62.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_29.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_4.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_35.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_66.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_57.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_30.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_52.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_19.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_28.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_63.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_34.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_5.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_67.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_56.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_11.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_20.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_42.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_9.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_73.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_38.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_24.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_15.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_46.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_48.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_3.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_32.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_50.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_61.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_7.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_36.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_65.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_54.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_13.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_58.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_69.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_22.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_40.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_71.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_26.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_17.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_44.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_59.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_12.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_23.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_68.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_41.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_70.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_27.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_16.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_74.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_45.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_49.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_33.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_2.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_51.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_60.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_37.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_6.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_64.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DoubleEG/DoubleEG_55.root</file>
+    </sample>
+    <sample id="ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8" xsec="0.019" stat="3742091.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8/ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8_2.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8/ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8/ST_FCNC-TH_Thadronic_HToaa_eta_hct-MadGraph5-pythia8_0.root</file>
+    </sample>
+    <sample id="DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa" xsec="84.4" stat="11244992.6641">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_14.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_4.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_10.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_8.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_18.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_9.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_15.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_5.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_11.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_3.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_17.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_7.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_13.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_2.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_16.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_6.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa/DiPhotonJetsBox_MGG-80toInf_13TeV-Sherpa_12.root</file>
+    </sample>
+    <sample id="ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8" xsec="50.43" stat="3234928584.0">
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_3.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_21.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_19.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_7.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_15.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_11.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_20.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_14.root</file>
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_10.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_21.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_2.root</file>
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_18.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_5.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_16.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_23.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_12.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_9.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_6.root</file>
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_8.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_4.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_17.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_16.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_12.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_23.root</file>
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_22.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_4.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_5.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_9.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_17.root</file>
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_13.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8_22.root</file>
+    </sample>
+    <sample id="TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8" xsec="830" stat="2.14733209856e+11">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_67.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_56.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_34.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_19.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_52.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_63.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_28.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_30.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_46.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_2.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_24.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_15.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_42.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_38.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_11.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_6.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_20.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_47.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_3.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_25.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_14.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_43.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_39.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_10.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_7.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_21.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_66.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_57.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_35.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_53.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_18.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_29.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_62.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_31.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_45.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_27.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_16.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_41.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_70.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_12.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_59.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_68.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_5.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_23.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_64.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_9.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_55.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_37.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_51.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_60.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_49.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_33.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_8.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_65.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_54.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_36.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_50.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_61.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_48.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_32.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_44.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_26.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_17.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_40.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_58.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_13.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_4.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_22.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8_69.root</file>
     </sample>
     <sample id="ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8" xsec="0.067" stat="3593476.0">
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8/ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8_3.root</file>
@@ -370,54 +401,23 @@
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8/ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8_0.root</file>
         <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8/ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8_1.root</file>
     </sample>
-    <sample id="ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8" xsec="0.139" stat="3910333.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8/ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8/ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8/ST_FCNC-TH_Thadronic_HToaa_eta_hut-MadGraph5-pythia8_2.root</file>
+    <sample id="TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8" xsec="0.11" stat="973679.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8_1.root</file>
     </sample>
-    <sample id="TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8" xsec="0.23" stat="935818.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8/TT_FCNC-TtoHJ_aThadronic_HToaa_eta_hct-MadGraph5-pythia8_2.root</file>
+    <sample id="THW_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5" xsec="3.4e-05" stat="964419.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/THW_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5/THW_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5_0.root</file>
     </sample>
-    <sample id="DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8" xsec="21.37" stat="8944740.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8_4.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8_3.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8/DYToEE_M-50_NNPDF31_13TeV-powheg-pythia8_2.root</file>
+    <sample id="QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8" xsec="24810.0" stat="9264674.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_0.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_4.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_5.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_3.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_2.root</file>
     </sample>
-    <sample id="ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8" xsec="0.009" stat="3823526.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8/ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8_2.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8/ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8/ST_FCNC-TH_Tleptonic_HToaa_eta_hct-MadGraph5-pythia8_1.root</file>
-    </sample>
-    <sample id="TT_FCNC-TtoHJ_aTleptonic_HToaa_eta_hut-MadGraph5-pythia8" xsec="0.11" stat="913978.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-TtoHJ_aTleptonic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-TtoHJ_aTleptonic_HToaa_eta_hut-MadGraph5-pythia8_0.root</file>
-    </sample>
-    <sample id="QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8" xsec="241400.0" stat="41145232.0">
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_10.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_21.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_14.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_9.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_5.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_18.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_1.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_4.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_19.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_0.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_11.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_20.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_15.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_8.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_6.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_2.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_13.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_22.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_17.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_12.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_16.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_7.root</file>
-        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8/QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_3.root</file>
+    <sample id="TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hut-MadGraph5-pythia8" xsec="0.23" stat="985943.0">
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hut-MadGraph5-pythia8_1.root</file>
+        <file>/storage_mnt/storage/user/kskovpen/analysis/tHGGNtuple/CMSSW_10_5_0/src/tHGG/Analyzer/jobs/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hut-MadGraph5-pythia8/TT_FCNC-aTtoHJ_Thadronic_HToaa_eta_hut-MadGraph5-pythia8_0.root</file>
     </sample>
 </data>

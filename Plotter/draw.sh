@@ -2,13 +2,15 @@
 
 #pn="_Muon"
 pn="_All"
-#sl="_SelNJet2"
-sl=""
+#pn=""
+sl="_SR2"
+#sl=""
+ch=leptonic
+#ch=hadronic
 
 python draw.py \
 --names=diPhoMass${pn}${sl},\
 diPhoMVA${pn}${sl},\
-lepPhMllMin${pn}${sl},\
 phoLeadIDMVA${pn}${sl},\
 phoSubLeadIDMVA${pn}${sl} \
---channel=leptonic --factor=1
+--channel=${ch} --factor=1
