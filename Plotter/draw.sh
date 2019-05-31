@@ -1,5 +1,14 @@
 #!/bin/env bash
 
-pn="_Elec"
+#pn="_Muon"
+pn="_All"
+#sl="_SelNJet2"
+sl=""
 
-python draw.py --names=diPhoMass${pn},diPhoMVA${pn},phoLeadIDMVA${pn},phoSubLeadIDMVA${pn} --channel=leptonic --factor=1
+python draw.py \
+--names=diPhoMass${pn}${sl},\
+diPhoMVA${pn}${sl},\
+lepPhMllMin${pn}${sl},\
+phoLeadIDMVA${pn}${sl},\
+phoSubLeadIDMVA${pn}${sl} \
+--channel=leptonic --factor=1

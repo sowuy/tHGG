@@ -89,13 +89,13 @@ if __name__ == '__main__':
                 
         nElec = ev.__getattr__("ElecInfo.Size")
         for i in range(int(nElec)):
-            l = obj.lepton(ev,i,1,Jets,Photons)
+            l = obj.lepton(ev,i,True,Jets,Photons)
             if l.passed:
                 Leptons.append(l)
                 
         nMuon = ev.__getattr__("MuonInfo.Size")
         for i in range(int(nMuon)):
-            l = obj.lepton(ev,i,0,Jets,Photons)
+            l = obj.lepton(ev,i,False,Jets,Photons)
             if l.passed:
                 Leptons.append(l)
 
@@ -126,6 +126,7 @@ if __name__ == '__main__':
             t.evNVtx[0] = Event.nVtx
             t.evWeight[0] = Event.weight
             t.evWeightb[0] = Event.weightb
+            t.evNJet[0] = nJetSelected
 
             t.diPhoMass[0] = Event.diPhoMass
             t.diPhoMVA[0] = Event.diPhoMVA
@@ -177,7 +178,8 @@ if __name__ == '__main__':
             tLep.lepCharge[0] = Leptons[0].charge
             tLep.lepIsElec[0] = Leptons[0].isElec
             tLep.lepDrlpMin[0] = Leptons[0].drlpMin
-            
+            tLep.lepPhMllMin[0] = func.zveto(Leptons[0],Photons,91.2,777)[1]
+
             if nJetSelected >= 1:
                 
                 tLep.fill()

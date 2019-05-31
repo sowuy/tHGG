@@ -87,7 +87,6 @@ class photon():
 class lepton():
 
     idx = -1
-    isElec = 0
     
     def __init__(self, ev, idx, isElec, Jets, Photons):
         
@@ -96,7 +95,7 @@ class lepton():
         self.passed = False
         
         if (isElec):
-            
+      
             self.pt = ev.__getattr__("ElecInfo.Pt")[idx]
             self.eta = ev.__getattr__("ElecInfo.Eta")[idx]
             self.phi = ev.__getattr__("ElecInfo.Phi")[idx]
@@ -105,8 +104,8 @@ class lepton():
             
             passPt = bool(self.pt > 20)
             passEta = bool((math.fabs(self.eta) < 1.4442 or math.fabs(self.eta) > 1.566) and math.fabs(self.eta) < 2.4)
-            passOverlapPhotons = bool(ev.__getattr__("ElecInfo.fggPhoVeto")[idx])
-#            passOverlapPhotons, self.drlpMin = fun.overlap(self.eta,self.phi,Photons,0.3)
+#            passOverlapPhotons = bool(ev.__getattr__("ElecInfo.fggPhoVeto")[idx])
+            passOverlapPhotons, self.drlpMin = fun.overlap(self.eta,self.phi,Photons,0.3)
 #            passID = bool(ev.__getattr__("ElecInfo.EGMCutBasedIDLoose")[idx])
             passID = bool(ev.__getattr__("ElecInfo.EGMCutBasedIDMedium")[idx])
 #            passDxy = (math.fabs(ev.__getattr__("ElecInfo.GsfTrackDxy")[idx]) < 0.02)

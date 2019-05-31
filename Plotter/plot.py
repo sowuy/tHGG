@@ -66,9 +66,9 @@ if __name__ == '__main__':
     hinfo = {}
     
     if options.channel == 'hadronic':
-        hinfo[''] = hhad
+        hinfo['All'] = hhad
     else:
-        hinfo[''] = hlep
+        hinfo['All'] = hlep
         hinfo['Elec'] = helep
         hinfo['Muon'] = hmlep
     
@@ -86,7 +86,7 @@ if __name__ == '__main__':
         else:
             for ch, hl in hinfo.items():
                 cstr = ch
-                if cstr != "": cstr = '_'+cstr
+                cstr = '_'+cstr
                 for s, hd in enumerate(hl):
                     sstr = sel[s]
                     if sstr != "": sstr = '_'+sstr
@@ -95,6 +95,7 @@ if __name__ == '__main__':
                     elif h == 'phoLeadIDMVA': hd['phoLeadIDMVA'+cstr+sstr] = [{'xtit':'Leading photon MVA discriminant','nb':30,'xmin':-1.,'xmax':1.,'ytit':'Events'}]
                     elif h == 'phoSubLeadIDMVA': hd['phoSubLeadIDMVA'+cstr+sstr] = [{'xtit':'Subleading photon MVA discriminant','nb':30,'xmin':-1.,'xmax':1.,'ytit':'Events'}]
                     elif h == 'lepDrlpMin': hd['lepDrlpMin'+cstr+sstr] = [{'xtit':'Min #Delta R(l,#gamma)','nb':30,'xmin':0.,'xmax':3.,'ytit':'Events'}]
+                    elif h == 'lepPhMllMin': hd['lepPhMllMin'+cstr+sstr] = [{'xtit':'Min m_{Z}-m(l,#gamma))','nb':30,'xmin':0.,'xmax':100.,'ytit':'Events'}]
                     else:
                         continue
 
@@ -117,33 +118,54 @@ if __name__ == '__main__':
             sys.stdout.write(' '+str(tree[p][s][0].GetEntries()))
             sys.stdout.flush()
             for ev in tree[p][s][0]:
+                
                 w = eval('ev.evWeight')
                 wb = eval('ev.evWeightb')
                 mgg = eval('ev.diPhoMass')
                 phoLeadIDMVA = eval('ev.phoLeadIDMVA')
                 phoSubLeadIDMVA = eval('ev.phoSubLeadIDMVA')
 #                if phoLeadIDMVA < 0.8 or phoSubLeadIDMVA < 0.8: continue
-                if p in ['TTJets','TGJets','TTGJets']:
-                    w = wb
+
+#                if p in ['TTJets','TGJets','TTGJets']:
+#                    w = wb
+                w = wb
+                    
                 if mgg < 100 or mgg > 180: continue
+                
                 if options.blind == '1' and p not in ['StHut','StHct','TtHut','TtHct']:
                     if mgg > 120 and mgg < 130:
                         continue
+                    
                 if p != 'data': w = w * c.lumi / (tree[p][s][2]/tree[p][s][1])
+                
                 if math.fabs(w) > 100 and p in ['Others']: continue # manually remove large weight
+                
                 for k in hist[p]:
+                    
                     dec = k.split('_')
                     vname = k.split('_')[0]
+                    
                     cname = ''
+                    sname = ''
                     if len(dec) > 1:
                         cname = k.split('_')[1]
+                    if len(dec) > 2:
+                        sname = k.split('_')[2]
+                        
+                    isElec = eval('ev.lepIsElec')
                     if cname == 'Elec':
-                        if eval('ev.lepIsElec') != 1: continue
-                    elif cname == 'Muon':
-                        if eval('ev.lepIsElec') == 1: continue
+                        if isElec == False: continue
+                    elif cname == 'Muon':                        
+                        if isElec == True: continue
+                        
+                    if sname == 'SelNJet2':
+                        nJet = eval('ev.evNJet')
+                        if nJet < 2: continue
+                        
                     br = 'ev.'+vname
                     v = eval(br)
                     hist[p][k].Fill(v,w)
+                    
         print ': \033[1;32mdone\033[1;m'
 
     outFile.Write()

@@ -1,4 +1,5 @@
 import utils
+import math
 
 def overlap(eta,phi,ecol,drMax):
     
@@ -13,3 +14,18 @@ def overlap(eta,phi,ecol,drMax):
         passed = False
         
     return passed, drMin
+
+def zveto(lep,ecol,mllZ,cut):
+    
+    passed = True
+    diffMin = 777
+    
+    for e in ecol:
+        mll = utils.mll(lep,e)
+        diff = math.fabs(mllZ-mll)
+        if (diff < diffMin): diffMin = diff
+    
+    if (diffMin < cut):
+        passed = False
+        
+    return passed, diffMin
