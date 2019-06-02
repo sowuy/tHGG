@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 import functions as func
 import common as c
 import ROOT
+import toprec as top
 
 ROOT.PyConfig.IgnoreCommandLineOptions = True
 from optparse import OptionParser
@@ -23,6 +24,7 @@ def main(argv = None):
     parser = OptionParser(usage)
     parser.add_option("-s","--sample",default="sample",help="input sample [default: %default]")
     parser.add_option("-x","--xml",default="samples.xml",help="input xml configuration [default: %default]")
+    parser.add_option("-p","--pdf",default="pdf.root",help="input file with pdfs [default: %default]")
     parser.add_option("-o","--output",default="output.root",help="output file name [default: %default]")
     parser.add_option("-n","--nmax",default=-1,help="max number of events [default: %default]")
     
@@ -56,6 +58,8 @@ if __name__ == '__main__':
     nEntries = tr.GetEntries()
     print 'Number of events:', nEntries
 
+    trec = top.toprec(options.pdf)
+    
     ie = 0
     
     for ev in tr:
@@ -72,6 +76,7 @@ if __name__ == '__main__':
         Photons = []
 
         Event = obj.event(ev,isdata)
+        Met = obj.met(ev)
 #        tLep.count(Event.weightb)
         tLep.count(Event.weight)
         
@@ -116,7 +121,7 @@ if __name__ == '__main__':
                     JetsBTagTight.append(j)
 
         nJetSelected = len(Jets)
-        nJetBTagSelected = len(JetsBTagLoose)
+        nJetBTagSelected = len(JetsBTagMedium)
                 
         Leptons.sort(key=operator.attrgetter('pt'))
         Jets.sort(key=operator.attrgetter('pt'))
@@ -192,6 +197,13 @@ if __name__ == '__main__':
             tLep.lepPhMllMin[0] = func.zveto(Leptons[0],Photons,91.2,777)[1]
 
             if nJetSelected >= 1:
+
+                lh, nuPz, mW, mTop = trec.calc(Leptons[0],Met,JetsBTagMedium[0])
+                
+                tLep.topRecLH[0] = lh
+                tLep.topRecNuPz[0] = nuPz
+                tLep.topRecMW[0] = mW
+                tLep.topRecMTop[0] = mTop
                 
                 tLep.fill()
             

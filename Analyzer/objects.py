@@ -21,6 +21,16 @@ class event():
         self.diPhoMass = ev.__getattr__("DiPhoInfo.mass")
         self.diPhoMVA = ev.__getattr__("DiPhoInfo.diphotonMVA")
 
+class met():
+
+    def __init__(self, ev):
+
+        self.pt = ev.__getattr__("MetInfo.Pt")
+        self.phi = ev.__getattr__("MetInfo.Phi")
+        self.px = ev.__getattr__("MetInfo.Px")
+        self.py = ev.__getattr__("MetInfo.Py")
+        self.sumET = ev.__getattr__("MetInfo.SumET")
+        
 class jet():
 
     idx = -1
@@ -48,6 +58,10 @@ class jet():
         
         self.passed = (passPt and passEta)
 
+        self.px = self.pt*math.cos(self.phi)
+        self.py = self.pt*math.sin(self.phi)
+        self.pz = self.pt*math.sinh(self.eta)
+        
 class photon():
 
     idx = -1
@@ -90,6 +104,10 @@ class photon():
 #            passID = bool(ev.__getattr__("DiPhoInfo.subleadIDMVA") > -0.4)
         
         self.passed = (passPt)
+
+        self.px = self.pt*math.cos(self.phi)
+        self.py = self.pt*math.sin(self.phi)
+        self.pz = self.pt*math.sinh(self.eta)
         
 class lepton():
 
@@ -136,3 +154,8 @@ class lepton():
             passOverlapPhotons, self.drlpMin = fun.overlap(self.eta,self.phi,Photons,0.3)
             
             self.passed = (passPt and passEta and passTight and passIso and passOverlapPhotons)
+
+        self.px = self.pt*math.cos(self.phi)
+        self.py = self.pt*math.sin(self.phi)
+        self.pz = self.pt*math.sinh(self.eta)
+            

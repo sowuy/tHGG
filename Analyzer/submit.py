@@ -11,11 +11,14 @@ def main(argv = None):
     if argv == None:
         argv = sys.argv[1:]
         
+    home = os.getcwd()
+        
     usage = "usage: %prog [options]\n Script to submit Analyzer jobs to batch"
         
     parser = OptionParser(usage)
     parser.add_option("-f","--files",default="10",help="number of files per job [default: %default]")
     parser.add_option("-x","--xml",default="samples.xml",help="input xml configuration [default: %default]")
+    parser.add_option("-p","--pdf",default=home+"/pdf.root",help="input file with pdfs [default: %default]")
     parser.add_option("-o","--out",default="jobs",help="output directory [default: %default]")
     parser.add_option("-n","--nmax",default="-1",help="number of processed events per job [default: %default]")
     
@@ -29,7 +32,7 @@ if __name__ == '__main__':
     
     os.system("cp /tmp/"+c.proxy+" "+c.proxydir+c.proxy)
 
-    home = os.getcwd()    
+    home = os.getcwd()
     
     outpath = home+"/"+options.out
     
@@ -100,7 +103,7 @@ if __name__ == '__main__':
                     outlog = outname+'.log'
                     output = outname+'.root'
 
-                    while (str(subprocess.check_output(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+f+',xml='+fjobxml[jid]+',output='+output+',dout='+home+',proxy='+c.proxydir+c.proxy+',arch='+c.arch+' | grep -v \"Invalid credential\"'])) == ''):
+                    while (str(subprocess.check_output(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+f+',xml='+fjobxml[jid]+',output='+output+',dout='+home+',pdf='+options.pdf+',proxy='+c.proxydir+c.proxy+',arch='+c.arch+' | grep -v \"Invalid credential\"'])) == ''):
                         pass
                     
                     jid = jid + 1                    
