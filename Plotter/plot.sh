@@ -6,5 +6,7 @@ chan=leptonic
 sl=''
 
 python plot.py \
---names=diPhoMass,diPhoMVA,phoLeadIDMVA,phoSubLeadIDMVA,metPt \
---channel=${chan} --blind=1 --selection=${sl}
+--names=diPhoMass \
+--channel=${chan} --blind=2 --selection=${sl}
+
+#--names=diPhoMass,diPhoMVA,phoLeadIDMVA,phoSubLeadIDMVA,metPt

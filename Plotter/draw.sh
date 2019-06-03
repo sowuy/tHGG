@@ -9,9 +9,5 @@ ch=leptonic
 #ch=hadronic
 
 python draw.py \
---names=diPhoMass${pn}${sl},\
-diPhoMVA${pn}${sl},\
-phoLeadIDMVA${pn}${sl},\
-metPt${pn}${sl},\
-phoSubLeadIDMVA${pn}${sl} \
---channel=${ch} --factor=1
+--names=diPhoMass${pn}${sl} \
+--channel=${ch} --factor=0.1

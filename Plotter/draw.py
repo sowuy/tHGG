@@ -32,7 +32,9 @@ def main(argv = None):
 if __name__ == '__main__':
     
     options = main()
-                
+
+    sf = float(options.factor)
+    
     ROOT.gROOT.SetBatch()
 
     pstyle = style.SetPlotStyle()
@@ -83,7 +85,7 @@ if __name__ == '__main__':
             h[l].SetFillStyle(0)
             h[l].SetLineStyle(1)
             
-            h[l].Scale(float(options.factor))
+            if sf > 0: h[l].Scale(sf)
         
         for l in ['TtHut','TtHct']:
             h[l].SetMarkerSize(0)
@@ -92,7 +94,7 @@ if __name__ == '__main__':
             h[l].SetFillStyle(0)
             h[l].SetLineStyle(1)
             
-            h[l].Scale(float(options.factor))
+            if sf > 0: h[l].Scale(sf)
         
         h['DiPhotonJets'].SetMarkerSize(0)
         h['DiPhotonJets'].SetMarkerColor(ROOT.kAzure-7)
@@ -132,10 +134,12 @@ if __name__ == '__main__':
                 hSM.Add(h[p])
                 maxSM = maxSM + h[p].GetMaximum()
 
-        h['StHut'].Scale(maxSM/(h['StHut'].GetMaximum()+h['TtHut'].GetMaximum()))
-        h['TtHut'].Scale(maxSM/(h['StHut'].GetMaximum()+h['TtHut'].GetMaximum()))
-        h['StHct'].Scale(maxSM/(h['StHct'].GetMaximum()+h['TtHct'].GetMaximum()))
-        h['TtHct'].Scale(maxSM/(h['StHct'].GetMaximum()+h['TtHct'].GetMaximum()))
+        if sf < 0:
+            
+            h['StHut'].Scale(maxSM/(h['StHut'].GetMaximum()+h['TtHut'].GetMaximum()))
+            h['TtHut'].Scale(maxSM/(h['StHut'].GetMaximum()+h['TtHut'].GetMaximum()))
+            h['StHct'].Scale(maxSM/(h['StHct'].GetMaximum()+h['TtHct'].GetMaximum()))
+            h['TtHct'].Scale(maxSM/(h['StHct'].GetMaximum()+h['TtHct'].GetMaximum()))
                 
         hNP = ROOT.THStack()
         maxNP = 0
@@ -220,4 +224,4 @@ if __name__ == '__main__':
         t = style.channel(chan)
         t.Draw()
         
-        c1.Print('pics/'+v+'.eps')
+        c1.Print(options.output+'/'+v+'.eps')

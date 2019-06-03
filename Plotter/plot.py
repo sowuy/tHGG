@@ -4,6 +4,7 @@ import subprocess
 import common as c
 from subprocess import call
 import xml.etree.ElementTree as ET
+from array import array
 import math
 import ROOT
 
@@ -105,6 +106,15 @@ if __name__ == '__main__':
                         continue
 
     outFile = ROOT.TFile.Open(options.output,"RECREATE")
+
+    tfit = {}
+    
+    DiPhoMassFit, WeightFit = (array( 'd', [ -777 ] ) for _ in range(2))
+    
+    for p in ['sig','bkg','data_obs']:
+        tfit[p] = ROOT.TTree(p,p)
+        tfit[p].Branch("DiPhoMassFit",DiPhoMassFit,"DiPhoMassFit/D");
+        tfit[p].Branch("WeightFit",WeightFit,"WeightFit/D");
     
     for p in tree:
         hist[p] = {}
@@ -140,6 +150,9 @@ if __name__ == '__main__':
                 if options.blind == '1' and p not in ['StHut','StHct','TtHut','TtHct']:
                     if mgg > 120 and mgg < 130:
                         continue
+                elif options.blind == '2' and p in ['data']:
+                    if mgg > 120 and mgg < 130:
+                        continue
                     
                 if p != 'data': w = w * c.lumi / (tree[p][s][2]/tree[p][s][1])
                 
@@ -147,6 +160,15 @@ if __name__ == '__main__':
 
                 nBJet = eval('ev.evNBMJet')
                 if nBJet < 1: continue
+
+                DiPhoMassFit[0] = eval('ev.diPhoMass')
+                WeightFit[0] = w
+                if p in ['data']:
+                    tfit['data_obs'].Fill()
+                elif p in ['StHut','StHct','TtHut','TtHct']:
+                    tfit['sig'].Fill()
+                else:
+                    tfit['bkg'].Fill()
                 
                 for k in hist[p]:
                     
