@@ -67,7 +67,7 @@ if __name__ == '__main__':
     nEntries = tr.GetEntries()
     print 'Number of events:', nEntries
 
-    trec = top.toprec(options.pdf)
+#    trec = top.toprec(options.pdf)
     
     ie = 0
     
@@ -210,13 +210,12 @@ if __name__ == '__main__':
 
                     if nJetSelected >= 1:
 
-                        lh, nuPz, mW, mTop = trec.calcLep(Leptons[0],Met,JetsBTagMedium[0])
-                        print lh
+#                        lh, nuPz, mW, mTop = trec.calcLep(Leptons[0],Met,JetsBTagMedium[0])
                     
-                        tLep.topRecLH[0] = lh
-                        tLep.topRecNuPz[0] = nuPz
-                        tLep.topRecMW[0] = mW
-                        tLep.topRecMTop[0] = mTop
+#                        tLep.topRecLH[0] = lh
+#                        tLep.topRecNuPz[0] = nuPz
+#                        tLep.topRecMW[0] = mW
+#                        tLep.topRecMTop[0] = mTop
                         
                         tLep.metPt[0] = Met.pt
                         tLep.metPhi[0] = Met.phi

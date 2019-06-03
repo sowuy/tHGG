@@ -11,7 +11,7 @@ nmax=10000
 #python read.py --sample=ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8 \
 #--output=output.root --nmax=${nmax} --xml=jobs/ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8/ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8_0.xml
 
-python read.py --sample=ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8 --run=pdf \
+python read.py --sample=ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8 --run='' \
 --output=output.root --nmax=${nmax} --xml=jobs/ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8/ST_FCNC-TH_Tleptonic_HToaa_eta_hut-MadGraph5-pythia8_0.xml
 
 #python read.py --sample=DoubleEG \
