@@ -105,7 +105,7 @@ class toprec():
 
         return x
 
-    def calc(self, l, nu, bjet):
+    def calcLep(self, l, nu, bjet):
     
         lhMin = 10E+10
         nuPz = -777

@@ -98,6 +98,9 @@ if __name__ == '__main__':
                     elif h == 'phoSubLeadIDMVA': hd['phoSubLeadIDMVA'+cstr+sstr] = [{'xtit':'Subleading photon MVA discriminant','nb':30,'xmin':-1.,'xmax':1.,'ytit':'Events'}]
                     elif h == 'lepDrlpMin': hd['lepDrlpMin'+cstr+sstr] = [{'xtit':'Min #Delta R(l,#gamma)','nb':30,'xmin':0.,'xmax':3.,'ytit':'Events'}]
                     elif h == 'lepPhMllMin': hd['lepPhMllMin'+cstr+sstr] = [{'xtit':'Min m_{Z}-m(l,#gamma))','nb':30,'xmin':0.,'xmax':100.,'ytit':'Events'}]
+                    elif h == 'topRecMTop': hd['topRecMTop'+cstr+sstr] = [{'xtit':'Reconstructed top mass [GeV]','nb':30,'xmin':0.,'xmax':600.,'ytit':'Events'}]
+                    elif h == 'topRecLH': hd['topRecLH'+cstr+sstr] = [{'xtit':'-2 log(P)','nb':30,'xmin':0.,'xmax':3.,'ytit':'Events'}]
+                    elif h == 'metPt': hd['metPt'+cstr+sstr] = [{'xtit':'Missing transverse momentum [GeV]','nb':30,'xmin':0.,'xmax':200.,'ytit':'Events'}]
                     else:
                         continue
 

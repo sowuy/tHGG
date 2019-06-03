@@ -159,3 +159,21 @@ class lepton():
         self.py = self.pt*math.sin(self.phi)
         self.pz = self.pt*math.sinh(self.eta)
             
+class gen():
+
+    def __init__(self, ev):
+
+        nGen = ev.__getattr__("GenPartInfo.size")
+        
+#        for g in range(nGen):
+                    
+#            self.pdgId = ev.__getattr__("GenPartInfo.PdgID")[g]
+#            self.status = ev.__getattr__("GenPartInfo.Status")[g]
+            
+#            if self.pdgId == 12 or self.pdgId == 14 or self.pdgId == 16:
+#                print self.status, ev.__getattr__("GenPartInfo.Pt")[g]
+            
+
+                    
+            
+            

@@ -16,8 +16,9 @@ class tree():
         self.jet3Pt, self.jet3Eta, self.jet3Phi, self.jet3E, self.jet3Btag, \
         self.jet4Pt, self.jet4Eta, self.jet4Phi, self.jet4E, self.jet4Btag, \
         self.lepDrlpMin, self.lepPhMllMin, \
-        self.topRecLH, self.topRecNuPz, self.topRecMW, self.topRecMTop \
-        = (array( 'f', [ -777 ] ) for _ in range(36))
+        self.topRecLH, self.topRecNuPz, self.topRecMW, self.topRecMTop, \
+        self.metPt, self.metPhi, self.metPx, self.metPy, self.sumET \
+        = (array( 'f', [ -777 ] ) for _ in range(41))
         
         self.lepCharge, self.evNVtx, self.evNJet, self.evNLep, self.evNBLJet, self.evNBMJet, self.evNBTJet \
         = (array( 'i', [ -777 ] ) for _ in range(7))
@@ -85,6 +86,12 @@ class tree():
             self.t.Branch( 'lepIsElec', self.lepIsElec, 'lepIsElec/O' )
             self.t.Branch( 'lepDrlpMin', self.lepDrlpMin, 'lepDrlpMin/F' )
             self.t.Branch( 'lepPhMllMin', self.lepPhMllMin, 'lepPhMllMin/F' )
+            
+            self.t.Branch( 'metPt', self.metPt, 'metPt/F' )
+            self.t.Branch( 'metPhi', self.metPhi, 'metPhi/F' )
+            self.t.Branch( 'metPx', self.metPx, 'metPx/F' )
+            self.t.Branch( 'metPy', self.metPy, 'metPy/F' )
+            self.t.Branch( 'sumET', self.sumET, 'sumET/F' )
             
             self.t.Branch( 'topRecLH', self.topRecLH, 'topRecLH/F' )
             self.t.Branch( 'topRecNuPz', self.topRecNuPz, 'topRecNuPz/F' )
