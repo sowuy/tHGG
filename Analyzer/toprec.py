@@ -33,14 +33,12 @@ class toprec():
         
         return mWmean*mWmean*GammaW*GammaW/(math.pow(mW*mW-mWmean*mWmean,2)+mWmean*mWmean*GammaW*GammaW)
 
-    def getNuMom(self, Wmass, WTmass, lPx, lPy, lPz, lE, nuPx, nuPy):
+    def getNuMom(self, Wmass, lPx, lPy, lPz, lE, nuPx, nuPy):
     
         solved = False
-        solvedt = False
         nuPz1 = -777
         nuPz2 = -777
         nuPz3 = -777
-        nuPz4 = -777
         
         a = math.sqrt(lPx*lPx+lPy*lPy)
         b = lPz
@@ -48,24 +46,17 @@ class toprec():
         f = lE
         
         c = Wmass*Wmass/2+lPx*nuPx+lPy*nuPy
-        ct = WTmass*WTmass/2+lPx*nuPx+lPy*nuPy
 
         racine = c*c*b*b-a*a*(d*d*f*f-c*c)
-        racinet = ct*ct*b*b-a*a*(d*d*f*f-ct*ct)
         
         if racine >= 0:
 
             solved = 1
             nuPz1 = (c*b+math.sqrt(racine))/a/a
             nuPz2 = (c*b-math.sqrt(racine))/a/a
-
-        if racinet >= 0:
-
-            solvedt = 1
-            nuPz3 = (ct*b+math.sqrt(racinet))/a/a
-            nuPz4 = (ct*b-math.sqrt(racinet))/a/a
+            nuPz3 = c*b/a/a
             
-        return solved, solvedt, nuPz1, nuPz2, nuPz3, nuPz4
+        return solved, nuPz1, nuPz2, nuPz3
 
     def setPDF(self):
     
@@ -140,17 +131,15 @@ class toprec():
 
             pNuET = math.sqrt(pNuPx*pNuPx+pNuPy*pNuPy)
             pLepET = math.sqrt(pLepPx*pLepPx+pLepPy*pLepPy)
-            mWT = math.sqrt(math.pow(pNuET+pLepET,2)-math.pow(pNuPx+pLepPx,2)-math.pow(pNuPy+pLepPy,2))
                 
-            solved, solvedt, pNuPz1, pNuPz2, pNuPz3, pNuPz4 = self.getNuMom(pWMass,mWT,pLepPx,pLepPy,pLepPz,pLepE,pNuPx,pNuPy)
+            solved, pNuPz1, pNuPz2, pNuPz3 = self.getNuMom(pWMass,pLepPx,pLepPy,pLepPz,pLepE,pNuPx,pNuPy)
             
             sol = []
             if solved: 
                 sol.append(pNuPz1)
                 sol.append(pNuPz2)
-#            if solvedt:
-#                sol.append(pNuPz3)
-#                sol.append(pNuPz4)                
+            else:
+                sol.append(pNuPz3)
 
             for pNuPz in sol:
                         
