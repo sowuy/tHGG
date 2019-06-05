@@ -54,7 +54,8 @@ class toprec():
             solved = 1
             nuPz1 = (c*b+math.sqrt(racine))/a/a
             nuPz2 = (c*b-math.sqrt(racine))/a/a
-            nuPz3 = c*b/a/a
+            
+        nuPz3 = c*b/a/a
             
         return solved, nuPz1, nuPz2, nuPz3
 
