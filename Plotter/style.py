@@ -1,12 +1,14 @@
 import ROOT
 
-def SetPlotStyle():
+def SetPlotStyle(mode):
 
-    plotStyle = PlotStyle();
+    plotStyle = PlotStyle(mode);
     ROOT.gROOT.SetStyle("PLOT")
     ROOT.gROOT.ForceStyle()
+    
+    return plotStyle
 
-def PlotStyle():
+def PlotStyle(mode):
 
     plotStyle = ROOT.TStyle("PLOT","Plot style")
     
@@ -23,10 +25,19 @@ def PlotStyle():
 
     plotStyle.SetPaperSize(20,26)
 
-    plotStyle.SetPadTopMargin(0.07)
-    plotStyle.SetPadRightMargin(0.2)
-    plotStyle.SetPadBottomMargin(0.16)
-    plotStyle.SetPadLeftMargin(0.16)
+    if mode == 1:
+        
+        plotStyle.SetPadTopMargin(0.07)
+        plotStyle.SetPadRightMargin(0.2)
+        plotStyle.SetPadBottomMargin(0.16)
+        plotStyle.SetPadLeftMargin(0.16)
+        
+    elif mode == 2:
+        
+        plotStyle.SetPadTopMargin(0.07)
+        plotStyle.SetPadRightMargin(0.07)
+        plotStyle.SetPadBottomMargin(0.16)
+        plotStyle.SetPadLeftMargin(0.16)        
     
     plotStyle.SetTitleXOffset(1.4)
     plotStyle.SetTitleYOffset(1.4)
@@ -66,7 +77,7 @@ def PlotStyle():
 
     return plotStyle
 
-def cmslabel():
+def cmslabel(mode):
     
     tex = ROOT.TLatex(0.1969,0.906825,"CMS")
     tex.SetNDC()
@@ -81,14 +92,18 @@ def cmslabel():
     tex2.SetTextFont(52)
     tex2.SetTextSize(0.05681)
     tex2.SetLineWidth(2)
-    
-    text1 = ROOT.TLatex(0.80,0.94,"41.5 fb^{-1}, #sqrt{s} = 13 TeV")
+
+    if mode == 1:        
+        text1 = ROOT.TLatex(0.80,0.94,"41.5 fb^{-1}, #sqrt{s} = 13 TeV")
+    elif mode == 2:        
+        text1 = ROOT.TLatex(0.94,0.94,"41.5 fb^{-1}, #sqrt{s} = 13 TeV")
+        
     text1.SetNDC()
     text1.SetTextAlign(31)
     text1.SetTextFont(42)
     text1.SetTextSize(0.04875)
     text1.SetLineWidth(2)
-
+        
     return tex, tex2, text1
 
 def channel(chan):

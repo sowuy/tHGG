@@ -37,7 +37,7 @@ if __name__ == '__main__':
     
     ROOT.gROOT.SetBatch()
 
-    pstyle = style.SetPlotStyle()
+    pstyle = style.SetPlotStyle(1)
 
     var = options.names.split(',')
     chan = options.channel
@@ -218,7 +218,7 @@ if __name__ == '__main__':
             elif p == 'GJet': leg.AddEntry(h[p],"#gamma+jets","f")
         leg.Draw()
         
-        t1, t2, t3 = style.cmslabel()
+        t1, t2, t3 = style.cmslabel(1)
         t1.Draw()
         t3.Draw()
         t = style.channel(chan)
