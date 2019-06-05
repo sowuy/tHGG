@@ -105,7 +105,7 @@ if __name__ == '__main__':
                     outlog = outname+'.log'
                     output = outname+'.root'
 
-                    while (str(subprocess.check_output(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+f+',xml='+fjobxml[jid]+',output='+output+',dout='+home+',pdf='+options.pdf+',run='+options.run+',toprec='+options.toprec+',proxy='+c.proxydir+c.proxy+',arch='+c.arch+' | grep -v \"Invalid credential\"'])) == ''):
+                    while (str(subprocess.check_output(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+f+',xml='+fjobxml[jid]+',output='+output+',dout='+home+',pdf='+options.pdf+',run='+options.run+',toprec='+str(options.toprec)+',proxy='+c.proxydir+c.proxy+',arch='+c.arch+' | grep -v \"Invalid credential\"'])) == ''):
                         pass
                     
                     jid = jid + 1                    
