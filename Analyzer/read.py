@@ -26,6 +26,7 @@ def main(argv = None):
     parser.add_option("-x","--xml",default="samples.xml",help="input xml configuration [default: %default]")
     parser.add_option("-p","--pdf",default="pdf.root",help="input file with pdfs [default: %default]")
     parser.add_option("-r","--run",default="",help="special run mode [default: %default]")
+    parser.add_option("-t","--toprec",default=0,help="do top reconstruction [default: %default]")
     parser.add_option("-o","--output",default="output.root",help="output file name [default: %default]")
     parser.add_option("-n","--nmax",default=-1,help="max number of events [default: %default]")
     
@@ -67,7 +68,8 @@ if __name__ == '__main__':
     nEntries = tr.GetEntries()
     print 'Number of events:', nEntries
 
-#    trec = top.toprec(options.pdf)
+    if options.toprec:
+        trec = top.toprec(options.pdf)
     
     ie = 0
     
@@ -210,12 +212,14 @@ if __name__ == '__main__':
 
                     if nJetSelected >= 1:
 
-#                        lh, nuPz, mW, mTop = trec.calcLep(Leptons[0],Met,JetsBTagMedium[0])
+                        if options.toprec:
+                            
+                            lh, nuPz, mW, mTop = trec.calcLep(Leptons[0],Met,JetsBTagMedium[0])
                     
-#                        tLep.topRecLH[0] = lh
-#                        tLep.topRecNuPz[0] = nuPz
-#                        tLep.topRecMW[0] = mW
-#                        tLep.topRecMTop[0] = mTop
+                            tLep.topRecLH[0] = lh
+                            tLep.topRecNuPz[0] = nuPz
+                            tLep.topRecMW[0] = mW
+                            tLep.topRecMTop[0] = mTop
                         
                         tLep.metPt[0] = Met.pt
                         tLep.metPhi[0] = Met.phi

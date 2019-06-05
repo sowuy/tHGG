@@ -7,6 +7,7 @@ sample=${sample}
 xml=${xml}
 pdf=${pdf}
 run=${run}
+toprec=${toprec}
 output=${output}
 nmax=${nmax}
 
@@ -18,5 +19,5 @@ export SCRAM_ARCH=${arch}
 eval `scramv1 runtime -sh`
 cd -
 
-echo "Executing python read.py --sample ${sample} --xml ${xml} --pdf ${pdf} --run ${run} --output ${output} --nmax ${nmax}"
-time python ${dout}/./read.py --sample "${sample}" --xml "${xml}" --pdf "${pdf}" --run "${run}" --output "${output}" --nmax "${nmax}"
+echo "Executing python read.py --sample ${sample} --xml ${xml} --pdf ${pdf} --run ${run} --toprec ${toprec} --output ${output} --nmax ${nmax}"
+time python ${dout}/./read.py --sample "${sample}" --xml "${xml}" --pdf "${pdf}" --run "${run}" --toprec "${toprec}" --output "${output}" --nmax "${nmax}"
