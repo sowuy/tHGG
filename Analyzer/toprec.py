@@ -9,7 +9,7 @@ class toprec():
         self.hPDF = {}
         self.rnd = ROOT.TRandom3(777)
         self.ns = 3
-        self.toys = 10
+        self.toys = 100
         self.setPDF()
 
     def getWmassBW(self, mWmean, GammaW, nSigma):
@@ -153,7 +153,7 @@ class toprec():
                     
                 pmW = math.pow(pNuE+pLepE,2)-math.pow(pNuPx+pLepPx,2)-math.pow(pNuPy+pLepPy,2)-math.pow(pNuPz+pLepPz,2)
                 pmTop = totE*totE-totPx*totPx-totPy*totPy-totPz*totPz
-                  
+                
                 if pmW > 0:
 #                if mW > 0 and mTop > 0:
                     
