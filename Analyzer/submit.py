@@ -109,6 +109,8 @@ if __name__ == '__main__':
                     while res is None:
                         try:
                             res = subprocess.check_output(['qsub','-N','Analyzer','-q',c.batchqueue,'-o',outlog,'-j','oe','job.sh','-l','walltime='+c.walltime,'-v','nmax='+options.nmax+',sample='+f+',xml='+fjobxml[jid]+',output='+output+',dout='+home+',pdf='+options.pdf+',run='+options.run+',toprec='+str(options.toprec)+',proxy='+c.proxydir+c.proxy+',arch='+c.arch+' | grep -v \"Invalid credential\"'])
+                        except KeyboardInterrupt:
+                            sys.exit(0)
                         except:
                             pass
                     
