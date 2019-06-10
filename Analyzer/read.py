@@ -210,24 +210,24 @@ if __name__ == '__main__':
                 tLep.lepDrlpMin[0] = Leptons[0].drlpMin
                 tLep.lepPhMllMin[0] = func.zveto(Leptons[0],Photons,91.2,777)[1]
 
-            if nJetSelected >= 1:
+                if nJetSelected >= 1:
 
-                if options.toprec:
-                            
-                    lh, nuPz, mW, mTop = trec.calcLep(Leptons[0],Met,JetsBTagMedium[0])
-                    
-                    tLep.topRecLH[0] = lh
-                    tLep.topRecNuPz[0] = nuPz
-                    tLep.topRecMW[0] = mW
-                    tLep.topRecMTop[0] = mTop
+                    if options.toprec:
                         
-                tLep.metPt[0] = Met.pt
-                tLep.metPhi[0] = Met.phi
-                tLep.metPx[0] = Met.px
-                tLep.metPy[0] = Met.py
-                tLep.sumET[0] = Met.sumET
+                        lh, nuPz, mW, mTop = trec.calcLep(Leptons[0],Met,JetsBTagMedium[0])
+                        
+                        tLep.topRecLH[0] = lh
+                        tLep.topRecNuPz[0] = nuPz
+                        tLep.topRecMW[0] = mW
+                        tLep.topRecMTop[0] = mTop
+                        
+                    tLep.metPt[0] = Met.pt
+                    tLep.metPhi[0] = Met.phi
+                    tLep.metPx[0] = Met.px
+                    tLep.metPy[0] = Met.py
+                    tLep.sumET[0] = Met.sumET
                     
-                tLep.fill()
+                    tLep.fill()
                     
             elif nLepSelected == 0:
             
