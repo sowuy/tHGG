@@ -183,57 +183,57 @@ if __name__ == '__main__':
                     t.jet2E = Jets[1].E
                     t.jet2Btag = Jets[1].btag
         
-                if nJetSelected > 2:
+            if nJetSelected > 2:
                     
-                    tHad.jet3Pt = Jets[2].pt
-                    tHad.jet3Eta = Jets[2].eta
-                    tHad.jet3Phi = Jets[2].phi
-                    tHad.jet3E = Jets[2].E
-                    tHad.jet3Btag = Jets[2].btag
+                tHad.jet3Pt = Jets[2].pt
+                tHad.jet3Eta = Jets[2].eta
+                tHad.jet3Phi = Jets[2].phi
+                tHad.jet3E = Jets[2].E
+                tHad.jet3Btag = Jets[2].btag
 
-                if nJetSelected > 3:
+            if nJetSelected > 3:
             
-                    tHad.jet4Pt = Jets[3].pt
-                    tHad.jet4Eta = Jets[3].eta
-                    tHad.jet4Phi = Jets[3].phi
-                    tHad.jet4E = Jets[3].E
-                    tHad.jet4Btag = Jets[3].btag
+                tHad.jet4Pt = Jets[3].pt
+                tHad.jet4Eta = Jets[3].eta
+                tHad.jet4Phi = Jets[3].phi
+                tHad.jet4E = Jets[3].E
+                tHad.jet4Btag = Jets[3].btag
             
-                if nLepSelected >= 1:
+            if nLepSelected >= 1:
 
-                    tLep.lepPt[0] = Leptons[0].pt
-                    tLep.lepEta[0] = Leptons[0].eta
-                    tLep.lepPhi[0] = Leptons[0].phi
-                    tLep.lepE[0] = Leptons[0].E
-                    tLep.lepCharge[0] = Leptons[0].charge
-                    tLep.lepIsElec[0] = Leptons[0].isElec
-                    tLep.lepDrlpMin[0] = Leptons[0].drlpMin
-                    tLep.lepPhMllMin[0] = func.zveto(Leptons[0],Photons,91.2,777)[1]
+                tLep.lepPt[0] = Leptons[0].pt
+                tLep.lepEta[0] = Leptons[0].eta
+                tLep.lepPhi[0] = Leptons[0].phi
+                tLep.lepE[0] = Leptons[0].E
+                tLep.lepCharge[0] = Leptons[0].charge
+                tLep.lepIsElec[0] = Leptons[0].isElec
+                tLep.lepDrlpMin[0] = Leptons[0].drlpMin
+                tLep.lepPhMllMin[0] = func.zveto(Leptons[0],Photons,91.2,777)[1]
 
-                    if nJetSelected >= 1:
+            if nJetSelected >= 1:
 
-                        if options.toprec:
+                if options.toprec:
                             
-                            lh, nuPz, mW, mTop = trec.calcLep(Leptons[0],Met,JetsBTagMedium[0])
+                    lh, nuPz, mW, mTop = trec.calcLep(Leptons[0],Met,JetsBTagMedium[0])
                     
-                            tLep.topRecLH[0] = lh
-                            tLep.topRecNuPz[0] = nuPz
-                            tLep.topRecMW[0] = mW
-                            tLep.topRecMTop[0] = mTop
+                    tLep.topRecLH[0] = lh
+                    tLep.topRecNuPz[0] = nuPz
+                    tLep.topRecMW[0] = mW
+                    tLep.topRecMTop[0] = mTop
                         
-                        tLep.metPt[0] = Met.pt
-                        tLep.metPhi[0] = Met.phi
-                        tLep.metPx[0] = Met.px
-                        tLep.metPy[0] = Met.py
-                        tLep.sumET[0] = Met.sumET
+                tLep.metPt[0] = Met.pt
+                tLep.metPhi[0] = Met.phi
+                tLep.metPx[0] = Met.px
+                tLep.metPy[0] = Met.py
+                tLep.sumET[0] = Met.sumET
                     
-                        tLep.fill()
+                tLep.fill()
                     
-                elif nLepSelected == 0:
+            elif nLepSelected == 0:
             
-                    if nJetSelected >= 3:
+                if nJetSelected >= 3:
             
-                        tHad.fill()
+                    tHad.fill()
         
     outFile.Write()
     outFile.Close()
