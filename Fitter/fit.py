@@ -25,6 +25,7 @@ def main(argv = None):
     parser.add_option("-o","--output",default="model.root",help="output file name [default: %default]")
     parser.add_option("-p","--pics",default="pics",help="output directory with pictures [default: %default]")
     parser.add_option("-c","--channel",default="leptonic",help="channel name [default: %default]")
+    parser.add_option("-f","--fit",default="bkg",help="fit mode [default: %default]")
     parser.add_option("-n","--nmax",default=-1,help="maximum number of entries to be used for signal model [default: %default]")
     
     (options, args) = parser.parse_args(sys.argv[1:])
@@ -44,10 +45,10 @@ def createModel():
     
     DiPhoMassFit = ROOT.RooRealVar('DiPhoMassFit','DiPhoMassFit',100.,180.)
     WeightFit = ROOT.RooRealVar('WeightFit','WeightFit',-10000.,10000.)
-#    EventId = ROOT.RooRealVar('EventId','EventId',0.,10E+10)
+    EventId = ROOT.RooRealVar('EventId','EventId',0.,10E+10)
     
-#    sig = ROOT.RooDataSet('sig','sig',ROOT.RooArgSet(DiPhoMassFit,EventId),ROOT.RooFit.Import(tr['sig']),ROOT.RooFit.WeightVar(WeightFit))
-    sig = ROOT.RooDataSet('sig','sig',ROOT.RooArgSet(DiPhoMassFit),ROOT.RooFit.Import(tr['sig']),ROOT.RooFit.WeightVar(WeightFit))
+    sig = ROOT.RooDataSet('sig','sig',ROOT.RooArgSet(DiPhoMassFit,EventId),ROOT.RooFit.Import(tr['sig']),ROOT.RooFit.WeightVar(WeightFit))
+#    sig = ROOT.RooDataSet('sig','sig',ROOT.RooArgSet(DiPhoMassFit),ROOT.RooFit.Import(tr['sig']),ROOT.RooFit.WeightVar(WeightFit))
     data_obs = ROOT.RooDataSet('data_obs','data_obs',ROOT.RooArgSet(DiPhoMassFit),ROOT.RooFit.Import(tr['data_obs']));
 
 #    w.factory('Gaussian::sig(x[-5,5],mu[-3,3],sigma[1])')
@@ -168,7 +169,7 @@ def bkgModel(var, data_obs):
 
     c1.Print('pics/bkgModel.eps')
     
-    return bestPdf
+    return bestPdf[0]
 
 def sigModel(var, sig):
 
@@ -266,8 +267,49 @@ def sigModel(var, sig):
     leg.Draw()
 
     c1.Print('pics/sigModel.eps')
+
+    return bestPdf[0]
+
+def combModel(var, bkg, sig, data_obs):
+
+    c1 = ROOT.TCanvas("c1","c1",650,500)
+
+    fsig = ROOT.RooRealVar("fsig","signal fraction",0.5,0.,1.)
+    combPdf = ROOT.RooAddPdf("comb","comb",ROOT.RooArgList(sig,bkg),ROOT.RooArgList(fsig))
+
+
+#    res = combPdf.fitTo(data_obs,ROOT.RooFit.Minimizer("Minuit2","minimize"),\
+#    ROOT.RooFit.Minos(ROOT.kFALSE),ROOT.RooFit.Hesse(ROOT.kTRUE),\
+#    ROOT.RooFit.SumW2Error(True),\
+#    ROOT.RooFit.Save(),\
+#    ROOT.RooFit.Range(115.,135.))
     
-    return sigPdf
+    combPlot = var.frame(ROOT.RooFit.Title("Fit"),ROOT.RooFit.Bins(64),ROOT.RooFit.Range(110,140))
+#    combPdf.plotOn(combPlot)
+    
+    combPdf.getVariables().Print("v")
+    
+    combPdf.plotOn(combPlot,ROOT.RooFit.Components(ROOT.RooArgSet(bkg)),ROOT.RooFit.LineStyle(2))
+#    combPdf.plotOn(combPlot,ROOT.RooFit.Components(sig),ROOT.RooFit.LineStyle(2),ROOT.RooFit.LineColor(2))
+    
+#    combPlot.Draw()
+    
+    t1, t2, t3 = style.cmslabel(2)
+    t1.Draw()
+    t3.Draw()
+    t = style.channel(chan)
+    t.Draw()
+    
+    leg = ROOT.TLegend(0.65,0.65,0.88,0.83)
+    leg.SetFillColor(253)
+    leg.SetBorderSize(0)
+#    leg.AddEntry(combPlot.findObject('sig'),'Data','p')
+#    leg.AddEntry(combPlot.findObject(bestGaus),'Gaus('+str(sigPdfGausResult[1]+1)+')','l')
+    leg.Draw()
+
+    c1.Print('pics/combModel.eps')
+    
+    return combPdf
 
 if __name__ == '__main__':
     
@@ -275,7 +317,9 @@ if __name__ == '__main__':
                 
     ROOT.gROOT.SetBatch()
     
-    chan = options.channel
+    chan = options.channel    
+        
+    dofit = options.fit.split(',')
     
     pstyle = style.SetPlotStyle(2)
 
@@ -293,13 +337,16 @@ if __name__ == '__main__':
     sig = w.data("sig")
     data_obs = w.data("data_obs")
 
-#    if int(options.nmax) > 0:
-#        print 'Reduce input stats to '+options.nmax+' for the signal model'
-#        sig = sig.reduce('EventId < '+options.nmax)
-#    sig = sig.reduce(ROOT.RooArgSet(DiPhoMassFit))
+    if int(options.nmax) > 0:
+        print 'Reduce input stats to '+options.nmax+' for the signal model'
+        sig = sig.reduce('EventId < '+options.nmax)
+    sig = sig.reduce(ROOT.RooArgSet(DiPhoMassFit))
     
-#    bkgPdf = bkgModel(DiPhoMassFit,data_obs)    
-    sigPdf = sigModel(DiPhoMassFit,sig)
+    if 'bkg' in dofit: bkgPdf = bkgModel(DiPhoMassFit,data_obs)    
+    if 'sig' in dofit: sigPdf = sigModel(DiPhoMassFit,sig)
+    if 'bkg' and 'sig' in dofit:
+        combPdf = combModel(DiPhoMassFit,bkgPdf,sigPdf,data_obs)
+        
 
     
     

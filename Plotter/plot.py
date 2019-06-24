@@ -129,10 +129,12 @@ if __name__ == '__main__':
 
     tfit = {}
 
+    EventId = array( 'i', [ -777 ] )
     DiPhoMassFit, WeightFit = (array( 'd', [ -777 ] ) for _ in range(2))
 
     for p in ['sig','bkg','data_obs']:
         tfit[p] = ROOT.TTree(p,p)
+        tfit[p].Branch("EventId",EventId,"EventId/I");
         tfit[p].Branch("DiPhoMassFit",DiPhoMassFit,"DiPhoMassFit/D");
         tfit[p].Branch("WeightFit",WeightFit,"WeightFit/D");
 
@@ -152,6 +154,7 @@ if __name__ == '__main__':
         for s in tree[p]:
             sys.stdout.write(' '+str(tree[p][s][0].GetEntries()))
             sys.stdout.flush()
+            EventId[0] = 0
             for ev in tree[p][s][0]:
 
                 w = eval('ev.evWeight')
@@ -187,7 +190,9 @@ if __name__ == '__main__':
                 if p in ['data']:
                     tfit['data_obs'].Fill()
                 elif p in ['StHut','StHct','TtHut','TtHct']:
+#                    if EventId[0] < 2000: #fixme
                     tfit['sig'].Fill()
+                    EventId[0] += 1
                 else:
                     tfit['bkg'].Fill()
 
