@@ -168,36 +168,36 @@ if __name__ == '__main__':
                 t.phoSubLeadIDMVA[0] = Photons[1].IDMVA
                 
                 if nJetSelected > 0:
-                    
-                    t.jet1Pt = Jets[0].pt
-                    t.jet1Eta = Jets[0].eta
-                    t.jet1Phi = Jets[0].phi
-                    t.jet1E = Jets[0].E
-                    t.jet1Btag = Jets[0].btag
+
+                    t.jet1Pt[0] = Jets[0].pt
+                    t.jet1Eta[0] = Jets[0].eta
+                    t.jet1Phi[0] = Jets[0].phi
+                    t.jet1E[0] = Jets[0].E
+                    t.jet1Btag[0] = Jets[0].btag
                     
                 if nJetSelected > 1:
                     
-                    t.jet2Pt = Jets[1].pt
-                    t.jet2Eta = Jets[1].eta
-                    t.jet2Phi = Jets[1].phi
-                    t.jet2E = Jets[1].E
-                    t.jet2Btag = Jets[1].btag
+                    t.jet2Pt[0] = Jets[1].pt
+                    t.jet2Eta[0] = Jets[1].eta
+                    t.jet2Phi[0] = Jets[1].phi
+                    t.jet2E[0] = Jets[1].E
+                    t.jet2Btag[0] = Jets[1].btag
         
             if nJetSelected > 2:
                     
-                tHad.jet3Pt = Jets[2].pt
-                tHad.jet3Eta = Jets[2].eta
-                tHad.jet3Phi = Jets[2].phi
-                tHad.jet3E = Jets[2].E
-                tHad.jet3Btag = Jets[2].btag
+                tHad.jet3Pt[0] = Jets[2].pt
+                tHad.jet3Eta[0] = Jets[2].eta
+                tHad.jet3Phi[0] = Jets[2].phi
+                tHad.jet3E[0] = Jets[2].E
+                tHad.jet3Btag[0] = Jets[2].btag
 
             if nJetSelected > 3:
             
-                tHad.jet4Pt = Jets[3].pt
-                tHad.jet4Eta = Jets[3].eta
-                tHad.jet4Phi = Jets[3].phi
-                tHad.jet4E = Jets[3].E
-                tHad.jet4Btag = Jets[3].btag
+                tHad.jet4Pt[0] = Jets[3].pt
+                tHad.jet4Eta[0] = Jets[3].eta
+                tHad.jet4Phi[0] = Jets[3].phi
+                tHad.jet4E[0] = Jets[3].E
+                tHad.jet4Btag[0] = Jets[3].btag
             
             if nLepSelected >= 1:
 
