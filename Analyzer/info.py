@@ -14,7 +14,7 @@ def main(argv = None):
     usage = "usage: %prog [options]\n Script to submit Analyzer jobs to batch"
 
     parser = OptionParser(usage)
-    parser.add_option("-d","--dir",default="trees/jobs",help="input directory with processed ntuples [default: %default]")
+    parser.add_option("-d","--dir",default="jobs/",help="input directory with processed ntuples [default: %default]")
     parser.add_option("-o","--output",default="info.xml",help="output file name [default: %default]")
 
     (options, args) = parser.parse_args(sys.argv[1:])
