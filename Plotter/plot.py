@@ -111,15 +111,14 @@ if __name__ == '__main__':
                     elif h == 'topRecLH': hd['topRecLH'+cstr+sstr] = [{'xtit':'-2 log(P)','nb':30,'xmin':0.,'xmax':3.,'ytit':'Events'}]
                     elif h == 'metPt': hd['metPt'+cstr+sstr] = [{'xtit':'Missing transverse momentum [GeV]','nb':30,'xmin':0.,'xmax':200.,'ytit':'Events'}]
                     elif h == 'evNVtx' : hd['evNVtx'+cstr+sstr] = [{'xtit':'Number of reconstructed vertices','nb':30,'xmin':0.,'xmax':60,'ytit':'Events'}]
-                    #elif h == 'jet1Pt' : hd['jet1Pt'+cstr+sstr] = [{'xtit':'Jet 1 pT [GeV]','nb':30,'xmin':0.,'xmax':60,'ytit':'Events'}]
-                    #elif h == 'jet2Pt' : hd['jet2Pt'+cstr+sstr] = [{'xtit':'Jet 2 pT [GeV]','nb':30,'xmin':0.,'xmax':60,'ytit':'Events'}]
-                    #elif h == 'jet1Eta' : hd['jet1Eta'+cstr+sstr] = [{'xtit':'Jet 1 #eta','nb':30,'xmin':0.,'xmax':60,'ytit':'Events'}]
-                    #elif h == 'jet2Eta' : hd['jet2Eta'+cstr+sstr] = [{'xtit':'Jet 2 #eta','nb':30,'xmin':0.,'xmax':60,'ytit':'Events'}]
-                    #elif h == 'jet1deltaPho' : hd['jet1deltaRPho'+cstr+sstr] = [{'xtit':'Jet 1 #Delta R Jet/Photon','nb':30,'xmin':0.,'xmax':60,'ytit':'Events'}]
-                    #elif h == 'jet1deltaLep' : hd['jet1deltaRLep'+cstr+sstr] = [{'xtit':'Jet 1 #Delta R Jet/Lepton','nb':30,'xmin':0.,'xmax':60,'ytit':'Events'}]
-                    #elif h == 'jet2Eta' : hd['jet2Eta'+cstr+sstr] = [{'xtit':'Jet 2 #eta','nb':30,'xmin':0.,'xmax':60,'ytit':'Events'}]
-                    #elif h == 'jet2deltaPho' : hd['jet2deltaRPho'+cstr+sstr] = [{'xtit':'Jet 2 #Delta R Jet/Photon','nb':30,'xmin':0.,'xmax':60,'ytit':'Events'}]
-                    #elif h == 'jet2deltaLep' : hd['jet2deltaRLep'+cstr+sstr] = [{'xtit':'Jet 2 #Delta R Jet/Lepton','nb':30,'xmin':0.,'xmax':60,'ytit':'Events'}]
+                    elif h == 'jet1Pt' : hd['jet1Pt'+cstr+sstr] = [{'xtit':'Jet 1 pT [GeV]','nb':30,'xmin':0.,'xmax':200,'ytit':'Events'}]
+                    elif h == 'jet2Pt' : hd['jet2Pt'+cstr+sstr] = [{'xtit':'Jet 2 pT [GeV]','nb':30,'xmin':0.,'xmax':200,'ytit':'Events'}]
+                    elif h == 'jet1Eta' : hd['jet1Eta'+cstr+sstr] = [{'xtit':'Jet 1 #eta','nb':30,'xmin':-3.,'xmax':3.,'ytit':'Events'}]
+                    elif h == 'jet2Eta' : hd['jet2Eta'+cstr+sstr] = [{'xtit':'Jet 2 #eta','nb':30,'xmin':-3.,'xmax':3.,'ytit':'Events'}]
+                    elif h == 'jet1deltaRPho' : hd['jet1deltaRPho'+cstr+sstr] = [{'xtit':'Jet 1 #Delta R Jet/Photon','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
+                    elif h == 'jet1deltaRLep' : hd['jet1deltaRLep'+cstr+sstr] = [{'xtit':'Jet 1 #Delta R Jet/Lepton','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
+                    elif h == 'jet2deltaRPho' : hd['jet2deltaRPho'+cstr+sstr] = [{'xtit':'Jet 2 #Delta R Jet/Photon','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
+                    elif h == 'jet2deltaRLep' : hd['jet2deltaRLep'+cstr+sstr] = [{'xtit':'Jet 2 #Delta R Jet/Lepton','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
 
 
                     else:
@@ -162,7 +161,11 @@ if __name__ == '__main__':
                 mgg = eval('ev.diPhoMass')
                 phoLeadIDMVA = eval('ev.phoLeadIDMVA')
                 phoSubLeadIDMVA = eval('ev.phoSubLeadIDMVA')
+                phoLeadpT = eval('ev.phoLeadpT')
+                phoSubLeadpT = eval('ev.phoSubLeadpT')
+
                 nVtx = eval('ev.evNVtx')
+
 
                 '''if isLep:
                     if phoLeadIDMVA < -0.4 or phoSubLeadIDMVA < -0.4: continue
