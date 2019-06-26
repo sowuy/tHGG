@@ -171,7 +171,7 @@ if __name__ == '__main__':
                     if phoLeadIDMVA < -0.4 or phoSubLeadIDMVA < -0.4: continue
                 else:
                     if phoLeadIDMVA < 0. or phoSubLeadIDMVA < 0.: continue
-
+                '''
                 if mgg < 100 or mgg > 180: continue
 
                 if options.blind == '1' and p not in ['StHut','StHct','TtHut','TtHct']:
@@ -180,7 +180,7 @@ if __name__ == '__main__':
                 elif options.blind == '2' and p in ['data']:
                     if mgg > 120 and mgg < 130:
                         continue
-'''
+
                 if p != 'data': w = w * c.lumi / (tree[p][s][2]/tree[p][s][1])
 
                 if math.fabs(w) > 1000 and p in ['Others']: continue # manually remove very large weights
