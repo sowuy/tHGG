@@ -25,7 +25,6 @@ def main(argv = None):
     parser.add_option("-o","--output",default="model.root",help="output file name [default: %default]")
     parser.add_option("-p","--pics",default="pics",help="output directory with pictures [default: %default]")
     parser.add_option("-c","--channel",default="leptonic",help="channel name [default: %default]")
-    parser.add_option("-f","--fit",default="bkg",help="fit mode [default: %default]")
     parser.add_option("-n","--nmax",default=-1,help="maximum number of entries to be used for signal model [default: %default]")
     
     (options, args) = parser.parse_args(sys.argv[1:])
@@ -103,8 +102,10 @@ def makePdf(var, func, ord, par, gaus=None, dm=None, mean=None, sigma=None, mH=N
     
     return pdf
 
-def bkgModel(var, data_obs):
+def makeModel(var, data_obs, sig):
 
+    # Derive background pdf
+    
     dataPdf = {}
     dataPdfPar = {}
     
@@ -148,7 +149,7 @@ def bkgModel(var, data_obs):
         pdf[0].plotOn(dataPlot,ROOT.RooFit.LineColor(ROOT.kBlue),ROOT.RooFit.Name(pdf[0].GetName()))
         dataPlot.GetXaxis().SetTitle('Diphoton invariant mass [GeV]')
 
-    bestPdf = dataPdfFinal[0]
+    bestDataPdf = dataPdfFinal[0]
         
     c1 = ROOT.TCanvas("c1","c1",650,500)
 
@@ -167,12 +168,12 @@ def bkgModel(var, data_obs):
     leg.AddEntry(dataPlot.findObject(bestBernstein),'Bernstein('+str(dataPdfBernstein[1])+')','l')
     leg.Draw()
 
-    c1.Print('pics/bkgModel.eps')
+#    param = bestDataPdf[0].getParameters(ROOT.RooArgSet())
     
-    return bestPdf[0]
+    c1.Print('pics/bkgModel.eps')
 
-def sigModel(var, sig):
-
+    # Derive signal pdf
+    
     sigPdf = {}
     sigPdfPar = {}
     sigPdfGaus = {}
@@ -247,7 +248,7 @@ def sigModel(var, sig):
         pdf[0].plotOn(sigPlot,ROOT.RooFit.LineColor(ROOT.kBlue),ROOT.RooFit.Name(pdf[0].GetName()))
         sigPlot.GetXaxis().SetTitle('Diphoton invariant mass [GeV]')
         
-    bestPdf = sigPdfFinal[0]
+    bestSigPdf = sigPdfFinal[0]
         
     c1 = ROOT.TCanvas("c1","c1",650,500)
 
@@ -266,50 +267,78 @@ def sigModel(var, sig):
     leg.AddEntry(sigPlot.findObject(bestGaus),'Gaus('+str(sigPdfGausResult[1]+1)+')','l')
     leg.Draw()
 
+#    param = bestSigPdf[0].getParameters(ROOT.RooArgSet())
+    
+#    iter = param.createIterator()
+#    while True:
+#        arg = iter.Next()
+#        if arg == None: break
+#        name = arg.GetName()
+#        print = param[name].getVal()
+    
     c1.Print('pics/sigModel.eps')
 
-    return bestPdf[0]
-
-def combModel(var, bkg, sig, data_obs):
-
+    # Combine sig+bkg pdfs
+    
     c1 = ROOT.TCanvas("c1","c1",650,500)
 
-    fsig = ROOT.RooRealVar("fsig","signal fraction",0.5,0.,1.)
+    bkg = bestDataPdf[0]
+    sig = bestSigPdf[0]    
+    
+    fsig = ROOT.RooRealVar("fsig","signal fraction",0.001,0.,1.)
     combPdf = ROOT.RooAddPdf("comb","comb",ROOT.RooArgList(sig,bkg),ROOT.RooArgList(fsig))
 
+    param = combPdf.getParameters(ROOT.RooArgSet())
 
-#    res = combPdf.fitTo(data_obs,ROOT.RooFit.Minimizer("Minuit2","minimize"),\
-#    ROOT.RooFit.Minos(ROOT.kFALSE),ROOT.RooFit.Hesse(ROOT.kTRUE),\
-#    ROOT.RooFit.SumW2Error(True),\
-#    ROOT.RooFit.Save(),\
-#    ROOT.RooFit.Range(115.,135.))
+    iter = param.createIterator()
+    while True:
+        arg = iter.Next()
+        if arg == None: break
+        name = arg.GetName()
+        if 'Gaus_dm' in name: param[name].setConstant(True)
+#        print name, param[name].getVal()
     
-    combPlot = var.frame(ROOT.RooFit.Title("Fit"),ROOT.RooFit.Bins(64),ROOT.RooFit.Range(110,140))
-#    combPdf.plotOn(combPlot)
+    combPlot = var.frame(ROOT.RooFit.Title("Fit"),ROOT.RooFit.Bins(16))
+
+    data_obs.plotOn(combPlot,ROOT.RooFit.DataError(ROOT.RooAbsData.SumW2),ROOT.RooFit.MarkerStyle(20),ROOT.RooFit.Name('data_obs'),ROOT.RooFit.XErrorSize(0))
+
+    sig.plotOn(combPlot,ROOT.RooFit.Normalization(0.1),ROOT.RooFit.LineColor(2))
     
-    combPdf.getVariables().Print("v")
+    res = combPdf.fitTo(data_obs,ROOT.RooFit.Minimizer("Minuit2","minimize"),\
+    ROOT.RooFit.Minos(ROOT.kFALSE),ROOT.RooFit.Hesse(ROOT.kTRUE),\
+    ROOT.RooFit.SumW2Error(True),\
+    ROOT.RooFit.Save())
     
-    combPdf.plotOn(combPlot,ROOT.RooFit.Components(ROOT.RooArgSet(bkg)),ROOT.RooFit.LineStyle(2))
-#    combPdf.plotOn(combPlot,ROOT.RooFit.Components(sig),ROOT.RooFit.LineStyle(2),ROOT.RooFit.LineColor(2))
+    bkgComponent = ROOT.RooArgSet(bkg)
+    sigComponent = ROOT.RooArgSet(sig)
     
-#    combPlot.Draw()
+    combPdf.plotOn(combPlot,ROOT.RooFit.Components(bkgComponent),ROOT.RooFit.LineStyle(2))
+    combPdf.plotOn(combPlot,ROOT.RooFit.Components(sigComponent),ROOT.RooFit.LineStyle(2),ROOT.RooFit.LineColor(2))
+    combPdf.plotOn(combPlot)
+
+    combPlot.GetXaxis().SetTitle('Diphoton invariant mass [GeV]')
+
+    combPlot.Draw()
     
     t1, t2, t3 = style.cmslabel(2)
     t1.Draw()
     t3.Draw()
     t = style.channel(chan)
     t.Draw()
+
+    combPlot.Print('v')
     
     leg = ROOT.TLegend(0.65,0.65,0.88,0.83)
     leg.SetFillColor(253)
     leg.SetBorderSize(0)
-#    leg.AddEntry(combPlot.findObject('sig'),'Data','p')
-#    leg.AddEntry(combPlot.findObject(bestGaus),'Gaus('+str(sigPdfGausResult[1]+1)+')','l')
+    leg.AddEntry(combPlot.findObject('data_obs'),'Data','p')
+    leg.AddEntry(combPlot.findObject('comb_Norm[DiPhoMassFit]'),'Combined fit','l')
+    leg.AddEntry(combPlot.findObject('comb_Norm[DiPhoMassFit]_Comp['+bestBernstein+']'),'Background','l')
+    leg.AddEntry(combPlot.findObject('comb_Norm[DiPhoMassFit]_Comp['+bestGaus+']'),'Signal','l')
+    leg.AddEntry(combPlot.findObject(bestGaus+'_Norm[DiPhoMassFit]_Range[fit_nll_'+bestGaus+'_sig]_NormRange[fit_nll_'+bestGaus+'_sig]'),'Signal fit','l')
     leg.Draw()
 
     c1.Print('pics/combModel.eps')
-    
-    return combPdf
 
 if __name__ == '__main__':
     
@@ -318,8 +347,6 @@ if __name__ == '__main__':
     ROOT.gROOT.SetBatch()
     
     chan = options.channel    
-        
-    dofit = options.fit.split(',')
     
     pstyle = style.SetPlotStyle(2)
 
@@ -342,10 +369,7 @@ if __name__ == '__main__':
         sig = sig.reduce('EventId < '+options.nmax)
     sig = sig.reduce(ROOT.RooArgSet(DiPhoMassFit))
     
-    if 'bkg' in dofit: bkgPdf = bkgModel(DiPhoMassFit,data_obs)    
-    if 'sig' in dofit: sigPdf = sigModel(DiPhoMassFit,sig)
-    if 'bkg' and 'sig' in dofit:
-        combPdf = combModel(DiPhoMassFit,bkgPdf,sigPdf,data_obs)
+    makeModel(DiPhoMassFit,data_obs,sig)
         
 
     
