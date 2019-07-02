@@ -159,6 +159,7 @@ if __name__ == '__main__':
                 w = eval('ev.evWeight')
                 wb = eval('ev.evWeightb')
                 mgg = eval('ev.diPhoMass')
+                diPhoMVA = eval('ev.diPhoMVA')
                 phoLeadIDMVA = eval('ev.phoLeadIDMVA')
                 phoSubLeadIDMVA = eval('ev.phoSubLeadIDMVA')
                 phoLeadpT = eval('ev.phoLeadpT')
@@ -166,11 +167,12 @@ if __name__ == '__main__':
 
                 nVtx = eval('ev.evNVtx')
 
-
-                '''if isLep:
+                if isLep:
                     if phoLeadIDMVA < -0.4 or phoSubLeadIDMVA < -0.4: continue
+                    if diPhoMVA < 0.: continue
                 else:
                     if phoLeadIDMVA < 0. or phoSubLeadIDMVA < 0.: continue
+                    if diPhoMVA < 0.8: continue
 
                 if mgg < 100 or mgg > 180: continue
 
@@ -180,13 +182,13 @@ if __name__ == '__main__':
                 elif options.blind == '2' and p in ['data']:
                     if mgg > 120 and mgg < 130:
                         continue
-'''
+
                 if p != 'data': w = w * c.lumi / (tree[p][s][2]/tree[p][s][1])
 
-                if math.fabs(w) > 1000 and p in ['Others']: continue # manually remove very large weights
+                if math.fabs(w) > 1000 and p in ['TT','QCD']: continue # manually remove very large weights
 
                 nBJet = eval('ev.evNBMJet')
-                #if nBJet < 1: continue
+                if nBJet < 1: continue
 
                 DiPhoMassFit[0] = eval('ev.diPhoMass')
                 WeightFit[0] = w
