@@ -174,6 +174,7 @@ if __name__ == '__main__':
                     if phoLeadIDMVA < 0. or phoSubLeadIDMVA < 0.: continue
                     if diPhoMVA < 0.8: continue
 
+
                 if mgg < 100 or mgg > 180: continue
 
                 if options.blind == '1' and p not in ['StHut','StHct','TtHut','TtHct']:

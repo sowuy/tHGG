@@ -10,6 +10,7 @@ class event():
     def __init__(self, ev, isdata):
 
         self.nVtx = ev.__getattr__("EvtInfo.NVtx")
+        self.nPu = ev.__getattr__("EvtInfo.NPu")
         self.weight = ev.__getattr__("EvtInfo.genweight")
         if isdata == "1": self.weight = 1
         if self.weight > 0:
@@ -20,7 +21,11 @@ class event():
 
         self.diPhoMass = ev.__getattr__("DiPhoInfo.mass")
         self.diPhoPt = ev.__getattr__("DiPhoInfo.pt")
-        self.diPhoMVA = ev.__getattr__("DiPhoInfo.diphotonMVA")
+        #self.diPhoMVA = ev.__getattr__("DiPhoInfo.diphotonMVA")
+
+    def puReweightingFactor(self,h_mcpu):
+        PU_reweighting_factor = h_mcpu.GetBinContent(self.nPu)
+        return PU_reweighting_factor
 
 class met():
 
@@ -87,6 +92,12 @@ class photon():
             self.IDMVA = ev.__getattr__("DiPhoInfo.leadIDMVA")
             self.isGenMatched = ev.__getattr__("DiPhoInfo.leadGenMatch")
 
+            self.px = self.pt*math.cos(self.phi)
+            self.py = self.pt*math.sin(self.phi)
+            self.pz = self.pt*math.sinh(self.eta)
+            self.LorentzVector = ROOT.TLorentzVector()
+            self.LorentzVector.SetPxPyPzE(self.px,self.py,self.pz,math.sqrt(self.px**2+self.py**2+self.pz**2))
+
             passPt = bool(self.pt > self.diPhoMass/2)
 
 #            passID = bool(ev.__getattr__("DiPhoInfo.leadIDMVA") > -0.4)
@@ -101,6 +112,12 @@ class photon():
             self.IDMVA = ev.__getattr__("DiPhoInfo.subleadIDMVA")
             self.isGenMatched = ev.__getattr__("DiPhoInfo.subleadGenMatch")
 
+            self.px = self.pt*math.cos(self.phi)
+            self.py = self.pt*math.sin(self.phi)
+            self.pz = self.pt*math.sinh(self.eta)
+            self.LorentzVector = ROOT.TLorentzVector()
+            self.LorentzVector.SetPxPyPzE(self.px,self.py,self.pz,math.sqrt(self.px**2+self.py**2+self.pz**2))
+
             passPt = bool(self.pt > self.diPhoMass/4)
 
 #            passID = bool(ev.__getattr__("DiPhoInfo.subleadIDMVA") > -0.4)
@@ -110,6 +127,20 @@ class photon():
         self.px = self.pt*math.cos(self.phi)
         self.py = self.pt*math.sin(self.phi)
         self.pz = self.pt*math.sinh(self.eta)
+
+class higgs():
+    def __init__(self, leadPho, subLeadPho):
+       self.LorentzVector = ROOT.TLorentzVector()
+       self.LorentzVector = leadPho.LorentzVector + subLeadPho.LorentzVector
+       self.pt = self.LorentzVector.Pt()
+       self.E = self.LorentzVector.E()
+       self.eta = self.LorentzVector.Eta()
+       self.phi = self.LorentzVector.Phi()
+       self.px = self.LorentzVector.Px()
+       self.py = self.LorentzVector.Py()
+       self.pz = self.LorentzVector.Pz()
+
+
 
 class lepton():
 
