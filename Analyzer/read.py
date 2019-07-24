@@ -25,7 +25,6 @@ def main(argv = None):
 
     parser = OptionParser(usage)
     parser.add_option("-s","--sample",default="sample",help="input sample [default: %default]")
-    parser.add_option("-y","--yieldFile",default="yieldFile.txt",help="output yield file [default: %default]")
     parser.add_option("-x","--xml",default="samples.xml",help="input xml configuration [default: %default]")
     parser.add_option("-p","--pdf",default="pdf.root",help="input file with pdfs [default: %default]")
     parser.add_option("-r","--run",default="",help="special run mode [default: %default]")
@@ -73,7 +72,6 @@ if __name__ == '__main__':
     for f in files: tr.Add(f)
 
 
-    sys.stdout= open(options.yieldFile,'w')
     nEntries = tr.GetEntries()
     print 'Number of events:', nEntries
 
@@ -117,6 +115,8 @@ if __name__ == '__main__':
             if p.passed:
                 Photons.append(p)
 
+        nPho = len(Photons)
+        if nPho < 2: continue
 
         nElec = ev.__getattr__("ElecInfo.Size")
         for i in range(int(nElec)):
@@ -152,9 +152,6 @@ if __name__ == '__main__':
 
         nLepSelected = len(Leptons)
 
-        nPho = len(Photons)
-
-        if nPho < 2: continue
         higgs = obj.higgs(Photons[0],Photons[1])
 
         #if nJetBTagSelected == 0: continue
@@ -174,7 +171,7 @@ if __name__ == '__main__':
 
                 t.diPhoMass[0] = Event.diPhoMass
                 t.diPhoPt[0] = Event.diPhoPt
-                #t.diPhoMVA[0] = Event.diPhoMVA
+                t.diPhoMVA[0] = Event.diPhoMVA
 
                 t.phoLeadIsGenMatched[0] = Photons[0].isGenMatched
                 t.phoLeadIDMVA[0] = Photons[0].IDMVA
@@ -260,14 +257,14 @@ if __name__ == '__main__':
 
                 if nJetSelected >= 1:
 
-                    if options.toprec:
+                    '''if options.toprec:
 
                         lh, nuPz, mW, mTop = trec.calcLep(Leptons[0],Met,JetsBTagMedium[0])
 
                         tLep.topRecLH[0] = lh
                         tLep.topRecNuPz[0] = nuPz
                         tLep.topRecMW[0] = mW
-                        tLep.topRecMTop[0] = mTop
+                        tLep.topRecMTop[0] = mTop'''
 
                     tLep.metPt[0] = Met.pt
                     tLep.metPhi[0] = Met.phi
@@ -289,15 +286,4 @@ if __name__ == '__main__':
 
 
 
-    print "Before renormalization : "
-    print "Event :",counter
-    print 'Entries in control region : ', entriesControlRegion
-    print 'Entries with at leat one lepton : ',entriesAtLeastOneLep
-    print 'Entries with at leat one jet : ', entriesAtLeastOneJet
-    print 'Entries with at leat one jet selected : ', entriesAtLeastOneJetSelected
-    print "After renormalization : "
-    print "Event :",sum(counter_wNorm)
-    print 'Entries in control region : ', sum(entriesControlRegion_wNorm)
-    print 'Entries with at leat one lepton : ',sum(entriesAtLeastOneLep_wNorm)
-    print 'Entries with at leat one jet : ', sum(entriesAtLeastOneJet_wNorm)
-    print 'Entries with at leat one jet selected : ', sum(entriesAtLeastOneJetSelected_wNorm)
+

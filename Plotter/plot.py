@@ -11,6 +11,7 @@ import ROOT
 ROOT.PyConfig.IgnoreCommandLineOptions = True
 from optparse import OptionParser
 
+
 def main(argv = None):
 
     if argv == None:
@@ -25,6 +26,7 @@ def main(argv = None):
     parser.add_option("-x","--xml",default="../Analyzer/info.xml",help="input xml configuration [default: %default]")
     parser.add_option("-b","--blind",default="1",help="blind analysis [default: %default]")
     parser.add_option("-s","--selection",default="",help="additional selection [default: %default]")
+    parser.add_option("-p","--puReweighting",default=False,help="Pile up reweighting [default: %default]")
 
     (options, args) = parser.parse_args(sys.argv[1:])
 
@@ -68,6 +70,7 @@ if __name__ == '__main__':
     hist = {}
     hinfo = {}
 
+
     if not isLep:
         hinfo['All'] = hhad
     else:
@@ -93,7 +96,7 @@ if __name__ == '__main__':
                 for s, hd in enumerate(hl):
                     sstr = sel[s]
                     if sstr != "": sstr = '_'+sstr
-                    if h == 'diPhoMass': hd['diPhoMass'+cstr+sstr] = [{'xtit':'Diphoton invariant mass [GeV]','nb':8,'xmin':100.,'xmax':180.,'ytit':'Events'}]
+                    if h == 'diPhoMass': hd['diPhoMass'+cstr+sstr] = [{'xtit':'Diphoton invariant mass [GeV]','nb':16,'xmin':100.,'xmax':180.,'ytit':'Events'}]
                     elif h == 'diPhoMVA': hd['diPhoMVA'+cstr+sstr] = [{'xtit':'Diphoton MVA discriminant','nb':30,'xmin':-1.,'xmax':1.,'ytit':'Events'}]
                     elif h == 'diPhoPt': hd['diPhoPt'+cstr+sstr] = [{'xtit':'Diphoton pT [GeV]','nb':30,'xmin':0,'xmax':720.,'ytit':'Events'}]
                     elif h == 'phoLeadIDMVA': hd['phoLeadIDMVA'+cstr+sstr] = [{'xtit':'Leading photon MVA discriminant','nb':30,'xmin':-1.,'xmax':1.,'ytit':'Events'}]
@@ -106,7 +109,9 @@ if __name__ == '__main__':
                     elif h == 'lepPhMllMin': hd['lepPhMllMin'+cstr+sstr] = [{'xtit':'Min m_{Z}-m(l,#gamma))','nb':30,'xmin':0.,'xmax':100.,'ytit':'Events'}]
                     elif h == 'lepPt': hd['lepPt'+cstr+sstr] = [{'xtit':'p_{T}','nb':30,'xmin':0.,'xmax':300.,'ytit':'Events'}]
                     elif h == 'lepEta': hd['lepEta'+cstr+sstr] = [{'xtit':'#eta','nb':30,'xmin':-3.,'xmax':3.,'ytit':'Events'}]
-                    elif h == 'lepDeltaRPho': hd['lepDeltaRPho'+cstr+sstr] = [{'xtit':'#Delta R Lepton/Photon','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
+                    elif h == 'lepDeltaRLeadPho': hd['lepDeltaRLeadPho'+cstr+sstr] = [{'xtit':'#Delta R Lepton/Lead Photon','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
+                    elif h == 'lepDeltaRSubLeadPho': hd['lepDeltaRSubLeadPho'+cstr+sstr] = [{'xtit':'#Delta R Lepton/SubLead Photon','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
+                    elif h == 'lepDeltaRHiggs': hd['lepDeltaRHiggs'+cstr+sstr] = [{'xtit':'#Delta R Lepton/Higgs','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
                     elif h == 'topRecMTop': hd['topRecMTop'+cstr+sstr] = [{'xtit':'Reconstructed top mass [GeV]','nb':30,'xmin':0.,'xmax':600.,'ytit':'Events'}]
                     elif h == 'topRecLH': hd['topRecLH'+cstr+sstr] = [{'xtit':'-2 log(P)','nb':30,'xmin':0.,'xmax':3.,'ytit':'Events'}]
                     elif h == 'metPt': hd['metPt'+cstr+sstr] = [{'xtit':'Missing transverse momentum [GeV]','nb':30,'xmin':0.,'xmax':200.,'ytit':'Events'}]
@@ -115,11 +120,14 @@ if __name__ == '__main__':
                     elif h == 'jet2Pt' : hd['jet2Pt'+cstr+sstr] = [{'xtit':'Jet 2 pT [GeV]','nb':30,'xmin':0.,'xmax':200,'ytit':'Events'}]
                     elif h == 'jet1Eta' : hd['jet1Eta'+cstr+sstr] = [{'xtit':'Jet 1 #eta','nb':30,'xmin':-3.,'xmax':3.,'ytit':'Events'}]
                     elif h == 'jet2Eta' : hd['jet2Eta'+cstr+sstr] = [{'xtit':'Jet 2 #eta','nb':30,'xmin':-3.,'xmax':3.,'ytit':'Events'}]
-                    elif h == 'jet1deltaRPho' : hd['jet1deltaRPho'+cstr+sstr] = [{'xtit':'Jet 1 #Delta R Jet/Photon','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
+                    elif h == 'jet1deltaRLeadPho' : hd['jet1deltaRLeadPho'+cstr+sstr] = [{'xtit':'Jet 1 #Delta R Jet/Lead Photon','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
+                    elif h == 'jet1deltaRSubLeadPho' : hd['jet1deltaRSubLeadPho'+cstr+sstr] = [{'xtit':'Jet 1 #Delta R Jet/SubLead Photon','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
                     elif h == 'jet1deltaRLep' : hd['jet1deltaRLep'+cstr+sstr] = [{'xtit':'Jet 1 #Delta R Jet/Lepton','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
-                    elif h == 'jet2deltaRPho' : hd['jet2deltaRPho'+cstr+sstr] = [{'xtit':'Jet 2 #Delta R Jet/Photon','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
+                    elif h == 'jet1deltaRHiggs' : hd['jet1deltaRHiggs'+cstr+sstr] = [{'xtit':'Jet 1 #Delta R Jet/Higgs','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
+                    elif h == 'jet2deltaRLeadPho' : hd['jet2deltaRLeadPho'+cstr+sstr] = [{'xtit':'Jet 2 #Delta R Jet/Lead Photon','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
+                    elif h == 'jet2deltaRSubLeadPho' : hd['jet2deltaRSubLeadPho'+cstr+sstr] = [{'xtit':'Jet 2 #Delta R Jet/SubLead Photon','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
                     elif h == 'jet2deltaRLep' : hd['jet2deltaRLep'+cstr+sstr] = [{'xtit':'Jet 2 #Delta R Jet/Lepton','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
-
+                    elif h == 'jet2deltaRHiggs' : hd['jet2deltaRHiggs'+cstr+sstr] = [{'xtit':'Jet 2 #Delta R Jet/Higgs','nb':30,'xmin':0.,'xmax':5.,'ytit':'Events'}]
 
                     else:
                         continue
@@ -156,13 +164,17 @@ if __name__ == '__main__':
             EventId[0] = 0
             for ev in tree[p][s][0]:
 
+
                 w = eval('ev.evWeight')
+                puFactor = eval('ev.evPuFactor')
                 wb = eval('ev.evWeightb')
                 mgg = eval('ev.diPhoMass')
                 phoLeadIDMVA = eval('ev.phoLeadIDMVA')
                 phoSubLeadIDMVA = eval('ev.phoSubLeadIDMVA')
                 phoLeadpT = eval('ev.phoLeadpT')
                 phoSubLeadpT = eval('ev.phoSubLeadpT')
+                nLepSelected = eval('ev.evNLep')
+                nJetSelected = eval('ev.evNJet')
 
                 nVtx = eval('ev.evNVtx')
 
@@ -181,9 +193,14 @@ if __name__ == '__main__':
                     if mgg > 120 and mgg < 130:
                         continue
 
-                if p != 'data': w = w * c.lumi / (tree[p][s][2]/tree[p][s][1])
+                if p != 'data':
+                    w = w * c.lumi / (tree[p][s][2]/tree[p][s][1])
+                    if options.puReweighting :
+                        w = w * puFactor
 
-                if math.fabs(w) > 1000 and p in ['Others']: continue # manually remove very large weights
+                if p in ['StHut','StHct','TtHut','TtHct']: w = w *0.1
+
+                if math.fabs(w) > 1000 and p in ['TT','QCD']: continue # manually remove very large weights
 
                 nBJet = eval('ev.evNBMJet')
                 #if nBJet < 1: continue
@@ -227,6 +244,7 @@ if __name__ == '__main__':
                     br = 'ev.'+vname
                     v = eval(br)
                     hist[p][k].Fill(v,w)
+                    #hist[p][k].Fill(v)
 
         print ': \033[1;32mdone\033[1;m'
 
