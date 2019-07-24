@@ -71,7 +71,7 @@ def makePdf(var, func, ord, par, gaus=None, dm=None, mean=None, sigma=None, mH=N
         
         plist = ROOT.RooArgList()
         for i in range(ord):
-            par.append(ROOT.RooRealVar('p'+str(i),'p'+str(i),1.,0.0,10.0))
+            par.append(ROOT.RooRealVar('p'+str(i),'p'+str(i),1.0,0.0,10.0))
             plist.add(par[i])
 
         pdf = ROOT.RooBernstein(func+str(ord),func+str(ord),var,plist)
@@ -102,7 +102,7 @@ def makePdf(var, func, ord, par, gaus=None, dm=None, mean=None, sigma=None, mH=N
     
     return pdf
 
-def makeModel(var, data_obs, sig):
+def makeModel(var, data_obs, sig, chan):
 
     # Derive background pdf
     
@@ -118,14 +118,22 @@ def makeModel(var, data_obs, sig):
 
     dataPdf = collections.OrderedDict(sorted(dataPdf.items(), key=lambda k: k[0]))
     dataPdfPar = collections.OrderedDict(sorted(dataPdfPar.items(), key=lambda k: k[0]))
-        
+
+    var.setRange('low',100,120)
+    var.setRange('high',130,180)
+    
     llh0 = 10E+10
     pval = 0.05
     ord0 = ordMinBernstein-1
     bestBernstein = ''
     for name, pdf in dataPdf.items():
-        res = dataPdf[name][0].fitTo(data_obs,ROOT.RooFit.Minimizer("Minuit2","minimize"),ROOT.RooFit.Minos(ROOT.kFALSE),ROOT.RooFit.Hesse(ROOT.kTRUE),\
-        ROOT.RooFit.Verbose(ROOT.kFALSE),ROOT.RooFit.Warnings(ROOT.kTRUE),ROOT.RooFit.PrintLevel(-1000),ROOT.RooFit.Save(),ROOT.RooFit.SumW2Error(True))
+        res = dataPdf[name][0].fitTo(data_obs,\
+        ROOT.RooFit.Minimizer("Minuit2","minimize"),\
+        ROOT.RooFit.Minos(ROOT.kFALSE),ROOT.RooFit.Hesse(ROOT.kTRUE),\
+        ROOT.RooFit.PrintLevel(-1000),\
+        ROOT.RooFit.Save(),\
+        ROOT.RooFit.Range("low,high"),\
+        ROOT.RooFit.SumW2Error(ROOT.kTRUE))
         llh = res.minNll()
         chi2 = 2.*(llh0 - llh)
         ord = dataPdf[name][1]
@@ -138,8 +146,13 @@ def makeModel(var, data_obs, sig):
         llh0 = llh
 
     dataPdfBernstein = dataPdf[bestBernstein]
-        
-    dataPlot = var.frame(ROOT.RooFit.Title("Fit"),ROOT.RooFit.Bins(16))
+
+    if chan == 'leptonic':
+        nBins = 32
+    else:
+        nBins = 64
+    
+    dataPlot = var.frame(ROOT.RooFit.Title("Fit"),ROOT.RooFit.Bins(nBins))
     
     dataPdfFinal = [dataPdfBernstein]
     
@@ -298,11 +311,12 @@ def makeModel(var, data_obs, sig):
         if 'Gaus_dm' in name: param[name].setConstant(True)
 #        print name, param[name].getVal()
     
-    combPlot = var.frame(ROOT.RooFit.Title("Fit"),ROOT.RooFit.Bins(16))
+    combPlot = var.frame(ROOT.RooFit.Title("Fit"),ROOT.RooFit.Bins(nBins))
 
     data_obs.plotOn(combPlot,ROOT.RooFit.DataError(ROOT.RooAbsData.SumW2),ROOT.RooFit.MarkerStyle(20),ROOT.RooFit.Name('data_obs'),ROOT.RooFit.XErrorSize(0))
 
-    sig.plotOn(combPlot,ROOT.RooFit.Normalization(0.1),ROOT.RooFit.LineColor(2))
+#    sig.plotOn(combPlot,ROOT.RooFit.Normalization(0.1),ROOT.RooFit.LineColor(2))
+    sig.plotOn(combPlot,ROOT.RooFit.LineColor(2))
     
     res = combPdf.fitTo(data_obs,ROOT.RooFit.Minimizer("Minuit2","minimize"),\
     ROOT.RooFit.Minos(ROOT.kFALSE),ROOT.RooFit.Hesse(ROOT.kTRUE),\
@@ -369,7 +383,7 @@ if __name__ == '__main__':
         sig = sig.reduce('EventId < '+options.nmax)
     sig = sig.reduce(ROOT.RooArgSet(DiPhoMassFit))
     
-    makeModel(DiPhoMassFit,data_obs,sig)
+    makeModel(DiPhoMassFit,data_obs,sig,chan)
         
 
     

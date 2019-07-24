@@ -4,7 +4,7 @@
 #pn="_Elec"
 pn="_All"
 #pn=""
-#sl="_SR2"
+#sl="_SR1"
 sl=""
 ch=leptonic
 #ch=hadronic

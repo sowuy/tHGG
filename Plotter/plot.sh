@@ -10,6 +10,7 @@
 #SBATCH --job-name=Plot
 #
 
+<<<<<<< HEAD
 #names=evNVtx
 chan=leptonic
 #chan=hadronic
@@ -19,6 +20,7 @@ sl=""
 #python plot.py \
 #--names=diPhoMass \
 #--channel=${chan} --blind=2 --selection=${sl}
+
 
 #--names=diPhoMass,diPhoMVA,phoLeadIDMVA,phoSubLeadIDMVA,metPt
 
