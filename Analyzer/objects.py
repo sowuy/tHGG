@@ -24,7 +24,7 @@ class event():
         #self.diPhoMVA = ev.__getattr__("DiPhoInfo.diphotonMVA")
 
     def puReweightingFactor(self,h_mcpu):
-        PU_reweighting_factor = h_mcpu.GetBinContent(self.nPu)
+        PU_reweighting_factor = h_mcpu.GetBinContent(int(self.nPu+1))
         return PU_reweighting_factor
 
 class met():

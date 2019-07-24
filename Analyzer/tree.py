@@ -11,7 +11,7 @@ class tree():
 
         self.lepPt, self.lepEta, self.lepPhi, self.lepE, self.evWeight, self.evWeightb, self.evPuFactor, \
         self.higgsPt,self.higgsEta,self.higgsPhi,\
-        self.diPhoMass,self.diPhoPt, self.phoLeadIDMVA, self.phoSubLeadIDMVA, \
+        self.diPhoMass,self.diPhoPt, self.diPhoMVA, self.phoLeadIDMVA, self.phoSubLeadIDMVA, \
         self.phoLeadpT, self.phoSubLeadpT, self.phoLeadEta, self.phoSubLeadEta, self.phoLeadPhi, self.phoSubLeadPhi, \
         self.lepDeltaRLeadPho,self.jet1deltaRLeadPho,self.jet2deltaRLeadPho,self.jet3deltaRLeadPho,self.jet4deltaRLeadPho, \
         self.lepDeltaRSubLeadPho,self.jet1deltaRSubLeadPho,self.jet2deltaRSubLeadPho,self.jet3deltaRSubLeadPho,self.jet4deltaRSubLeadPho, \
@@ -24,10 +24,10 @@ class tree():
         self.lepDrlpMin, self.lepPhMllMin, \
         self.topRecLH, self.topRecNuPz, self.topRecMW, self.topRecMTop, \
         self.metPt, self.metPhi, self.metPx, self.metPy, self.sumET \
-        = (array( 'f', [ -777 ] ) for _ in range(68))
+        = (array( 'f', [ -777 ] ) for _ in range(69))
 
-        self.lepCharge, self.evNVtx, self.evNVtxCut1, self.evNVtxCut2, self.evNVtxCut3, self.evNVtxCut4, self.nOfEvents, self.evNJet, self.evNLep, self.evNBLJet, self.evNBMJet, self.evNBTJet, \
-        = (array( 'i', [ -777 ] ) for _ in range(12))
+        self.lepCharge, self.evNVtx, self.evNJet, self.evNLep, self.evNBLJet, self.evNBMJet, self.evNBTJet, \
+        = (array( 'i', [ -777 ] ) for _ in range(7))
 
         self.phoLeadIsGenMatched, self.phoSubLeadIsGenMatched, self.lepIsElec \
         = (array( 'b', [ 0 ] ) for _ in range(3))
@@ -38,11 +38,6 @@ class tree():
         self.t = ROOT.TTree( name, 'Analysis tree' )
 
         self.t.Branch( 'evNVtx', self.evNVtx, 'evNVtx/I' )
-        self.t.Branch( 'evNVtxCut1', self.evNVtxCut1, 'evNVtxCut1/I' )
-        self.t.Branch( 'evNVtxCut2', self.evNVtxCut2, 'evNVtxCut2/I' )
-        self.t.Branch( 'evNVtxCut3', self.evNVtxCut3, 'evNVtxCut3/I' )
-        self.t.Branch( 'evNVtxCut4', self.evNVtxCut4, 'evNVtxCut4/I' )
-        #self.t.Branch( 'nOfEvents', self.nOfEvents, 'nOfEvents/I' )
         self.t.Branch( 'evWeight', self.evWeight, 'evWeight/F' )
         self.t.Branch( 'evWeightb', self.evWeightb, 'evWeightb/F' )
         self.t.Branch( 'evPuFactor', self.evPuFactor, 'evPuFactor/F' )
@@ -55,7 +50,7 @@ class tree():
 
         self.t.Branch( 'diPhoMass', self.diPhoMass, 'diPhoMass/F' )
         self.t.Branch( 'diPhoPt', self.diPhoPt, 'diPhoPt/F' )
-        #self.t.Branch( 'diPhoMVA', self.diPhoMVA, 'diPhoMVA/F' )
+        self.t.Branch( 'diPhoMVA', self.diPhoMVA, 'diPhoMVA/F' )
 
         self.t.Branch( 'phoLeadIsGenMatched', self.phoLeadIsGenMatched, 'phoLeadIsGenMatched/O' )
         self.t.Branch( 'phoLeadIDMVA', self.phoLeadIDMVA, 'phoLeadIDMVA/F' )
