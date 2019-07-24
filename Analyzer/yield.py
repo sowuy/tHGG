@@ -67,6 +67,8 @@ if __name__ == '__main__':
     cut2=0
     cut3=0
     cut4=0
+    cut5=0
+    nEntries_wNorm=[]
     cut0_wNorm=[]
     cut1_wNorm=[]
     cut2_wNorm=[]
@@ -84,18 +86,21 @@ if __name__ == '__main__':
         JetsBTagMedium = []
         JetsBTagTight = []
         Leptons = []
+        Electrons = []
+        Muons = []
         Photons = []
         Event = obj.event(ev,isdata)
 
         #ttHJet sample weight
         if isdata=="0":
             w = Event.weight * c.lumi / (409426.09375/0.0016)
-        elif isdata="1":
+        elif isdata=="1":
             w = 1
-
+        nEntries_wNorm.append(w)
         passTrig = Event.trig
         if passTrig == False:
             continue
+
 
         nJet = ev.__getattr__("jets_size")
         for i in range(int(nJet)):
@@ -108,24 +113,44 @@ if __name__ == '__main__':
             if p.passed:
                 Photons.append(p)
 
+        nPho = len(Photons)
+        if nPho < 2: continue
 
         nElec = ev.__getattr__("ElecInfo.Size")
         for i in range(int(nElec)):
             l = obj.lepton(ev,i,True,Jets,Photons)
             if l.passed:
                 Leptons.append(l)
+                Electrons.append(l)
 
         nMuon = ev.__getattr__("MuonInfo.Size")
         for i in range(int(nMuon)):
             l = obj.lepton(ev,i,False,Jets,Photons)
             if l.passed:
                 Leptons.append(l)
+                Muons.append(l)
 
+        Leptons.sort(key=operator.attrgetter('pt'))
+        nLepSelected = len(Leptons)
+
+        indexJ = 1;
         nJets = len(Jets)
         for j in Jets:
+            if ie==9741:
+                #print 'Entry number: ', ie
+                print "(%d) Pt = %6.2f, Eta = %6.2f, Phi = %6.2f, Energy = %6.2f (jet)\n"%(indexJ,j.pt, j.eta, j.phi,j.E)
+                indexJ+=1
+                indexL = 0
+                if nLepSelected>0:
+                    for l in Leptons:
+                        print "(%d) Pt = %6.2f, Eta = %6.2f, Phi = %6.2f, Energy = %6.2f, deltaR = %6.2f (lepton)\n"%(indexL, l.pt, l.eta, l.phi,l.E,ut.deltaR(j.eta,j.phi,l.eta,l.phi)
+ )
+                        indexL+=1
+
             passedOverlapPhotons = func.overlap(j.eta,j.phi,Photons,0.4)[0]
             passedOverlapLeptons = func.overlap(j.eta,j.phi,Leptons,0.4)[0]
-            if not passedOverlapPhotons or not passedOverlapLeptons:
+            #if not passedOverlapPhotons or not passedOverlapLeptons:
+            if not passedOverlapLeptons:
                 Jets.remove(j)
             else:
                 if j.isBTagLoose:
@@ -138,14 +163,12 @@ if __name__ == '__main__':
         nJetSelected = len(Jets)
         nJetBTagSelected = len(JetsBTagMedium)
 
-        Leptons.sort(key=operator.attrgetter('pt'))
         Jets.sort(key=operator.attrgetter('pt'))
 
-        nLepSelected = len(Leptons)
 
         #YIELDS
         cut0+=1
-        #cut0_wNorm.append(w)
+        cut0_wNorm.append(w)
         if nLepSelected>=1:
             cut1+=1
             cut1_wNorm.append(w)
@@ -160,8 +183,7 @@ if __name__ == '__main__':
             cut4_wNorm.append(w)
 
 
-
-    print "Event :",cut0
+    '''print "Event :",cut0
     print 'Entries in control region : ', cut4
     print 'Entries with at leat one lepton : ', cut1
     print 'Entries with at leat one jet : ', cut2
@@ -170,4 +192,4 @@ if __name__ == '__main__':
     print 'Entries in control region : ', sum(cut4_wNorm)
     print 'Entries with at leat one lepton : ',sum(cut1_wNorm)
     print 'Entries with at leat one jet : ', sum(cut2_wNorm)
-    print 'Entries with at leat one jet selected : ', sum(cut3_wNorm)
+    print 'Entries with at leat one jet selected : ', sum(cut3_wNorm)'''
