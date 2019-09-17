@@ -23,7 +23,7 @@ def main(argv = None):
     parser.add_option("-c","--channel",default="leptonic",help="analysis channel [default: %default]")
     parser.add_option("-o","--output",default="pics",help="output directory [default: %default]")
     parser.add_option("-s","--sys",default="",help="systematics list [default: %default]")
-    parser.add_option("-f","--factor",default="1",help="signal scale factor [default: %default]")
+    parser.add_option("-f","--factor",default="0.1",help="signal scale factor [default: %default]")
 
     (options, args) = parser.parse_args(sys.argv[1:])
 
@@ -52,8 +52,14 @@ if __name__ == '__main__':
 
     for v in var:
 
-        c1 = ROOT.TCanvas()
-
+        c1 = ROOT.TCanvas("c1","c1",1000,800)
+        pad1 = ROOT.TPad("pad1", "pad1", 0, 0.25, 1, 1.0)
+        pad1.SetRightMargin(0.25) #Upper and lower pads are joined
+        pad1.SetBottomMargin(0) #Upper and lower pads are joined
+        pad1.SetAttLinePS(ROOT.kBlack,1,2)
+        pad1.Draw()
+        pad1.cd() #pad1 becomes current pad
+        ROOT.gPad.SetTicks(1,1)
         h = {}
         hSysUp = {}
         hSysDown = {}
@@ -72,11 +78,12 @@ if __name__ == '__main__':
                 hSysDown[p].append(fHist.Get('h_'+v+'__'+p))
 
                 func.addbin(hSysUp[p][isys])
-                func.addbin(hSysDown[p][isys]);
+                func.addbin(hSysDown[p][isys])
 
         h['data'].SetMarkerSize(0.7)
         h['data'].SetMarkerColor(1)
         h['data'].SetLineColor(1)
+        hist_tqh_ratio = h['data'].Clone()
 
         for l in ['StHut','StHct']:
             h[l].SetMarkerSize(0)
@@ -145,11 +152,13 @@ if __name__ == '__main__':
         h['GJet'].SetLineStyle(1)
 
         hSM = ROOT.THStack()
+        hSMbis = ROOT.TH1D()
         maxSM = 0
         for p in c.processSort:
             if p == 'data': continue
             if p not in ['StHut','StHct','TtHut','TtHct']:
                 hSM.Add(h[p])
+                hSMbis.Add(h[p])
                 maxSM = maxSM + h[p].GetMaximum()
 
         if sf < 0:
@@ -169,7 +178,7 @@ if __name__ == '__main__':
 
         hSM.Draw('hist')
 
-        hSM.GetXaxis().SetTitle(h['data'].GetXaxis().GetTitle())
+        #hSM.GetXaxis().SetTitle(h['data'].GetXaxis().GetTitle())
         hSM.GetYaxis().SetTitle(h['data'].GetYaxis().GetTitle())
 
         maxData = h['data'].GetMaximum()
@@ -241,8 +250,66 @@ if __name__ == '__main__':
 
         t1, t2, t3 = style.cmslabel(1)
         t1.Draw()
+        t2.Draw()
         t3.Draw()
         t = style.channel(chan)
         t.Draw()
+
+        hist_tqh_ratio.Divide(hSMbis)
+        hSMbis_uncertainty = hSMbis.Clone()
+        nbins = hSMbis.GetNbinsX()
+        for i in range(nbins):
+             mean = hSMbis_uncertainty.GetBinContent(i+1)
+             error = hSMbis_uncertainty.GetBinError(i+1)
+             upper_rel_error = 0. if mean==0 else (mean+error)/mean
+             lower_rel_error = 0 if mean==0 else (mean-error)/mean
+             error_mean = (upper_rel_error + lower_rel_error)/2.
+             error_error = (upper_rel_error - lower_rel_error)/2.
+             hSMbis_uncertainty.SetBinContent(i+1, error_mean)
+             hSMbis_uncertainty.SetBinError(i+1, error_error)
+
+
+        c1.cd()
+        pad2 = ROOT.TPad("pad2", "pad2", 0, 0.05, 1, 0.25)
+        pad2.SetRightMargin(0.25)
+        pad2.SetTopMargin(0.01)
+        pad2.SetBottomMargin(0.4)
+        pad2.SetAttLinePS(ROOT.kBlack,1,2)
+        pad2.SetGridx(1) #Upper and lower pads are joined
+        pad2.Draw()
+        pad2.cd() #pad2 becomes current pad
+        ROOT.gPad.SetTicks(1,1)
+        hist_tqh_ratio.SetMaximum(1.75)
+        hist_tqh_ratio.SetMinimum(0.5)
+        hist_tqh_ratio.SetTitle("")
+        hist_tqh_ratio.SetStats(0) #No statistics on lower plot
+        hist_tqh_ratio.Draw("p,E1")
+        #grMCMerged.SetFillColor(ROOT.kGray)
+        #grMCMerged.SetLineColor(ROOT.kGray)
+        #grMCMerged.Draw("E2,same")
+        hist_tqh_ratio.Draw("p,E1,same")
+        #--------------------
+        hist_tqh_ratio.GetYaxis().SetTitle("data/MC")
+        hist_tqh_ratio.GetYaxis().SetNdivisions(5)
+        hist_tqh_ratio.GetYaxis().SetTitleSize(20)
+        hist_tqh_ratio.GetYaxis().SetTitleFont(43)
+        hist_tqh_ratio.GetYaxis().SetTitleOffset(1.2)
+        hist_tqh_ratio.GetYaxis().SetLabelFont(43) # Absolute font size in pixel (precision 3)
+        hist_tqh_ratio.GetYaxis().SetLabelSize(15)
+        #--------------------
+        hist_tqh_ratio.GetXaxis().SetTitle(h['data'].GetXaxis().GetTitle())
+        hist_tqh_ratio.GetXaxis().SetTitleSize(25)
+        hist_tqh_ratio.GetXaxis().SetTitleFont(43)
+        hist_tqh_ratio.GetXaxis().SetTitleOffset(4.)
+        hist_tqh_ratio.GetXaxis().SetLabelFont(43) # Absolute font size in pixel (precision 3)
+        hist_tqh_ratio.GetXaxis().SetLabelSize(15)
+        #--------------------
+        c1.Update() #update the value of pad2.GetUxmax().
+        line=ROOT.TLine()
+        line.SetLineStyle(2)
+        line.DrawLine(pad2.GetUxmin(),0.5,pad2.GetUxmax(),0.5)
+        line.DrawLine(pad2.GetUxmin(),1.0,pad2.GetUxmax(),1.0)
+        line.DrawLine(pad2.GetUxmin(),1.5,pad2.GetUxmax(),1.5)
+        line.DrawLine(pad2.GetUxmin(),2.0,pad2.GetUxmax(),2.0)
 
         c1.Print(options.output+'/'+v+'.eps')
