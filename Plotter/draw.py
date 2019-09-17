@@ -84,7 +84,7 @@ if __name__ == '__main__':
         h['data'].SetMarkerColor(1)
         h['data'].SetLineColor(1)
         hist_tqh_ratio = h['data'].Clone()
-
+        #h['data'].Print("all")
         for l in ['StHut','StHct']:
             h[l].SetMarkerSize(0)
             h[l].SetMarkerColor(ROOT.kOrange+2)
@@ -152,14 +152,17 @@ if __name__ == '__main__':
         h['GJet'].SetLineStyle(1)
 
         hSM = ROOT.THStack()
-        hSMbis = ROOT.TH1D()
+        hSMbis =h['DiPhotonJets'].Clone()
+
         maxSM = 0
         for p in c.processSort:
             if p == 'data': continue
             if p not in ['StHut','StHct','TtHut','TtHct']:
                 hSM.Add(h[p])
-                hSMbis.Add(h[p])
+                #hSMbis.Add(h[p])
                 maxSM = maxSM + h[p].GetMaximum()
+                if  p != 'DiPhotonJets':
+                    hSMbis.Add(h[p])
 
         if sf < 0:
 
@@ -177,7 +180,7 @@ if __name__ == '__main__':
                 maxNP = maxNP + h[p].GetMaximum()
 
         hSM.Draw('hist')
-
+        #hSMbis.Print("all")
         #hSM.GetXaxis().SetTitle(h['data'].GetXaxis().GetTitle())
         hSM.GetYaxis().SetTitle(h['data'].GetYaxis().GetTitle())
 
